@@ -1,13 +1,14 @@
-// react
+// <========== react ==========>
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
-// css
+// <========== css ==========>
 import './index.css';
+import "./App.css";
 
-// Layout
-import Layout from './Components/Layout/layout';
+// <========== Layout ==========>
+import Header from './Components/header';
 
 
 const root = ReactDOM.createRoot(
@@ -15,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Layout/>
+    <Header/>
   </React.StrictMode>
 );
 

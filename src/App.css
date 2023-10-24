@@ -119,7 +119,8 @@ body {
 }
 .paint{
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 .content-head-1{
@@ -148,10 +149,6 @@ body {
   border-radius: 5px;
   padding: 48px;
 }
-
-.card:hover{
-  background-color: #777777;;
-}
 .card-icon
 {
   height: 60px;
@@ -176,7 +173,38 @@ body {
  text-align: center;
 }
 
+.img-radius{
+  border-radius: 15px;  
+}
+.destination-btn{
+  background-color: #777777;
+  color: white;
+  border-radius:10px ;
+  padding: 10px 15px;
+}
+.background-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover  ;
 
+}
+
+.background-travelers{
+  background-repeat: no-repeat;
+  background-position:right;
+  background-size:contain  ;
+}
+.tour-pic-btn{
+  background-color: #777777;
+  color: white;
+  border-radius:7px ;
+  padding: 10px 15px;
+}
+.background-top-pick {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 
