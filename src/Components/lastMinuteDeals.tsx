@@ -3,8 +3,8 @@ import Card from "./card";
 import carouselData from "../Mock/PackageData"
 import { url } from "inspector";
 import parashoot from "../Assets/Images/parashoot.png"
-import LongCard from "./long-card";
-import GetToKnowUs from "./get-toknowus";
+import LongCard from "./longCard";
+import GetToKnowUs from "./getToKnowus";
 
 const LastMinuteDeals = () => {
   return (
@@ -52,9 +52,7 @@ const LastMinuteDeals = () => {
         </div>
       </div>
     </div>
-    <div>
-     <GetToKnowUs/>
-    </div>
+    
     </div>
     
   );

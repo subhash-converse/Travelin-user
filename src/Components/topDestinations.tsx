@@ -1,11 +1,9 @@
 import React from "react";
 
-import destination1 from "../Assets/Images/destination2.jpg";
-
 // <========== mock data ==========>
-import carouselData from "../Mock/PackageData"
-import BestTourPackages from "./best-tourpackages";
-
+import carouselData from "../Mock/PackageData";
+import BestTourPackages from "./bestTourPackages";
+import Destination from "./destination";
 
 const TopDestinations = () => {
   return (
@@ -23,8 +21,7 @@ const TopDestinations = () => {
           </p>
         </div>
 
-     
-          <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center ">
           <div
             className="
             grid grid-cols-1 gap-5
@@ -32,30 +29,17 @@ const TopDestinations = () => {
             lg:grid-cols-4 ]
             xl:max-w-[1200px] xl:min-w-[1200px] "
           >
-             {carouselData.map((data) =>(
-            <div
-              style={{ backgroundImage: `url(${destination1})` }}
-              className="background-img img-radius h-[380px] 
-              md:col-span-2  flex items-end
-              lg:row-span-2  lg:h-[687px]"
-            >
-              <div className="w-full flex justify-between p-[24px]">
-                <div className="Play-fair">
-                  <h3 className="yellow">{data.country}</h3>
-                  <h3 className="white">{data.territory}</h3>
-                </div>
-                <button className="destination-btn">{`${data.days} days`}</button>
-              </div>
-            </div>
-            ))}
+            {carouselData.map((data) => {
+              let filter = data.catogory.find(
+                (a) => a.toLowerCase().trim() == "destination");
+              if (filter) {
+                return <Destination data={data} />;
+              } else {
+                return null;
+              }
+            })}
           </div>
         </div>
-        
-        
-      </div>
-
-      <div>
-        <BestTourPackages />
       </div>
     </div>
   );

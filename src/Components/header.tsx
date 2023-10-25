@@ -10,8 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from "../Assets/Images/logo.png";
 
 // <========== componet ==========>
-import Carousel from './landing-carousal';
-import LandingCarousel from './landing-carousal';
+import Carousel from './landingCarousal';
+import LandingCarousel from './landingCarousal';
 
 const Header = () => {
   return (
@@ -98,9 +98,7 @@ const Header = () => {
         </div>
       </header>
 
-      <div>
-        <LandingCarousel/>
-      </div>
+      
     </div>
   )
 }

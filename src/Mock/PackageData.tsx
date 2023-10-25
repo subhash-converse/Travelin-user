@@ -18,7 +18,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Barcelona City Beach",
         reviewsStar: 5,
         description: "Barcelona City Beach is a stunning beach in the heart of Barcelona, perfect for sunbathing and swimming.",
-        catogory:["Last Minute Deals","landing carowsal"],
+        catogory:["Last Minute Deals","destination"],
         price: 220,
         territory:"England",
         days:15
@@ -29,7 +29,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Venice Canals",
         reviewsStar: 4,
         description: "Explore the enchanting canals of Venice, known for its romantic gondola rides.",
-        catogory:["Last Minute Deals","landing carowsal"],
+        catogory:["Last Minute Deals","offer","destination"],
         price: 300,
         territory:"America",
         days:17
@@ -40,7 +40,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Eiffel Tower",
         reviewsStar: 4.5,
         description: "Visit the iconic Eiffel Tower in Paris, a symbol of romance and architectural beauty.",
-        catogory:["Last Minute Deals","landing carowsal"],
+        catogory:["Last Minute Deals","landing carowsal","destination"],
         price: 150,
         territory:"Caspian Valley",
         days:16
@@ -62,7 +62,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:[],
+        catogory:["landing carowsal","destination"],
         price: 250,
         territory:"Russia",
         days:19
@@ -73,7 +73,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:[],
+        catogory:["landing carowsal","destination"],
         price: 250,
         territory:"Japan",
         days:10
@@ -84,7 +84,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:[],
+        catogory:["landing carowsal"],
         price: 250,
         territory:"Russia",
         days:19
@@ -95,7 +95,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:[],
+        catogory:["offer","landing carowsal"],
         price: 250,
         territory:"Russia",
         days:19
@@ -106,7 +106,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:["Long Card","best tour package","landing carowsal"],
+        catogory:["Long Card","best tour package","landing carowsal","offer"],
         price: 250,
         territory:"Russia",
         days:19
@@ -117,7 +117,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:["Long Card","best tour package","landing carowsal"],
+        catogory:["Long Card","best tour package","landing carowsal","offer"],
         price: 250,
         territory:"Russia",
         days:19

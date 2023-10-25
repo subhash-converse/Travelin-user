@@ -1,9 +1,14 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel'
+import LastMainDeals from "../Mock/PackageData"
+import Carowsal from './carousal'
+import Offer from './offer'
 
 const GuideCarousal = () => {
   return (
     <div>
-        <div>
+      <div>
+      <div>
         <div className="flex flex-col justify-center items-center p-[50px]">
           <h1 className="yellow content-head-1 Play-fair">Tour Guides</h1>
           <h1 className="content-head-2 Play-fair">
@@ -18,10 +23,12 @@ const GuideCarousal = () => {
         </div>
 
         <div className='className="w-full flex justify-center p-4  background-travelers"'>
-          <div className='lg:max-w-[1200px] md:grid grid-cols-2'>
-
+          <div className='lg:max-w-[1200px] grid grid-cols-1 '>
+              <Carowsal carouselData={LastMainDeals}/>
           </div>
         </div>
+      </div>
+        
     </div>
   )
 }

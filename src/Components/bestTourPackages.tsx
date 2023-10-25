@@ -4,7 +4,7 @@ import { useState } from 'react';
 // <========== mock data ==========>
 import carouselData from "../Mock/PackageData"
 import Card from './card';
-import LastMinuteDeals from './last-minute-deals';
+import LastMinuteDeals from './lastMinuteDeals';
 
 const BestTourPackages = () => {
   const [btnOff,setBtnOn] = useState(false)
@@ -52,9 +52,7 @@ const BestTourPackages = () => {
       </div>
     </div>
       </div>
-      <div>
-      <LastMinuteDeals/>
-      </div>
+      
     </div>
     
   )

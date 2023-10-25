@@ -12,7 +12,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // <========== components ==========>
-import TopDestination from './core-futures';
+import TopDestination from './coreFutures';
 
 const FindHolidayForm = () => {
   return (
@@ -87,9 +87,7 @@ const FindHolidayForm = () => {
       </form>
     </div>
   </div>
-   <div>
-      <TopDestination/>
-    </div>
+   
     </div>
   )
 }

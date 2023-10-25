@@ -7,7 +7,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import GuideCarousal from "./guide-carousal";
+import GuideCarousal from "./guideCarousal";
 
 const GetToKnowUs = () => {
   return (
@@ -77,9 +77,7 @@ const GetToKnowUs = () => {
                 
             </div>
       </div>
-        <div>
-            <GuideCarousal/>
-        </div>
+        
     </div>
   );
 };

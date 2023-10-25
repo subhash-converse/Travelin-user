@@ -5,8 +5,8 @@ import React from 'react'
 import LastMainDeals from "../Mock/PackageData"
 
 // <========== componets ==========>
-import FindHolidayForm from './find-holiday-form';
-import Carowsal from './carowsal';
+import FindHolidayForm from './findHolidayForm';
+import Carowsal from './carousal';
 
 
 
@@ -17,9 +17,6 @@ const LandingCarousel = () => {
   return (
         <div className="">
           <Carowsal carouselData={LastMainDeals} />;
-          <div>
-            <FindHolidayForm/>
-          </div>
       </div>
   )
         }
