@@ -7,15 +7,6 @@ import TopDestinations from './topDestinations';
 
 const CoreFutures = () => {
 
-  //  const card = (event:any) => {
-  //   console.log(event)
-  //  }
-
-  //  const cardOut = (event:any) => {
-  //   console.log(event)
-  //  }
-
-
   return (
     <div>
     <div
@@ -87,9 +78,6 @@ const CoreFutures = () => {
           </div>
         </div>
       </div>
-      <div>
-          <TopDestinations/>
-        </div>
       </div>
   )
 }

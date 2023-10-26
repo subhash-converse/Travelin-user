@@ -19,7 +19,7 @@ const FindHolidayForm = () => {
     <div>
       <div
     style={{ backgroundImage: `url(${mountain})` }}
-    className="mountain-back lg:min-h-[172px] flex justify-center px-4 mt-8 lg:mt-0 z-10 lg:pt-[100px]"
+    className=" mountain-back lg:min-h-[172px] flex justify-center px-4 mt-8 lg:mt-0 z-10 lg:pt-[100px]"
   >
     <div className=" main-input h-full w-[1200px] flex flex-col rounded-md bg-white lg:flex-row ">
       <div className="w-full py-[30px] flex bg-[#029E9D] text-white justify-center items-center gap-2 rounded-t-md lg:rounded-none lg:rounded-l-md lg:w-[20%] ">

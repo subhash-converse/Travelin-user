@@ -27,21 +27,31 @@ const Offer = () => {
             );
             if (filter) {
               return (
-                <div className=" grid grid-cols-5 img-radius main-input">
-                  <div style={{backgroundImage: `url(${offer})`}} className="col-span-2 rounded-l-xl background-img"></div>
-                
-                  <div className="col-span-3 py-[24px] px-[15px]">
-                    <h3 className="text-[18px] text-[#777777] Play-fair mb-2">{data.territory}</h3>
-                    <h2 className="text-[26px] Play-fair mb-2">{data.country}</h2>
+                <div className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-5 img-radius main-input">
+                  <div
+                    style={{ backgroundImage: `url(${offer})` }}
+                    className=" md:col-span-2 rounded-t-xl md:rounded-t-none md:rounded-l-xl background-img"
+                  ></div>
+
+                  <div className="md:col-span-3 py-[24px] px-[15px]">
+                    <h3 className="text-[18px] text-[#777777] Play-fair mb-2">
+                      {data.territory}
+                    </h3>
+                    <h2 className="text-[26px] Play-fair mb-2">
+                      {data.country}
+                    </h2>
                     <span className="pb-4 ">Start</span>
-                    <p className="mb-2 text-[#777777] text-[16px]">{data.description}</p>
+                    <p className="mb-2 text-[#777777] text-[16px]">
+                      {data.description}
+                    </p>
                     <div className="text-[#777] text-[16px] pb-4 mb-4">
                       <FontAwesomeIcon icon={faCalendarDays} />
                       <span> {`${data.days} Days Tours`} </span>
                     </div>
                     <div className="text-[#777]">
                       <span className="text-[20px]">{`$${data.price}`}</span>{" "}
-                      <span> | </span> <span className="text-[16px]">Per person</span>
+                      <span> | </span>{" "}
+                      <span className="text-[16px]">Per person</span>
                     </div>
                   </div>
                 </div>

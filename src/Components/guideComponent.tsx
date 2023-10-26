@@ -15,7 +15,6 @@ import { useRef, useState, useEffect } from "react";
 import carousel1 from "../Assets/Images/corrosal1.jpg";
 import LastMainDeals from "../Mock/PackageData";
 
-
 interface LastMainDeal{
   image:any,
   country:string,
@@ -28,7 +27,7 @@ interface LastMainDeal{
   days:number
 }
 
-const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
+const GuideComponent = (props: { carouselData: LastMainDeal[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -102,4 +101,4 @@ const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
   );
 };
 
-export default Carowsal;
+export default GuideComponent;

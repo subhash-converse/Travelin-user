@@ -18,7 +18,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Barcelona City Beach",
         reviewsStar: 5,
         description: "Barcelona City Beach is a stunning beach in the heart of Barcelona, perfect for sunbathing and swimming.",
-        catogory:["Last Minute Deals","destination"],
+        catogory:["Last Minute Deals","destination","articles"],
         price: 220,
         territory:"England",
         days:15
@@ -106,7 +106,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:["Long Card","best tour package","landing carowsal","offer"],
+        catogory:["Long Card","best tour package","landing carowsal","offer","articles"],
         price: 250,
         territory:"Russia",
         days:19
@@ -117,7 +117,7 @@ const LastMainDeals:LastMainDeals[] = [
         touristPlace: "Santorini",
         reviewsStar: 5,
         description: "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-        catogory:["Long Card","best tour package","landing carowsal","offer"],
+        catogory:["Long Card","best tour package","landing carowsal","offer","articles"],
         price: 250,
         territory:"Russia",
         days:19

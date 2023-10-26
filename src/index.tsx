@@ -17,6 +17,12 @@ import LastMinuteDeals from "./Components/lastMinuteDeals";
 import GetToKnowUs from "./Components/getToKnowus";
 import GuideCarousal from "./Components/guideCarousal";
 import Offer from "./Components/offer";
+import ExploreYourLife from "./Components/exploreYourLife";
+import GoodReviews from "./Components/goodReviews";
+import ArticlesPosts from "./Components/articlesPosts";
+import Patners from "./Components/patners";
+import Footer from "./Components/Footer";
+import CoreFutures from "./Components/coreFutures";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -31,6 +37,9 @@ root.render(
     </div>
     <div>
       <FindHolidayForm />
+    </div>
+    <div>
+      <CoreFutures/>
     </div>
     <div>
       <TopDestinations />
@@ -49,6 +58,21 @@ root.render(
     </div>
     <div>
       <Offer />
+    </div>
+    <div >
+      <ExploreYourLife />
+    </div>
+    <div>
+      <GoodReviews/>
+    </div>
+    <div>
+      <ArticlesPosts/>
+    </div>
+    <div>
+      <Patners/>
+    </div>
+    <div>
+      <Footer/>
     </div>
   </React.StrictMode>
 );

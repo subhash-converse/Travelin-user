@@ -16,7 +16,7 @@ const LandingCarousel = () => {
 
   return (
         <div className="">
-          <Carowsal carouselData={LastMainDeals} />;
+          <Carowsal carouselData={LastMainDeals}/>;
       </div>
   )
         }

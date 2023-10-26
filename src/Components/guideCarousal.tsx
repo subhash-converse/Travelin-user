@@ -4,6 +4,8 @@ import LastMainDeals from "../Mock/PackageData"
 import Carowsal from './carousal'
 import Offer from './offer'
 
+
+
 const GuideCarousal = () => {
   return (
     <div>
@@ -24,7 +26,9 @@ const GuideCarousal = () => {
 
         <div className='className="w-full flex justify-center p-4  background-travelers"'>
           <div className='lg:max-w-[1200px] grid grid-cols-1 '>
-              <Carowsal carouselData={LastMainDeals}/>
+              <GuideCarousal 
+              // carouselData={ LastMainDeals }
+              />
           </div>
         </div>
       </div>
