@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "src/Components/landingCarousal.tsx", "src/Components/coreFutures.tsx"  ]
+, "src/Components/landingPage.tsx", "src/Components/coreFutures.tsx"  ]
 }

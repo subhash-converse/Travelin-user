@@ -1,11 +1,52 @@
-import React from "react";
-import blueMountain from "../Assets/Images/mountain.png";
-import whiteLogo from "../Assets/Images/logo-white.png";
-import peoples from "../Assets/Images/peoples.png";
+// <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
+// <========== swipper ==========>
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// <========== hooks ==========>
+import { useRef, useState, useEffect } from "react";
+
+// <========== images ==========>
+import blueMountain from "../Assets/Images/mountain.png";
+import whiteLogo from "../Assets/Images/logo-white.png";
+import peoples from "../Assets/Images/peoples.png";
+import footer1 from "../Assets/Images/footer1.jpg";
+import footer2 from "../Assets/Images/footer2.jpg";
+import footer3 from "../Assets/Images/footer3.jpg";
+import footer4 from "../Assets/Images/footer4.jpg";
+import footer5 from "../Assets/Images/footer5.jpg";
+import footer6 from "../Assets/Images/footer6.jpg";
+import footer7 from "../Assets/Images/footer7.jpg";
+import footer8 from "../Assets/Images/footer8.jpg";
+import footer9 from "../Assets/Images/footer9.jpg";
+
+
+
 const Footer = () => {
+  const [windowWidth, setWindowWidth] = useState(4);
+  let screenWidth = window.innerWidth;
+
+  useEffect(() => {
+    if (425 >= screenWidth ){
+      setWindowWidth(2)
+    }
+    else if (768 >= screenWidth) {
+      setWindowWidth(3)
+    }   
+    else if (768 >= screenWidth) {
+      setWindowWidth(5)
+
+    } else {
+      setWindowWidth(6)
+    }
+  }, [screenWidth]);
+
   return (
     <div>
       <div className="">
@@ -20,7 +61,58 @@ const Footer = () => {
         <div className="w-full lg:max-w-[1200px] grid grid-cols-1 ">
           {/* carousel */}
 
-          <div className="bg-white">carousel</div>
+          <div className="bg-[#17233E]">
+            <Swiper
+              slidesPerView={windowWidth}
+              spaceBetween={70}
+              centeredSlides={false}
+              loop={true}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer1} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer2} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer3} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer4} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer5} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer6} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer7} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer8} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer9} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer7} alt="" />
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <img className="img-radius bg-[#17233E]" src={footer8} alt="" />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
 
@@ -117,7 +209,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
             </div>
-            
+
             <div className="mt-2 flex gap-4  lg:gap-1 lg:mt-0">
               <div className="bg-white pl-5 py-3 lg:py-[11px] rounded-lg flex items-center w-[70%]">
                 <input
@@ -130,31 +222,28 @@ const Footer = () => {
                 Subscribe
               </button>
             </div>
-
-            
-
           </div>
           <div className="flex flex-col py-5 md:px-6 rounded-xl mt-6 bg-[#fbfbfb12] md:flex-row justify-between  text-white">
-              <div className="flex justify-center items-center">
-                {" "}
-                <h3>2022 Travelin. All rights reserved.</h3>
+            <div className="flex justify-center items-center">
+              {" "}
+              <h3>2022 Travelin. All rights reserved.</h3>
+            </div>
+            <div className="flex gap-5 justify-center items-center">
+              <div className="bg-[#fbfbfb12] p-3 rounded-[50%] ">
+                <FontAwesomeIcon icon={faImage} />
               </div>
-              <div className="flex gap-5 justify-center items-center">
-                <div className="bg-[#fbfbfb12] p-3 rounded-[50%] ">
-                  <FontAwesomeIcon icon={faImage} />
-                </div>
-                <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
-                  {" "}
-                  <FontAwesomeIcon icon={faImage} />
-                </div>
-                <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
-                  <FontAwesomeIcon icon={faImage} />
-                </div>
-                <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
-                  <FontAwesomeIcon icon={faImage} />
-                </div>
+              <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
+                {" "}
+                <FontAwesomeIcon icon={faImage} />
+              </div>
+              <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
+                <FontAwesomeIcon icon={faImage} />
+              </div>
+              <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
+                <FontAwesomeIcon icon={faImage} />
               </div>
             </div>
+          </div>
         </div>
       </div>
 

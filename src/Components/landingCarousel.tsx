@@ -1,12 +1,9 @@
-import React from "react";
-
 // <========== swipper ==========>
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { url } from "inspector";
 
 // <========== hooks ==========>
 import { useRef, useState, useEffect } from "react";
@@ -15,23 +12,24 @@ import { useRef, useState, useEffect } from "react";
 import carousel1 from "../Assets/Images/corrosal1.jpg";
 import LastMainDeals from "../Mock/PackageData";
 
-interface LastMainDeal{
-  image:any,
-  country:string,
-  touristPlace:string,
-  reviewsStar:number,
-  description:string;
-  catogory:string[]
-  price:number,
-  territory:string,
-  days:number
+interface LastMainDeal {
+  image: any;
+  country: string;
+  touristPlace: string;
+  reviewsStar: number;
+  description: string;
+  catogory: string[];
+  price: number;
+  territory: string;
+  days: number;
+  guideName?: string;
+  position?: string;
 }
 
-const GuideComponent = (props: { carouselData: LastMainDeal[] }) => {
+const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
-
 
   useEffect(() => {
     if (screenWidth <= 768) {
@@ -58,7 +56,7 @@ const GuideComponent = (props: { carouselData: LastMainDeal[] }) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper swiper-pagination-bullets "
       >
         {props.carouselData.map((carousal: LastMainDeals) => {
           let filter = carousal.catogory.find((a) => {
@@ -66,14 +64,14 @@ const GuideComponent = (props: { carouselData: LastMainDeal[] }) => {
               return a;
             }
           });
-          console.log(carousal.image)
+          console.log(carousal.image);
           if (filter) {
             console.log(filter);
             return (
               <SwiperSlide className="flex justify-center w-full">
                 <div
-                  className="backround-image ]"
-                  style={{ backgroundImage: `url(${carousel1})`}}
+                  className="backround-image carousel-bg"
+                  style={{ backgroundImage: `url(${carousel1})` }}
                 >
                   <div className="background-text">
                     <h2 className="yellow Play-fair swiper-title1">
@@ -101,4 +99,4 @@ const GuideComponent = (props: { carouselData: LastMainDeal[] }) => {
   );
 };
 
-export default GuideComponent;
+export default Carowsal;

@@ -1,4 +1,4 @@
-import React from "react";
+// <========== MockData ==========>
 import destination1 from "../Assets/Images/destination2.jpg";
 
 interface data {
@@ -12,6 +12,8 @@ interface data {
     price: number;
     territory: string;
     days: number;
+    guideName?: string;
+    position?: string;
   };
 }
 

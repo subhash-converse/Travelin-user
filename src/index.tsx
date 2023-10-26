@@ -8,21 +8,22 @@ import "./index.css";
 import "./App.css";
 
 // <========== Layout ==========>
-import Header from "./Components/header";
-import LandingCarousel from "./Components/landingCarousal";
+
+import LandingCarousel from "./Components/landingPage";
 import FindHolidayForm from "./Components/findHolidayForm";
 import TopDestinations from "./Components/topDestinations";
 import BestTourPackages from "./Components/bestTourPackages";
 import LastMinuteDeals from "./Components/lastMinuteDeals";
 import GetToKnowUs from "./Components/getToKnowus";
-import GuideCarousal from "./Components/guideCarousal";
+import GuideCarousal from "./Components/guidePage";
 import Offer from "./Components/offer";
 import ExploreYourLife from "./Components/exploreYourLife";
 import GoodReviews from "./Components/goodReviews";
 import ArticlesPosts from "./Components/articlesPosts";
-import Patners from "./Components/patners";
-import Footer from "./Components/Footer";
+import Patners from "./Components/partners";
+import Footer from "./Components/footer";
 import CoreFutures from "./Components/coreFutures";
+import Header from "./Components/header";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

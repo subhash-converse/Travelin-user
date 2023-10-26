@@ -1,7 +1,5 @@
-import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import Carowsal from "./carousal";
-import LastMainDeals from "../Mock/PackageData";
+// <========== Componets ==========>
+import PartnersCarousel from "./PartnersCarousel";
 
 const Patners = () => {
   return (
@@ -18,8 +16,8 @@ const Patners = () => {
         </p>
       </div>
       <div className='className="w-full flex justify-center p-4  background-travelers"'>
-          <div className='lg:max-w-[1200px] grid grid-cols-1 '>
-        <Carowsal carouselData={LastMainDeals}/>
+        <div className="lg:max-w-[1200px] grid grid-cols-1 ">
+          <PartnersCarousel />
         </div>
       </div>
     </div>

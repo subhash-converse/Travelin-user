@@ -1,15 +1,19 @@
-import { faCompass, faFlag, faLocationDot, faSignsPost } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
-import paint from "../Assets/Images/shape4.png";
-import TopDestinations from './topDestinations';
+// <========== icons ==========>
+import {
+  faCompass,
+  faFlag,
+  faLocationDot,
+  faSignsPost,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// <========== images ==========>
+import paint from "../Assets/Images/shape4.png";
 
 const CoreFutures = () => {
-
   return (
     <div>
-    <div
+      <div
         className="paint px-4 grid grid-flow-row"
         style={{ backgroundImage: `url(${paint})` }}
       >
@@ -26,12 +30,7 @@ const CoreFutures = () => {
         </div>
         <div className="w-full flex justify-center">
           <div className="max-w-[1200px] grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4">
-            <div
-              className="card  "
-              id="box1"
-              // onMouseEnter={card}
-              // onMouseLeave={cardOut}
-            >
+            <div className="card  " id="box1">
               <FontAwesomeIcon icon={faFlag} className="card-icon" />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
@@ -78,8 +77,8 @@ const CoreFutures = () => {
           </div>
         </div>
       </div>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
 export default CoreFutures;

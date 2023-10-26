@@ -13,34 +13,33 @@ import { useRef, useState, useEffect } from "react";
 
 // <========== images ==========>
 import carousel1 from "../Assets/Images/corrosal1.jpg";
+import guide from "../Assets/Images/guide1.jpg";
 import LastMainDeals from "../Mock/PackageData";
 
-
-interface LastMainDeal{
-  image:any,
-  country:string,
-  touristPlace:string,
-  reviewsStar:number,
-  description:string;
-  catogory:string[]
-  price:number,
-  territory:string,
-  days:number
+interface LastMainDeal {
+  image: any;
+  country: string;
+  touristPlace: string;
+  reviewsStar: number;
+  description: string;
+  catogory: string[];
+  price: number;
+  territory: string;
+  days: number;
+  guideName?: string;
+  position?: string;
 }
 
-const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
+const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
 
-
   useEffect(() => {
     if (screenWidth <= 768) {
       setWindowWidth(1);
-    } else if (screenWidth > 768 && screenWidth <= 1024) {
-      setWindowWidth(3);
     } else {
-      setWindowWidth(4);
+      setWindowWidth(2);
     }
   }, [screenWidth]);
   return (
@@ -67,30 +66,23 @@ const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
               return a;
             }
           });
-          console.log(carousal.image)
+          console.log(carousal.image);
           if (filter) {
             console.log(filter);
             return (
-              <SwiperSlide className="flex justify-center w-full">
-                <div
-                  className="backround-image ]"
-                  style={{ backgroundImage: `url(${carousel1})`}}
-                >
-                  <div className="background-text">
-                    <h2 className="yellow Play-fair swiper-title1">
-                      {carousal.country}
-                    </h2>
-                    <h1 className="white Play-fair swiper-title2">
-                      {carousal.touristPlace}
-                    </h1>
-                    <span className="yellow">{carousal.reviewsStar}</span>
-                    <div className="flex gap-x-2 justify-center">
-                      <span className="border-r-[1px] pr-2 yellow">
-                        &#36;
-                        <span className="swiper-amount">{carousal.price}</span>
-                      </span>
-                      <span className="white">per person</span>
-                    </div>
+              <SwiperSlide className="flex justify-center ">
+                <div className=" carousel-bg main-input h-[332px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
+                  <div className="h-[50%] flex items-center ">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore.
+                    </p>
+                  </div>
+                  <div className="  w-full h-[50%]  flex flex-col items-center justify-center text-[#777] p-4">
+                    <h3 className="Play-fair text-[22px]">
+                      {carousal.guideName}
+                    </h3>
+                    <h3 className="text-[16px]">{carousal.position}</h3>
                   </div>
                 </div>
               </SwiperSlide>
@@ -102,4 +94,4 @@ const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
   );
 };
 
-export default Carowsal;
+export default ReviewComponent;

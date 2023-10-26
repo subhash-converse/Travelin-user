@@ -1,22 +1,22 @@
-// <========== react ==========>
-import React from 'react'
-
 // <========== icons ==========>
-
-import { faBars, faCalendarDays, faClock, faLocationDot, faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faBars,
+  faCalendarDays,
+  faClock,
+  faImage,
+  faLocationDot,
+  faMagnifyingGlass,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // <========== images ==========>
 import logo from "../Assets/Images/logo.png";
 
-// <========== componet ==========>
-import Carousel from './landingCarousal';
-import LandingCarousel from './landingCarousal';
-
 const Header = () => {
   return (
     <div>
-        <div className="top-head hidden lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
+      <div className="top-head hidden lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
         <div className="w-[90%]  lg:max-w-[1296px] flex justify-between">
           <div className="flex items-center gap-2">
             <div className="border-r-[1px] pr-[8px]">
@@ -31,7 +31,23 @@ const Header = () => {
               <FontAwesomeIcon icon={faClock} /> Mon-Fri:10 AM-5 PM
             </div>
           </div>
-          <div></div>
+          <div>
+            <div className="flex  justify-center items-center">
+              <div className=" p-3 rounded-[50%]">
+                <FontAwesomeIcon icon={faImage} />
+              </div>
+              <div className=" p-3 rounded-[50%]">
+                {" "}
+                <FontAwesomeIcon icon={faImage} />
+              </div>
+              <div className=" p-3 rounded-[50%]">
+                <FontAwesomeIcon icon={faImage} />
+              </div>
+              <div className=" p-3 rounded-[50%]">
+                <FontAwesomeIcon icon={faImage} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <header className="h-[94px]  flex justify-center items-center">
@@ -97,10 +113,8 @@ const Header = () => {
           </div>
         </div>
       </header>
-
-      
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

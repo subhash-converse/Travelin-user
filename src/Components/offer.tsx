@@ -1,6 +1,10 @@
-import React from "react";
-import carouselData from "../Mock/PackageData";
+// <========== Componets ==========>
 import offer from "../Assets/Images/offer1.jpg";
+
+// <========== MockData ==========>
+import carouselData from "../Mock/PackageData";
+
+// <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
 
@@ -20,14 +24,14 @@ const Offer = () => {
         </p>
       </div>
       <div className="w-full flex justify-center p-4">
-        <div className="lg:max-w-[1200px] md:grid grid-cols-l lg:grid-cols-2 gap-7">
+        <div className="grid gap-4 lg:max-w-[1200px] md: grid-cols-l lg:grid-cols-2 lg:gap-7">
           {carouselData.map((data) => {
             let filter = data.catogory.find(
               (a) => a.toLowerCase().trim() == "offer"
             );
             if (filter) {
               return (
-                <div className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1 md:grid-cols-5 img-radius main-input">
+                <div className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1  md:grid-cols-5 img-radius main-input">
                   <div
                     style={{ backgroundImage: `url(${offer})` }}
                     className=" md:col-span-2 rounded-t-xl md:rounded-t-none md:rounded-l-xl background-img"

@@ -1,8 +1,8 @@
-import React from "react";
 
 // <========== mock data ==========>
 import carouselData from "../Mock/PackageData";
-import BestTourPackages from "./bestTourPackages";
+
+// <========== Componets ==========>
 import Destination from "./destination";
 
 const TopDestinations = () => {
