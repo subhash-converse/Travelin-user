@@ -64,9 +64,7 @@ const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
               return a;
             }
           });
-          console.log(carousal.image);
           if (filter) {
-            console.log(filter);
             return (
               <SwiperSlide className="flex justify-center w-full">
                 <div

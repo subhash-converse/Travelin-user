@@ -66,9 +66,7 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
               return a;
             }
           });
-          console.log(carousal.image);
           if (filter) {
-            console.log(filter);
             return (
               <SwiperSlide className="flex justify-center ">
                 <div className=" carousel-bg main-input h-[332px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">

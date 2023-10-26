@@ -24,16 +24,19 @@ const TopDestinations = () => {
         <div className="flex flex-col items-center ">
           <div
             className="
-            grid grid-cols-1 gap-5
+            grid grid-cols-1 gap-5 w-full
             md:grid-cols-2 
             lg:grid-cols-4 ]
-            xl:max-w-[1200px] xl:min-w-[1200px] "
+            xl:max-w-[1200px] "
           >
-            {carouselData.map((data) => {
+            {carouselData.map((data,index) => {
+             
               let filter = data.catogory.find(
                 (a) => a.toLowerCase().trim() == "destination");
               if (filter) {
-                return <Destination data={data} />;
+                let filteredData = [];
+                filteredData.push(data)
+                  return <Destination data={data} index={index} />;
               } else {
                 return null;
               }
