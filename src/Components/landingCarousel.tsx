@@ -25,7 +25,7 @@ interface LastMainDeal {
   position?: string;
 }
 
-const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
+const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -102,4 +102,4 @@ const Carowsal = (props: { carouselData: LastMainDeal[] }) => {
   );
 };
 
-export default Carowsal;
+export default LandingCarousel;
