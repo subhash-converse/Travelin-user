@@ -10,6 +10,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+
 // <========== images ==========>
 import logo from "../Assets/Images/logo.png";
 
@@ -18,41 +27,42 @@ const Header = () => {
     <div>
       <div className="top-head hidden lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
         <div className="w-[90%]  lg:max-w-[1296px] flex justify-between">
-          <div className="flex items-center gap-2">
-            <div className="border-r-[1px] pr-[8px]">
-              <FontAwesomeIcon icon={faCalendarDays} />{" "}
-              <span>Sunday, Mar 26, 2021</span>
+          <div className="flex items-center ">
+            <div className="border-r-[1px] border-[#35B0AF] pr-[15px] flex  ">
+                <CalendarMonthOutlinedIcon className="" style={{ width: '19px', height: '16px' }}/>{" "}
+              <span className="">Thursday, Mar 26, 2021</span>
             </div>
-            <div className="border-r-[1px] pr-[8px]">
-              <FontAwesomeIcon icon={faLocationDot} />{" "}
+            <div className="border-r-[1px] border-[#35B0AF] px-[15px] flex items-center">
+            <LocationOnOutlinedIcon  className="" style={{  width: '19px', height: '17px' }}/>
               <span>Hollywood, America</span>
             </div>
-            <div>
-              <FontAwesomeIcon icon={faClock} /> Mon-Fri:10 AM-5 PM
+            <div className="pl-[15px] flex items-center">
+              <div><WatchLaterOutlinedIcon className="" style={{ width: '19px', height: '17px' }}/></div>
+              <div>Mon-Fri: 10 AM-5 PM</div> 
             </div>
           </div>
           <div>
-            <div className="flex  justify-center items-center">
-              <div className=" p-3 rounded-[50%]">
-                <FontAwesomeIcon icon={faImage} />
+            <div className="flex h-full justify-center items-center">
+              <div className=" px-[14px]   border-r-[1px] border-[#35B0AF]">
+                <FacebookOutlinedIcon style={{  width: '19px', height: '17px' }}/>
               </div>
-              <div className=" p-3 rounded-[50%]">
-                {" "}
-                <FontAwesomeIcon icon={faImage} />
+              <div className=" px-[15px] border-r-[1px] border-[#35B0AF]">
+             
+                <TwitterIcon style={{  width: '19px', height: '17px' }} />
               </div>
-              <div className=" p-3 rounded-[50%]">
-                <FontAwesomeIcon icon={faImage} />
+              <div className=" px-[15px]  border-r-[1px] border-[#35B0AF]">
+                <InstagramIcon style={{  width: '19px', height: '17px' }} />
               </div>
-              <div className=" p-3 rounded-[50%]">
-                <FontAwesomeIcon icon={faImage} />
+              <div className=" pl-[14px] ">
+                <LinkedInIcon style={{  width: '19px', height: '17px' }}/>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <header className="h-[94px]  flex justify-center items-center">
+      <header className="h-[100px]  flex justify-center items-center">
         <div className="flex w-[90%] justify-between md:max-w-[696px] lg:max-w-[1296px] ">
-          <div>
+          <div className="pt-[1px]">
             <img src={logo} alt="Travelin" className="" />
           </div>
 
@@ -103,8 +113,8 @@ const Header = () => {
               className="self-center h-[20px] xl:hidden"
             />
             <div className="hidden xl:inline-flex items-center gap-2">
-              <span className="text-[#029E9D] ">
-                <FontAwesomeIcon icon={faUser} className="text-[15px] mr-1" />
+              <span className="text-[#868686] mr-4 text-[15px]">
+                <PersonOutlineOutlinedIcon className="mb-[7px] "/>
                 LOGIN/REGISTER
               </span>
 

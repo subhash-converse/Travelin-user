@@ -11,6 +11,10 @@ import { useState, useEffect } from "react";
 // <========== images ==========>
 import carousel1 from "../Assets/Images/corrosal1.jpg";
 
+// <========== images ==========>
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+
+
 interface LastMainDeal {
   image: any;
   country: string;
@@ -43,11 +47,11 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
     <div>
       <Swiper
         slidesPerView={windowWidth}
-        spaceBetween={1}
+        spaceBetween={0}
         centeredSlides={false}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -70,7 +74,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
             return (
               <SwiperSlide className="flex justify-center w-full">
                 <div
-                  className="backround-image carousel-bg"
+                  className="backround-image carousel-bg "
                   style={{ backgroundImage: `url(${carousel1})` }}
                 >
                   <div className="background-text">
@@ -84,10 +88,11 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
                     <div className="flex gap-x-2 justify-center">
                       <span className="border-r-[1px] pr-2 yellow">
                         &#36;
-                        <span className="swiper-amount">{carousal.price}</span>
+                        <span className="swiper-amount font-extrabold">{carousal.price}</span>
                       </span>
-                      <span className="white">per person</span>
+                      <span className="white text-[16px] self-end">per person</span>
                     </div>
+                    <h3  className="white text-[16px] self-end"><span><CalendarMonthOutlinedIcon className="font-black" style={{ width: '19px', height: '19px' }}/></span><span className="font-black" style={{ width: '19px', height: '19px' }}>{carousal.days}Days Tour</span></h3>
                   </div>
                 </div>
               </SwiperSlide>
