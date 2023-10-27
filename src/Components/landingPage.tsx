@@ -12,4 +12,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingCarousel;
+export default LandingPage;
