@@ -25,9 +25,8 @@ const Offer = () => {
       </div>
       <div className="w-full flex justify-center p-4">
         <div className="grid gap-4 lg:max-w-[1200px] md: grid-cols-l lg:grid-cols-2 lg:gap-7">
-          {carouselData.map((data) => {
-            let filter = data.catogory.find(
-              (a) => a.toLowerCase().trim() == "offer"
+          {carouselData.map(data => {
+            let filter = data.catogory.find(a => a.toLowerCase().trim() === "offer"
             );
             if (filter) {
               return (
@@ -61,7 +60,10 @@ const Offer = () => {
                 </div>
               );
             }
-          })}
+            else{
+              return null
+            }
+        })}
         </div>
       </div>
     </div>

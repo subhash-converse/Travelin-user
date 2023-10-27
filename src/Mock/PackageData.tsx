@@ -1,5 +1,4 @@
-import img from "../Assets/Images/corrosal1.jpg"
-interface LastMainDeals{
+interface datas{
     image:any,
     country:string,
     touristPlace:string,
@@ -13,7 +12,7 @@ interface LastMainDeals{
     position?:string
 }
 
-const LastMainDeals:LastMainDeals[] = [
+const LastMainDeals:datas[] = [
     {
         image: "carousel1",
         country: "Spain",

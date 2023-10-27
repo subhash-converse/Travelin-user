@@ -22,7 +22,7 @@ const ArticlesPosts = () => {
         <div className="max-w-[1200px] grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
           {carouselData.map((data) => {
             let filter = data.catogory.find(
-              (a) => a.toLowerCase().trim() == "articles"
+              (a) => a.toLowerCase().trim() === "articles"
             );
             if (filter) {
               return <Card data={data} />;

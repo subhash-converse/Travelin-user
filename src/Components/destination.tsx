@@ -24,7 +24,7 @@ const Destination = (props: data) => {
   return (
     <>
     {
-      (props.index == 0) ? 
+      (props.index === 0) ? 
       <div
       style={{ backgroundImage: `url(${destination1})` }}
       className="background-img img-radius h-[380px] 

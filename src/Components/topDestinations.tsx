@@ -32,7 +32,7 @@ const TopDestinations = () => {
             {carouselData.map((data,index) => {
              
               let filter = data.catogory.find(
-                (a) => a.toLowerCase().trim() == "destination");
+                (a) => a.toLowerCase().trim() === "destination");
               if (filter) {
                 let filteredData = [];
                 filteredData.push(data)

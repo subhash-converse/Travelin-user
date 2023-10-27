@@ -6,15 +6,9 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { url } from "inspector";
 
 // <========== hooks ==========>
-import { useRef, useState, useEffect } from "react";
-
-// <========== images ==========>
-import carousel1 from "../Assets/Images/corrosal1.jpg";
-import guide from "../Assets/Images/guide1.jpg";
-import LastMainDeals from "../Mock/PackageData";
+import { useState, useEffect } from "react";
 
 interface LastMainDeal {
   image: any;
@@ -60,10 +54,13 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {props.carouselData.map((carousal: LastMainDeals) => {
-          let filter = carousal.catogory.find((a) => {
-            if (a.toLocaleLowerCase().trim() == "landing carowsal") {
+        {props.carouselData.map(function(carousal: LastMainDeal) {
+          let filter = carousal.catogory.find(function(a) {
+            if (a.toLocaleLowerCase().trim() === "landing carowsal") {
               return a;
+            }
+            else{
+              return null
             }
           });
           if (filter) {
@@ -85,6 +82,10 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
                 </div>
               </SwiperSlide>
             );
+          }
+
+          else{
+            return null
           }
         })}
       </Swiper>

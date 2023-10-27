@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // <========== hooks ==========>
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // <========== images ==========>
 import blueMountain from "../Assets/Images/mountain.png";

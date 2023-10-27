@@ -30,7 +30,7 @@ const LastMinuteDeals = () => {
               <div className="col-span-3 grid gap-5 grid-cols-1 md:grid-cols-2">
                 {carouselData.map((data) => {
                   let filter = data.catogory.find(
-                    (a) => a.toLowerCase().trim() == "last minute deals"
+                    (a) => a.toLowerCase().trim() === "last minute deals"
                   );
                   if (filter) {
                     return <Card data={data} />;
@@ -43,7 +43,7 @@ const LastMinuteDeals = () => {
               <div className="col-span-2 grid gap-6">
                 {carouselData.map((data) => {
                   let filter = data.catogory.find(
-                    (a) => a.toLowerCase().trim() == "long card"
+                    (a) => a.toLowerCase().trim() === "long card"
                   );
                   if (filter) {
                     return <LongCard data={data} />;

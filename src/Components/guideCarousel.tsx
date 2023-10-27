@@ -6,13 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // <========== hooks ==========>
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // <========== images ==========>
 import guide from "../Assets/Images/guide1.jpg";
 
 // <========== MockData ==========>
-import LastMainDeals from "../Mock/PackageData";
 
 interface LastMainDeal {
   image: any;
@@ -60,10 +59,13 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets"
       >
-        {props.carouselData.map((carousal: LastMainDeals) => {
+        {props.carouselData.map((carousal: LastMainDeal) => {
           let filter = carousal.catogory.find((a) => {
-            if (a.toLocaleLowerCase().trim() == "guide info") {
+            if (a.toLocaleLowerCase().trim() === "guide info") {
               return a;
+            }
+            else{
+              return null
             }
           });
 
@@ -83,6 +85,9 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
                 </div>
               </SwiperSlide>
             );
+          }
+          else{
+            return null
           }
         })}
       </Swiper>
