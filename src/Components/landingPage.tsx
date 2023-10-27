@@ -6,7 +6,7 @@ import Carowsal from "./LandingCarousel";
 
 const LandingPage = () => {
   return (
-    <div className="">
+    <div>
       <Carowsal carouselData={LastMainDeals} />;
     </div>
   );
