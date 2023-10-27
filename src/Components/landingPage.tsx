@@ -4,7 +4,7 @@ import LastMainDeals from "../Mock/PackageData";
 // <========== componets ==========>
 import Carowsal from "./LandingCarousel";
 
-const LandingCarousel = () => {
+const LandingPage = () => {
   return (
     <div className="">
       <Carowsal carouselData={LastMainDeals} />;
@@ -12,4 +12,4 @@ const LandingCarousel = () => {
   );
 };
 
-export default LandingCarousel;
+export default LandingPage;
