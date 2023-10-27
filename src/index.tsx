@@ -9,7 +9,7 @@ import "./App.css";
 
 // <========== Layout ==========>
 
-import LandingPage from "./Components/LandingPage";
+import Landing from "./Components/LandingPage";
 import FindHolidayForm from "./Components/FindHolidayForm";
 import TopDestinations from "./Components/TopDestinations";
 import BestTourPackages from "./Components/BestTourPackages";
@@ -34,7 +34,7 @@ root.render(
       <Header />
     </div>
     <div>
-      <LandingPage />
+      <Landing />
     </div>
     <div>
       <FindHolidayForm />

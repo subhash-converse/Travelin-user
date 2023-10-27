@@ -2,14 +2,14 @@
 import LastMainDeals from "../Mock/PackageData";
 
 // <========== componets ==========>
-import Carowsal from "./LandingCarousel";
+import LandingCarousel from "./LandingCarousel";
 
 const LandingPage = () => {
   return (
     <div>
-      <Carowsal carouselData={LastMainDeals} />;
+      <LandingCarousel carouselData={LastMainDeals} />;
     </div>
   );
 };
 
-export default LandingPage;
+export default LandingCarousel;
