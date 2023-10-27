@@ -2,7 +2,7 @@
 import LastMainDeals from "../Mock/PackageData";
 
 // <========== Components ==========>
-import GuideComponent from "./guideCarousel";
+import GuideComponent from "./GuideCarousel";
 
 const GuideCarousal = () => {
   return (

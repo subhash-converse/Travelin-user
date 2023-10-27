@@ -3,7 +3,7 @@
 import carouselData from "../Mock/PackageData";
 
 // <========== Componets ==========>
-import Destination from "./destination";
+import Destination from "./Destination";
 
 const TopDestinations = () => {
   return (

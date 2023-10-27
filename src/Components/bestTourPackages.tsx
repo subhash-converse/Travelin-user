@@ -5,7 +5,7 @@ import { useState } from "react";
 import carouselData from "../Mock/PackageData";
 
 // <========== Components ==========>
-import Card from "./card";
+import Card from "./Card";
 
 const BestTourPackages = () => {
   const [btnOff, setBtnOn] = useState(false);

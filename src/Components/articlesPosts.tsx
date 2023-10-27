@@ -2,7 +2,7 @@
 import carouselData from "../Mock/PackageData";
 
 // <========== Components ==========>
-import Card from "./card";
+import Card from "./Card";
 
 const ArticlesPosts = () => {
   return (

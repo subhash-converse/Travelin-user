@@ -1,6 +1,6 @@
 // <========== Componets ==========>
-import Card from "./card";
-import LongCard from "./longCard";
+import Card from "./Card";
+import LongCard from "./LongCard";
 
 // <========== MockData ==========>
 import carouselData from "../Mock/PackageData";

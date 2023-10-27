@@ -2,7 +2,7 @@
 import LastMainDeals from "../Mock/PackageData";
 
 // <========== componets ==========>
-import Carowsal from "./landingCarousel";
+import Carowsal from "./LandingCarousel";
 
 const LandingCarousel = () => {
   return (
