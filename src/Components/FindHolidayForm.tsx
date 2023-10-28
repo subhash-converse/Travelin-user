@@ -2,6 +2,8 @@
 import mountain from "../Assets/Images/mountain.png";
 
 // <========== icons ==========>
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+
 import {
   faLocationDot,
   faMagnifyingGlass,
@@ -18,9 +20,8 @@ const FindHolidayForm = () => {
         <div className=" rotate main-input h-full w-[1200px] flex flex-col rounded-xl bg-white lg:flex-row ">
           <div className="w-full py-[30px] flex bg-[#029E9D] text-white justify-center items-center gap-2 rounded-t-md lg:rounded-none lg:rounded-l-xl lg:w-[20%] ">
             <div className="lg:w-[30%] lg:flex justify-end  ">
-              <FontAwesomeIcon
+              <LocationOnOutlinedIcon style={{height:"50", width:"50px"}}
                 className="h-[39px]  justify-around"
-                icon={faLocationDot}
               />
             </div>
             <span className="text-[22px] flex-wrap lg:w-[70%]">

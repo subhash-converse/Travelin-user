@@ -51,7 +51,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
         centeredSlides={false}
         loop={true}
         autoplay={{
-          delay: 4000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -74,10 +74,12 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
             return (
               <SwiperSlide className="flex justify-center w-full">
                 <div
-                  className="backround-image carousel-bg "
+                  className="backround-image carousel-bg ]"
                   style={{ backgroundImage: `url(${carousel1})` }}
                 >
-                  <div className="background-text">
+                  <div className="bg-[#000] h-full w-full opacity-50 absolute">
+                  </div>
+                  <div className="background-text z-[1] ">
                     <h2 className="yellow Play-fair swiper-title1">
                       {carousal.country}
                     </h2>
@@ -92,8 +94,12 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
                       </span>
                       <span className="white text-[16px] self-end">per person</span>
                     </div>
-                    <h3  className="white text-[16px] self-end"><span><CalendarMonthOutlinedIcon className="font-black" style={{ width: '19px', height: '19px' }}/></span><span className="font-black" style={{ width: '19px', height: '19px' }}>{carousal.days}Days Tour</span></h3>
-                  </div>
+                    <h3  className="white text-[16px]">
+                      <span><CalendarMonthOutlinedIcon className=""/></span>
+                      <span className="font-black">{carousal.days}Days Tour</span>
+                      </h3>
+                   </div>
+                  
                 </div>
               </SwiperSlide>
             );

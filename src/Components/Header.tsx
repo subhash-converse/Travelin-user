@@ -1,3 +1,4 @@
+import { Dropdown, ButtonToolbar } from 'rsuite';
 // <========== icons ==========>
 import {
   faBars,
@@ -58,9 +59,44 @@ const Header = () => {
       </div>
       <header className="h-[100px]  flex justify-center items-center">
         <div className="flex w-[90%] justify-between md:max-w-[696px] lg:max-w-[1296px] ">
-          <div className="pt-[1px]">
-            <img src={logo} alt="Travelin" className="" />
+          <div className='xl:inline-flex items-center'>
+              <div className="pt-[1px]">
+               <img src={logo} alt="Travelin" className="" />
+              </div>
           </div>
+          
+{/* .......................................................................................... */}
+
+{/* <div className='flex items-center'>
+<div className='  '>
+<ButtonToolbar className=''>
+    <Dropdown title="Dropdown" className='relative z-10'>
+      <Dropdown.Item className=''>Item 1</Dropdown.Item>
+      <Dropdown.Menu title="Right Item 2">
+        <Dropdown.Menu title="Item 2-1">
+          <Dropdown.Item>Item 2-1-1</Dropdown.Item>
+          <Dropdown.Item active>Item 2-1-2</Dropdown.Item>
+          <Dropdown.Item>Item 2-1-3</Dropdown.Item>
+        </Dropdown.Menu>
+        <Dropdown.Item>Item 2-2</Dropdown.Item>
+        <Dropdown.Item>Item 2-3</Dropdown.Item>
+      </Dropdown.Menu>
+      <Dropdown.Menu title="Left Item 3">
+        <Dropdown.Menu title="Item 3-1">
+          <Dropdown.Item>Item 3-1-1</Dropdown.Item>
+          <Dropdown.Item active>Item 3-1-2</Dropdown.Item>
+          <Dropdown.Item>Item 3-1-3</Dropdown.Item>
+        </Dropdown.Menu>
+        <Dropdown.Item>Item 3-2</Dropdown.Item>
+        <Dropdown.Item>Item 3-3</Dropdown.Item>
+      </Dropdown.Menu>
+      <Dropdown.Item>Item 4</Dropdown.Item>
+      <Dropdown.Item>Item 5</Dropdown.Item>
+      <Dropdown.Item>Item 6</Dropdown.Item>
+    </Dropdown>
+  </ButtonToolbar>
+</div>
+  </div> */}
 
           <div className="hidden xl:inline-flex w-auto items-center gap-x-5">
             <span className="nav">HOME</span>
@@ -102,7 +138,7 @@ const Header = () => {
               />
             </div>
           </div>
-
+{/* ................................................................................ */}
           <div className="flex">
             <FontAwesomeIcon
               icon={faBars}
