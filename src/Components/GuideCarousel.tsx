@@ -1,5 +1,3 @@
-import React from "react";
-
 // <========== swipper ==========>
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -9,6 +7,11 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
+
+// <========== images ==========>
+import guide from "../Assets/Images/guide1.jpg";
+
+// <========== MockData ==========>
 
 interface LastMainDeal {
   image: any;
@@ -24,7 +27,7 @@ interface LastMainDeal {
   position?: string;
 }
 
-const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
+const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -32,19 +35,21 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
   useEffect(() => {
     if (screenWidth <= 768) {
       setWindowWidth(1);
+    } else if (screenWidth > 768 && screenWidth <= 1024) {
+      setWindowWidth(3);
     } else {
-      setWindowWidth(2);
+      setWindowWidth(4);
     }
   }, [screenWidth]);
   return (
     <div>
       <Swiper
         slidesPerView={windowWidth}
-        spaceBetween={1}
+        spaceBetween={25}
         centeredSlides={false}
         loop={true}
         autoplay={{
-          delay: 1000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -52,28 +57,26 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper swiper-pagination-bullets"
       >
-        {props.carouselData.map(function(carousal: LastMainDeal) {
-          let filter = carousal.catogory.find(function(a) {
-            if (a.toLocaleLowerCase().trim() === "landing carowsal") {
+        {props.carouselData.map((carousal: LastMainDeal) => {
+          let filter = carousal.catogory.find((a) => {
+            if (a.toLocaleLowerCase().trim() === "guide info") {
               return a;
             }
             else{
               return null
             }
           });
+
           if (filter) {
             return (
               <SwiperSlide className="flex justify-center ">
-                <div className=" carousel-bg main-input h-[332px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
-                  <div className="h-[50%] flex items-center ">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore.
-                    </p>
-                  </div>
-                  <div className="  w-full h-[50%]  flex flex-col items-center justify-center text-[#777] p-4">
+                <div
+                  className=" carousel-bg h-[332px] bg-no-repeat rounded-xl flex items-end "
+                  style={{ backgroundImage: `url(${guide})` }}
+                >
+                  <div className=" bg-[#777] w-full rounded-b-lg flex flex-col items-center justify-center text-white p-4">
                     <h3 className="Play-fair text-[22px]">
                       {carousal.guideName}
                     </h3>
@@ -83,7 +86,6 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
               </SwiperSlide>
             );
           }
-
           else{
             return null
           }
@@ -93,4 +95,4 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
   );
 };
 
-export default ReviewComponent;
+export default CorouselGuide;
