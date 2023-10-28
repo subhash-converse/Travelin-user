@@ -1,12 +1,8 @@
 // <========== icons ==========>
 import {
   faBars,
-  faCalendarDays,
-  faClock,
-  faImage,
-  faLocationDot,
   faMagnifyingGlass,
-  faUser,
+
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
