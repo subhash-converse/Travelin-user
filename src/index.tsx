@@ -39,7 +39,7 @@ root.render(
     <div>
       <FindHolidayForm />
     </div>
-    <div>
+    <div >
       <CoreFutures/>
     </div>
     <div>

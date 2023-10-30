@@ -29,14 +29,17 @@ const Destination = (props: data) => {
       style={{ backgroundImage: `url(${destination1})` }}
       className="background-img img-radius h-[380px] 
           md:col-span-2  flex items-end
-          lg:row-span-2  lg:h-[687px]"
+          lg:row-span-2  lg:h-[690px]
+          lg:col-span-3"
     >
       <div className="w-full flex justify-between p-[24px]">
         <div className="Play-fair">
-          <h3 className="yellow">{props.data.country}</h3>
-          <h3 className="white">{props.data.territory}</h3>
+          <h3 className="yellow text-[18px]">{props.data.country}</h3>
+          <h3 className="white text-[21px] md:text-[26px]">{props.data.territory}</h3>
         </div>
-        <button className="destination-btn">{`${props.data.days} days`}</button>
+        <div className="flex items-end">
+        <button className="destination-btn text-[16px]">{`${props.data.days} days`}</button>
+        </div>
       </div>
     </div>
 
@@ -44,14 +47,16 @@ const Destination = (props: data) => {
 
     <div
     style={{ backgroundImage: `url(${destination1})` }}
-    className="background-img img-radius h-[333px] flex items-end"
+    className="background-img img-radius h-[333px] flex items-end  lg:col-span-2 "
   >
     <div className="w-full flex justify-between p-[24px]">
       <div className="Play-fair">
         <h3 className="yellow">{props.data.country}</h3>
-        <h3 className="white">{props.data.territory}</h3>
+        <h3 className="white text-[21px] md:text-[26px]">{props.data.territory}</h3>
       </div>
-      <button className="destination-btn">{`${props.data.days} days`}</button>
+       <div className="flex items-end">
+        <button className="destination-btn text-[16px]">{`${props.data.days} days`}</button>
+        </div>
     </div>
   </div> 
 

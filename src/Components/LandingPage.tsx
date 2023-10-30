@@ -7,7 +7,7 @@ import LandingCarousel from "./LandingCarousel";
 const LandingPage = () => {
   return (
     <div>
-      <LandingCarousel carouselData={LastMainDeals} />;
+      <LandingCarousel carouselData={LastMainDeals} />
     </div>
   );
 };

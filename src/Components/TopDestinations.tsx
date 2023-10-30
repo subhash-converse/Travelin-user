@@ -24,10 +24,11 @@ const TopDestinations = () => {
         <div className="flex flex-col items-center ">
           <div
             className="
-            grid grid-cols-1 gap-5 w-full
+            grid grid-cols-1 gap-[30px] w-full
             md:grid-cols-2 
-            lg:grid-cols-4 ]
-            xl:max-w-[1200px] "
+            lg:grid-cols-7
+           
+            xl:max-w-[1290px] "
           >
             {carouselData.map((data,index) => {
              

@@ -135,10 +135,17 @@ body {
 }
 
 .input-outerDiv{
-  padding: 12px 5px;
+  padding: 12px 14px;
   border: 1px solid #F1F1F1;
-  border-radius: 7px;
-  width: 80%;
+  border-radius: 12px;
+  width:100%;
+  color: #7B777B;
+}
+
+@media screen and (min-width: 1440px) {
+  .input-outerDiv{
+    width:185px;
+  }
 }
 
 .mountain-back{
@@ -174,8 +181,10 @@ body {
 .card{
   border: 1px solid #F1F1F1;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 12px;
   padding: 48px;
+  height: 358px;
+  width: 300px;
 }
 .card-icon
 {
@@ -191,24 +200,23 @@ body {
 }
 .card-para{
   font-size: 16px;
-  color: #777777;
+  color: #7F7777;
   margin-bottom: 16px;
 }
 
 .card-review{
   font-size: 16px;
-  color: #777777;
- text-align: center;
+  color: #029E9D;
 }
 
 .img-radius{
   border-radius: 15px;  
 }
 .destination-btn{
-  background-color: #777777;
+  background-color: #029E9D;
   color: white;
   border-radius:10px ;
-  padding: 10px 15px;
+  padding: 4px 8px;
 }
 .background-img{
   background-repeat: no-repeat;
@@ -226,10 +234,10 @@ body {
   background-size:contain  ;
 }
 .tour-pic-btn{
-  background-color: #777777;
+  background-color: #029E9D;
   color: white;
-  border-radius:7px ;
-  padding: 10px 15px;
+  border-radius:12px ;
+  padding: 16px;
 }
 .background-top-pick {
   background-size: cover;

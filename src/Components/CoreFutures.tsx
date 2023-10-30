@@ -1,12 +1,4 @@
 // <========== icons ==========>
-import {
-  faCompass,
-  faFlag,
-  faLocationDot,
-  faSignsPost,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import OutlinedFlagSharpIcon from '@mui/icons-material/OutlinedFlagSharp';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
@@ -18,12 +10,12 @@ import paint from "../Assets/Images/shape4.png";
 
 const CoreFutures = () => {
   return (
-    <div>
+    <div className="  ">
       <div
         className="paint px-4 grid grid-flow-row"
         style={{ backgroundImage: `url(${paint})` }}
       >
-        <div className="flex flex-col justify-center items-center p-[50px]">
+        <div className="flex flex-col justify-center items-center p-[50px] pt-[60px]">
           <h1 className="yellow content-head-1 Play-fair">Core Futures</h1>
           <h1 className="content-head-2 Play-fair">
             <span className="text-[#17233E]">Find </span>
@@ -35,8 +27,8 @@ const CoreFutures = () => {
           </p>
         </div>
         <div className="w-full flex justify-center">
-          <div className="max-w-[1200px] grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4">
-            <div className="card  " id="box1">
+          <div className="max-w-[1295px] grid grid-cols-1 lg:pb-[27px] gap-y-4 md:grid-cols-2 gap-[33px] xl:grid-cols-4">
+            <div className="card" id="box1">
               <OutlinedFlagSharpIcon style={{height:"60", width:"60px"}} className="card-icon" />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do

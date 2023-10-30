@@ -25,13 +25,13 @@ interface data {
 
 const Card: React.FC<data> = (props) => {
   return (
-    <div className="bg-white main-input img-radius">
+    <div className="bg-white main-input img-radius w-full  lg:h-[510px]  xl:h-[570px]">
       <div
         style={{ backgroundImage: `url(${topPick1})` }}
-        className="background-top-pick w-full h-[200px] rounded-t-xl md:h-[310px] flex items-end "
+        className="background-top-pick w-full h-[190px] rounded-t-xl md:h-[221px] xl:h-[274px] flex items-end "
       >
-        <div className="w-full  px-[24px] flex justify-end">
-          <button className="tour-pic-btn relative top-[20px]">
+        <div className="w-full text-[16px] font-semibold  px-[24px] flex justify-end">
+          <button className="tour-pic-btn relative top-[28px]">
             <FontAwesomeIcon icon={faCalendarDays} />
             <span> {`${props.data.days} Days Tours`} </span>
           </button>
@@ -42,15 +42,15 @@ const Card: React.FC<data> = (props) => {
         <h3 className="Play-fair text-[18px] text-[#777777] mb-2">
           {props.data.country}
         </h3>
-        <h3 className="Play-fair text-[21px] mb-2">{props.data.territory}</h3>
+        <h3 className="Play-fair text-[21px] lg:text-[26px] mb-2">{props.data.territory}</h3>
         <div className="mb-4">
           <span>Stars</span>
           <span>(12)</span>
         </div>
-        <p className="text-[#777777] mb-4">{props.data.description}</p>
+        <p className="text-[#777777] text-[16px] mb-4">{props.data.description}</p>
         <div>
-          <span className="text-[#777777]">{`$${props.data.price}`}</span>{" "}
-          <span> | </span> <span>Per person</span>
+          <span className="text-[#777777] text-[20px] font-bold">{`$${props.data.price}`}</span>{" "}
+          <span> | </span> <span className="text-[16px] text-[#777777]">Per person</span>
         </div>
       </div>
     </div>

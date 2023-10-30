@@ -74,8 +74,9 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
             return (
               <SwiperSlide className="flex justify-center w-full">
                 <div
-                  className="backround-image carousel-bg ]"
+                  className="backround-image carousel-bg "
                   style={{ backgroundImage: `url(${carousel1})` }}
+
                 >
                   <div className="bg-[#000] h-full w-full opacity-50 absolute">
                   </div>

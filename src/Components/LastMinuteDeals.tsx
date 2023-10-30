@@ -13,7 +13,7 @@ const LastMinuteDeals = () => {
     <div>
       <div>
         <div style={{ backgroundImage: `url(${parashoot})` }}>
-          <div className="flex flex-col justify-center items-center p-[50px]">
+          <div className="flex flex-col justify-center items-center p-[50px] pt-[87px]">
             <h1 className="yellow content-head-1 Play-fair">Top Deals</h1>
             <h1 className="content-head-2 Play-fair">
               <span className="text-[#17233E]">The Last </span>
@@ -25,9 +25,9 @@ const LastMinuteDeals = () => {
             </p>
           </div>
 
-          <div className="w-full flex justify-center p-4">
-            <div className="lg:max-w-[1200px] grid grid-cols-1 lg:grid-cols-5 gap-6 ">
-              <div className="col-span-3 grid gap-5 grid-cols-1 md:grid-cols-2">
+          <div className="w-full flex justify-center px-4">
+            <div className="lg:max-w-[1290px] grid grid-cols-1 lg:grid-cols-5 gap-6 ">
+              <div className="col-span-3 grid gap-[31px] grid-cols-1 md:grid-cols-2">
                 {carouselData.map((data) => {
                   let filter = data.catogory.find(
                     (a) => a.toLowerCase().trim() === "last minute deals"

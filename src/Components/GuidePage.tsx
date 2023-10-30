@@ -9,7 +9,7 @@ const GuideCarousal = () => {
     <div>
       <div>
         <div>
-          <div className="flex flex-col justify-center items-center p-[50px]">
+          <div className="flex flex-col justify-center items-center px-4 pt-[72px]">
             <h1 className="yellow content-head-1 Play-fair">Tour Guides</h1>
             <h1 className="content-head-2 Play-fair">
               <span className="text-[#17233E]">Meet Our </span>
@@ -22,8 +22,8 @@ const GuideCarousal = () => {
           </div>
         </div>
 
-        <div className='className="w-full flex justify-center p-4  background-travelers"'>
-          <div className="lg:max-w-[1200px] grid grid-cols-1 ">
+        <div className='className="w-full flex justify-center px-4  background-travelers"'>
+          <div className="lg:max-w-[1290px] grid grid-cols-1 pt-[57px] ">
             <GuideComponent carouselData={LastMainDeals} />;
           </div>
         </div>

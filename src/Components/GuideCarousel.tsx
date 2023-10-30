@@ -73,10 +73,10 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
             return (
               <SwiperSlide className="flex justify-center ">
                 <div
-                  className=" carousel-bg h-[332px] bg-no-repeat rounded-xl flex items-end "
+                  className=" carousel-bg w-full xl:w-[304px] xl:h-[420px] bg-no-repeat rounded-xl flex items-end "
                   style={{ backgroundImage: `url(${guide})` }}
                 >
-                  <div className=" bg-[#777] w-full rounded-b-lg flex flex-col items-center justify-center text-white p-4">
+                  <div className=" bg-[#029e9d] w-full rounded-b-lg flex flex-col items-center justify-center text-white p-4">
                     <h3 className="Play-fair text-[22px]">
                       {carousal.guideName}
                     </h3>

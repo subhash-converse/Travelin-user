@@ -2,34 +2,43 @@
 import mountain from "../Assets/Images/mountain.png";
 
 // <========== icons ==========>
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 import {
-  faLocationDot,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FindHolidayForm = () => {
   return (
-    <div className="relative lg:top-[-110px] z-10">
-      <div
-        style={{ backgroundImage: `url(${mountain})` }}
-        className=" rotate mountain-back lg:min-h-[172px] flex justify-center px-4 mt-8 lg:mt-0 z-10 lg:pt-[100px]"
-      >
-        <div className=" rotate main-input h-full w-[1200px] flex flex-col rounded-xl bg-white lg:flex-row ">
-          <div className="w-full py-[30px] flex bg-[#029E9D] text-white justify-center items-center gap-2 rounded-t-md lg:rounded-none lg:rounded-l-xl lg:w-[20%] ">
+    <div className=" z-10 flex flex-col items-center lg:relative top-[-90px] lg:h-[70px]">
+      <div className="flex w-full ">
+        <img
+          src={mountain}
+          alt="mountain"
+          className="w-[50%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
+        />
+        <img
+          src={mountain}
+          alt="mountain"
+          className="w-[50%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
+        />
+      </div>
+      <div className="px-4 z-10  w-full flex justify-center lg:relative top-[-120px] ">
+        <div className=" relative  main-input w-full h-full lg:max-w-[1200px]  flex flex-col rounded-xl bg-white lg:flex-row ">
+          <div className="w-full py-[40px] flex bg-[#029E9D] text-white justify-center items-center  rounded-t-md lg:rounded-none lg:rounded-l-xl lg:w-[250px] ">
             <div className="lg:w-[30%] lg:flex justify-end  ">
-              <LocationOnOutlinedIcon style={{height:"50", width:"50px"}}
+              <LocationOnOutlinedIcon
+                style={{ height: "50", width: "50px" }}
                 className="h-[39px]  justify-around"
               />
             </div>
-            <span className="text-[22px] flex-wrap lg:w-[70%]">
+            <span className="text-[22px] flex-wrap lg:w-[70%] text-center Play-fair">
               Find Your Holidays
             </span>
           </div>
           <form
-            className="w-full  flex flex-col gap-3 justify-evenly items-center lg:flex-row lg:px-3  "
+            className="w-full  flex flex-col gap-[9px] px-[15px] md:px-[26px] justify-between items-center lg:flex-row lg:px-[26px]"
             action=""
           >
             <div className="input-outerDiv mt-5 lg:mt-0">
@@ -70,7 +79,7 @@ const FindHolidayForm = () => {
               </select>
             </div>
 
-            <button className="bg-[#029E9D] text-white rounded-md  h-[49px] w-[80%] mb-4 lg:mb-0 flex gap-2 justify-center items-center">
+            <button className="bg-[#029E9D] text-white rounded-[12PX]  h-[49px] w-full lg:w-[185px] mb-4 lg:mb-0 flex gap-2 justify-center items-center">
               <span>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
