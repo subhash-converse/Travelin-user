@@ -16,12 +16,17 @@ const FindHolidayForm = () => {
         <img
           src={mountain}
           alt="mountain"
-          className="w-[50%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
+          className="w-[33.33%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
         />
         <img
           src={mountain}
           alt="mountain"
-          className="w-[50%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
+          className="w-[33.33%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
+        />
+         <img
+          src={mountain}
+          alt="mountain"
+          className="w-[33.33%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
         />
       </div>
       <div className="px-4 z-10  w-full flex justify-center lg:relative top-[-120px] ">
@@ -79,14 +84,16 @@ const FindHolidayForm = () => {
               </select>
             </div>
 
-            <button className="bg-[#029E9D] text-white rounded-[12PX]  h-[49px] w-full lg:w-[185px] mb-4 lg:mb-0 flex gap-2 justify-center items-center">
-              <span>
+            <button className="button bg-[#029E9D] text-white rounded-[12PX]  h-[49px] w-full lg:w-[185px] mb-4 lg:mb-0 flex gap-2 justify-center items-center">
+              <span className="text inner-button flex gap-1">
+                <div></div>
                 <FontAwesomeIcon
                   icon={faMagnifyingGlass}
                   className=" text-[12px]"
                 />
+                <span> Search Now</span>
               </span>
-              <span>Search Now</span>
+              
             </button>
           </form>
         </div>

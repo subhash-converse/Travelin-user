@@ -4,6 +4,8 @@ import LastMainDeals from "../Mock/PackageData";
 // <========== Conponents ==========>
 import ReviewComponent from "./ReviewCarousel";
 
+
+
 const GoodReviews = () => {
   return (
     <div>
@@ -14,14 +16,16 @@ const GoodReviews = () => {
           <span className="text-[#777777]">Clients</span>
         </h1>
         <p className="text-[#777F94] content-para">
+          <i>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore.
+          </i>
         </p>
       </div>
 
       <div className='className="w-full flex justify-center p-4  background-travelers"'>
-        <div className="lg:max-w-[1200px] grid grid-cols-1  ">
-          <ReviewComponent carouselData={LastMainDeals} />
+        <div className="lg:max-w-[1290px] grid grid-cols-1  ">
+          <ReviewComponent  carouselData={LastMainDeals} />
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 import longcard1 from "../Assets/Images/long-card3.jpg";
 
 // <========== icons ==========>
-import { faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface data {
@@ -23,22 +23,35 @@ const LongCard = (props: data) => {
   return (
     <div>
       {
-        <div
-          className="background-img img-radius p-[16px] h-[180px] md:h-[400px]  grid items-center md:items-end"
+        <div className="image-box rounded-lg relative  h-[180px] md:h-[368px]  grid items-center md:items-end">
+        {/* <div
+          className=" image background-img img-radius p-[16px]"
           style={{ backgroundImage: `url(${longcard1})` }}
-        >
-          <div>
+        > */}
+        <div className="image-box h-full w-full">
+          <img className="image h-full w-fu" src={longcard1} alt="" />
+        </div>
+
+          <div className="absolute bottom-0 p-3">
             <h3 className="yellow Play-fair text-[18px] mb-2">
               {props.data.territory}
             </h3>
             <h3 className="white Play-fair text-[18px] mb-2">
               {props.data.country}
             </h3>
-            <span className="yellow text-[18px] mb-4">Star</span>
+            <div className="rating text-[#FDC703]  ">
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="ms-2 white">(18)</span>
+                          </div>
+                          
 
             <div className="flex justify-between">
               <div className="white">
-                <span className="yellow">{`$${props.data.price}`}</span>{" "}
+                <span className="yellow font-semibold">{`$${props.data.price}`}</span>{" "}
                 <span> | </span> <span>Per person</span>
               </div>
               <div className="text-[white]">
@@ -47,6 +60,7 @@ const LongCard = (props: data) => {
               </div>
             </div>
           </div>
+        
         </div>
       }
     </div>

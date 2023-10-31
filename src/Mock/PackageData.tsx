@@ -14,7 +14,7 @@ interface datas{
 
 const LastMainDeals:datas[] = [
     {
-        image: "carousel1",
+        image: "destination1",
         country: "Spain",
         touristPlace: "Barcelona City Beach",
         reviewsStar: 5,
@@ -28,7 +28,7 @@ const LastMainDeals:datas[] = [
 
     },
     {
-        image: "carousel2",
+        image: "destination1",
         country: "Italy",
         touristPlace: "Venice Canals",
         reviewsStar: 4,
@@ -41,7 +41,7 @@ const LastMainDeals:datas[] = [
         position:"Manager"
     },
     {
-        image: "carousel3",
+        image: "destination1",
         country: "France",
         touristPlace: "Eiffel Tower",
         reviewsStar: 4.5,
@@ -54,7 +54,7 @@ const LastMainDeals:datas[] = [
         position:"HR"
     },
     {
-        image: "carousel4",
+        image: "../Assets/Images/destination2.jpg",
         country: "USA",
         touristPlace: "Grand Canyon",
         reviewsStar: 4.8,
@@ -67,7 +67,7 @@ const LastMainDeals:datas[] = [
         position:"Manager"
     },
     {
-        image: "carousel5",
+        image: "destination1",
         country: "Greece",
         touristPlace: "Santorini",
         reviewsStar: 5,
@@ -80,7 +80,7 @@ const LastMainDeals:datas[] = [
         position:"Manager"
     },
     {
-        image: "carousel5",
+        image: "destination1",
         country: "Greece",
         touristPlace: "Santorini",
         reviewsStar: 5,
@@ -93,7 +93,7 @@ const LastMainDeals:datas[] = [
         position:"Manager"
     },
     {
-        image: "carousel5",
+        image: "../Assets/Images/destination2.jpg",
         country: "Greece",
         touristPlace: "Santorini",
         reviewsStar: 5,
@@ -106,7 +106,7 @@ const LastMainDeals:datas[] = [
         position:"Manager"
     },
     {
-        image: "carousel5",
+        image: "../Assets/Images/destination2.jpg",
         country: "Greece",
         touristPlace: "Santorini",
         reviewsStar: 5,
@@ -119,7 +119,7 @@ const LastMainDeals:datas[] = [
         position:"HR"
     },
     {
-        image: "carousel5",
+        image: "../Assets/Images/destination2.jpg",
         country: "Greece",
         touristPlace: "Santorini",
         reviewsStar: 5,
@@ -132,7 +132,7 @@ const LastMainDeals:datas[] = [
         position:"HR"
     },
     {
-        image: "carousel5",
+        image: "../Assets/Images/destination2.jpg",
         country: "Greece",
         touristPlace: "Santorini",
         reviewsStar: 5,

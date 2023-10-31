@@ -17,8 +17,22 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 
 // <========== images ==========>
 import logo from "../Assets/Images/logo.png";
+import { Hidden } from "@mui/material";
+import { useState } from "react";
 
 const Header = () => {
+  const[dList,setDList]=useState(false)
+
+  function onHover(e:any){
+   
+      console.log(e)
+  }
+  
+  function mouseout(e:any){
+   
+      console.log(e)
+  }
+
   return (
     <div>
       <div className="top-head hidden lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
@@ -66,41 +80,24 @@ const Header = () => {
           
 {/* .......................................................................................... */}
 
-{/* <div className='flex items-center'>
-<div className='  '>
-<ButtonToolbar className=''>
-    <Dropdown title="Dropdown" className='relative z-10'>
-      <Dropdown.Item className=''>Item 1</Dropdown.Item>
-      <Dropdown.Menu title="Right Item 2">
-        <Dropdown.Menu title="Item 2-1">
-          <Dropdown.Item>Item 2-1-1</Dropdown.Item>
-          <Dropdown.Item active>Item 2-1-2</Dropdown.Item>
-          <Dropdown.Item>Item 2-1-3</Dropdown.Item>
-        </Dropdown.Menu>
-        <Dropdown.Item>Item 2-2</Dropdown.Item>
-        <Dropdown.Item>Item 2-3</Dropdown.Item>
-      </Dropdown.Menu>
-      <Dropdown.Menu title="Left Item 3">
-        <Dropdown.Menu title="Item 3-1">
-          <Dropdown.Item>Item 3-1-1</Dropdown.Item>
-          <Dropdown.Item active>Item 3-1-2</Dropdown.Item>
-          <Dropdown.Item>Item 3-1-3</Dropdown.Item>
-        </Dropdown.Menu>
-        <Dropdown.Item>Item 3-2</Dropdown.Item>
-        <Dropdown.Item>Item 3-3</Dropdown.Item>
-      </Dropdown.Menu>
-      <Dropdown.Item>Item 4</Dropdown.Item>
-      <Dropdown.Item>Item 5</Dropdown.Item>
-      <Dropdown.Item>Item 6</Dropdown.Item>
-    </Dropdown>
-  </ButtonToolbar>
-</div>
-  </div> */}
-
           <div className="hidden xl:inline-flex w-auto items-center gap-x-5">
             <span className="nav">HOME</span>
             <span className="nav">ABOUT US</span>
-            <select
+
+{/* .......................................... */}
+
+
+          <div>
+            <h3 className="nav " id="destina" >DESTINATIONS</h3>
+            <div id="destination" className="hide-div absolute z-10 mt-3 " >
+              <ul className=" drop-ul w-[200px] bg-white">
+                <li className="li-line">Destination List</li>
+                <li>Destination Details</li>
+              </ul>
+            </div>
+          </div>
+
+            {/* <select
               name="destination"
               id="destination"
               className="w-[140px] nav    "
@@ -110,16 +107,24 @@ const Header = () => {
               </option>
               <option value="">Destination List</option>
               <option value="">Destination Details</option>
-            </select>
-            <select name="tours" id="tours" className="dropdown-land nav">
+            </select> */}
+
+{/* ................................................... */}
+
+            <div><div className="nav">TOURS</div></div>
+            {/* <select name="tours" id="tours" className="dropdown-land nav">
               <option value="" selected hidden>
                 TOURS
               </option>
               <option value="">Tour List</option>
               <option value="">Tour Grid</option>
               <option value="">Tour Single</option>
-            </select>
-            <select name="pages" id="pages" className="dropdown-land nav">
+            </select> */}
+
+{/* ................................................................. */}
+
+            <div><div className="nav">BLOG</div></div>
+            {/* <select name="pages" id="pages" className="dropdown-land nav">
               <option value="" selected hidden>
                 BLOG
               </option>
@@ -129,7 +134,10 @@ const Header = () => {
               <option value="">Services</option>
               <option value="">Gallery</option>
               <option value="">Error</option>
-            </select>
+            </select> */}
+
+{/* ............................................................. */}
+
             <div>
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
@@ -149,7 +157,7 @@ const Header = () => {
                 LOGIN/REGISTER
               </span>
 
-              <button className="book-now">BOOK NOW</button>
+              <button className="button book-now"><span className="text">BOOK NOW</span></button>
             </div>
           </div>
         </div>

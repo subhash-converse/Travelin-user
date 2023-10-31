@@ -1,6 +1,14 @@
 // <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImage, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 // <========== swipper ==========>
 import "swiper/css";
@@ -26,45 +34,50 @@ import footer7 from "../Assets/Images/footer7.jpg";
 import footer8 from "../Assets/Images/footer8.jpg";
 import footer9 from "../Assets/Images/footer9.jpg";
 
-
-
 const Footer = () => {
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
 
   useEffect(() => {
-    if (425 >= screenWidth ){
-      setWindowWidth(2)
-    }
-    else if (768 >= screenWidth) {
-      setWindowWidth(3)
-    }   
-    else if (768 >= screenWidth) {
-      setWindowWidth(5)
-
+    if (425 >= screenWidth) {
+      setWindowWidth(2);
+    } else if (768 >= screenWidth) {
+      setWindowWidth(3);
+    } else if (1024 >= screenWidth) {
+      setWindowWidth(4);
     } else {
-      setWindowWidth(6)
+      setWindowWidth(8);
     }
   }, [screenWidth]);
 
   return (
     <div>
-      <div className="">
+      <div className="flex">
         <img
           src={blueMountain}
-          className="bg-[#17233E] w-full relative top-1"
+          className="bg-[#17233E] w-[33.33%] relative top-1 "
+          alt=""
+        />
+        <img
+          src={blueMountain}
+          className="bg-[#17233E] w-[33.33%] relative top-1"
+          alt=""
+        />
+        <img
+          src={blueMountain}
+          className="bg-[#17233E] w-[33.33%] relative top-1"
           alt=""
         />
       </div>
 
-      <div className="w-full flex flex-col items-center p-4 bg-[#17233E]">
-        <div className="w-full lg:max-w-[1200px] grid grid-cols-1 ">
+      <div className=" w-full flex flex-col items-center p-4 bg-[#17233E]">
+        <div className="w-full lg:max-w-[1290px] grid grid-cols-1 ">
           {/* carousel */}
 
-          <div className="bg-[#17233E]">
+          <div className="bg-[#17233E] h-[131px] md:h-[195px] lg:h-[97px] xl:h-[135px] ">
             <Swiper
               slidesPerView={windowWidth}
-              spaceBetween={70}
+              spaceBetween={30}
               centeredSlides={false}
               loop={true}
               autoplay={{
@@ -78,49 +91,159 @@ const Footer = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
-              <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer1} alt="" />
+              <SwiperSlide className="flex justify-center img-radius  ">
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer1}
+                    alt=""
+                  />
+                </div>
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer2} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer1}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer3} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer1}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer4} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer1}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer5} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer2}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer6} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer3}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer7} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer4}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer8} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer5}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer9} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer6}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer7} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer7}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="flex justify-center img-radius ">
-                <img className="img-radius bg-[#17233E]" src={footer8} alt="" />
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer8}
+                    alt=""
+                  />
+                </div>{" "}
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer9}
+                    alt=""
+                  />
+                </div>{" "}
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer1}
+                    alt=""
+                  />
+                </div>{" "}
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer2}
+                    alt=""
+                  />
+                </div>{" "}
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-center img-radius ">
+                <div className="image-box img-radius ">
+                  <img
+                    className="image img-radius h-[100px] bg-[#17233E]"
+                    src={footer3}
+                    alt=""
+                  />
+                </div>{" "}
               </SwiperSlide>
             </Swiper>
+            <div className="flex justify-center relative z-10 top-[-70%] md:top-[-60%] lg:top-[-70%] xl:top-[-60%] outline-[3px] outline-black   m-[2px]">
+              <button className=" bg-white text-Play-fair rounded-xl gap-1 flex items-center px-[15px] py-[10px]">
+                <div>
+                  <InstagramIcon />
+                </div>
+                <div>Follow On Instagram</div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <div
-        className="background-travelers bg-[#17233E] grid grid-cols-1 justify-items-center"
+        className="background-travelers bg-[#17233E] grid grid-cols-1 p-4 justify-items-center"
         style={{ backgroundImage: `url(${peoples})` }}
       >
-        <div className="lg:max-w-[1200px] p-4">
+        <div className="lg:max-w-[1290px] ">
           <div className=" grid-width grid grid-cols-1 md:grid-cols-2 md:gap-4 lg:grid-cols-4 text-white text-[16px] lg:gap-0">
             {/* col 1 */}
             <div className="flex flex-col lg:px-2">
@@ -152,7 +275,7 @@ const Footer = () => {
 
             {/* col 2 */}
             <div className="mb-[32px] flex flex-col lg:px-2">
-              <h2 className="footer-heading">Quick Link</h2>
+              <h2 className="footer-heading underline">Quick Link</h2>
               <div className="flex flex-col gap-4 md:justify-between h-full ">
                 <h3>About Us</h3>
                 <h3>Delivery Information</h3>
@@ -165,7 +288,7 @@ const Footer = () => {
 
             {/* col 3 */}
             <div className="mb-[32px] flex flex-col lg:px-2">
-              <h2 className="footer-heading">Categories</h2>
+              <h2 className="footer-heading underline">Categories</h2>
               <div className="flex flex-col gap-4 md:justify-between h-full ">
                 <h3>Travel</h3>
                 <h3>Technology</h3>
@@ -178,7 +301,7 @@ const Footer = () => {
 
             {/* col 4 */}
             <div className="mb-[32px] flex flex-col  lg:px-2">
-              <h2 className="footer-heading">Newsletter</h2>
+              <h2 className="footer-heading underline">Newsletter</h2>
               <div className="grid gap-4">
                 <p>
                   Jin our community of over 200,000 global readers who receives
@@ -199,28 +322,41 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className=" lg:flex justify-between items-center text-white">
-            <div className="flex justify-center">
+          <div className="grid-width lg:grid grid-cols-4 px-2 justify-between items-center text-white">
+            <div className="flex justify-start">
               <h3 className="text-[16px]">We Support : </h3>
               <div className="flex gap-4 items-center">
-                <FontAwesomeIcon icon={faLocationDot} />
+                <i className="fa-brands fa-cc-paypal"></i>
                 <FontAwesomeIcon icon={faLocationDot} />
                 <FontAwesomeIcon icon={faLocationDot} />
                 <FontAwesomeIcon icon={faLocationDot} />
               </div>
             </div>
+            <div></div>
+            <div></div>
 
-            <div className="mt-2 flex gap-4  lg:gap-1 lg:mt-0">
-              <div className="bg-white pl-5 py-3 lg:py-[11px] rounded-lg flex items-center w-[70%]">
-                <input
-                  type="text"
-                  placeholder="Email Address"
-                  className="w-full outline-none text-[#000] rounded-lg text-[15px] "
-                />
+            <div className="mt-2 flex gap-4  lg:gap-1  lg:mt-0">
+              <div className="bg-white px-5 py-3 lg:py-[11px] rounded-lg flex items-center w-[70%]">
+                <select
+                  name=""
+                  id=""
+                  className=" custom-dropdown w-full bg-white text-black outline-none"
+                >
+                  <option value="English" className="">
+                    English
+                  </option>
+                  <option value="Chinese">Chinese</option>
+                  <option value="Russian">Russian</option>
+                </select>
               </div>
-              <button className="bg-[#777777] w-[30%] rounded-lg  border-[#3E4253] border-[3px] p-[14px] lg:p-[12px] lg:w-[37%]">
-                Subscribe
-              </button>
+
+              <select className="bg-white w-[30%] text-black rounded-lg  border-[#3E4253] border-[3px] p-[14px] lg:p-[12px] lg:w-[37%]">
+                <option value="$ USD" className="">
+                  $ USD
+                </option>
+                <option value="$ AUDI">$ AUDI</option>
+                <option value="$ YEN">$ YEN</option>
+              </select>
             </div>
           </div>
           <div className="flex flex-col py-5 md:px-6 rounded-xl mt-6 bg-[#fbfbfb12] md:flex-row justify-between  text-white">
@@ -230,17 +366,17 @@ const Footer = () => {
             </div>
             <div className="flex gap-5 justify-center items-center">
               <div className="bg-[#fbfbfb12] p-3 rounded-[50%] ">
-                <FontAwesomeIcon icon={faImage} />
+                <FacebookOutlinedIcon />
               </div>
               <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
                 {" "}
-                <FontAwesomeIcon icon={faImage} />
+                <TwitterIcon />
               </div>
               <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
-                <FontAwesomeIcon icon={faImage} />
+                <InstagramIcon />
               </div>
               <div className="bg-[#fbfbfb12] p-3 rounded-[50%]">
-                <FontAwesomeIcon icon={faImage} />
+                <LinkedInIcon />
               </div>
             </div>
           </div>

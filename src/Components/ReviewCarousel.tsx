@@ -1,5 +1,8 @@
 import React from "react";
 
+// <========== icons ==========>
+import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+
 // <========== swipper ==========>
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -9,6 +12,9 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
+
+// <========== images ==========>
+import guide from "../Assets/Images/guide2.jpg";
 
 interface LastMainDeal {
   image: any;
@@ -66,14 +72,18 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
           if (filter) {
             return (
               <SwiperSlide className="flex justify-center ">
-                <div className=" carousel-bg main-input h-[332px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
-                  <div className="h-[50%] flex items-center ">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <div className=" carousel-bg lite-input h-[383px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
+                  <div className="h-[30%] flex items-center ">
+                    <p className=" text-[#777]"><em>
+                    <span><FormatQuoteIcon style={{ height: "50", width: "50px" }} className="rotate text-[#777777]"/></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore.
+                      </em>
                     </p>
                   </div>
-                  <div className="  w-full h-[50%]  flex flex-col items-center justify-center text-[#777] p-4">
+                  <div className="  w-full h-full flex flex-col items-center justify-center text-[#777] p-4 pt-0">
+                    <div className="h-[92px] w-[92px]">
+                      <img src={guide} alt="" className="  rounded-[50%]" />
+                    </div>
                     <h3 className="Play-fair text-[22px]">
                       {carousal.guideName}
                     </h3>

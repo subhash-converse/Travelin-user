@@ -10,10 +10,11 @@ const ExploreYourLife = () => {
   return (
     <div
       style={{ backgroundImage: `url(${mountainWithPeoples})` }}
-      className="bg-no-repeat -500"
+      className="bg-no-repeat -500 "
     >
-      <div className="flex flex-col justify-center items-center p-[50px] ">
-        <h1 className="yellow content-head-1 Play-fair">
+      
+      <div className="flex flex-col justify-center items-center p-[50px] pt-[110px]">
+        <h1 className="text-[#777F94] content-head-1 Play-fair">
           Love Where Your're Going
         </h1>
         <h1 className="content-head-2 Play-fair">
@@ -23,21 +24,22 @@ const ExploreYourLife = () => {
         </h1>
         <p className="text-[#777F94] content-para">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
+          eiusmod tempor incididunt ut <br /> laboreet dolore magna aliqua.
         </p>
       </div>
 
       <div className="w-full flex flex-col justify-center p-0">
-        <div className=" flex justify-center items-center ">
-          <FontAwesomeIcon
-            icon={faCirclePlay}
-            className="h-[70px] w-[70px] text-[#777]"
-          />
+        <div className="call-button flex justify-center items-center ">
+          <button type="button" className="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">        
+          </button>
         </div>
-        <div className="">
-          <img className="rotate" src={mountain2} alt="mountain" />
+        <div className="flex">
+          <img className="rotate h-[130px] w-[100%] lg:w-[50%]" src={mountain2} alt="mountain" />
+          <img className="rotate h-[130px] lg:w-[50%] hidden lg:inline-block " src={mountain2} alt="mountain" />
+
         </div>
       </div>
+      
     </div>
   );
 };

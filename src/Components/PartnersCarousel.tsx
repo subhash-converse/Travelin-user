@@ -22,13 +22,13 @@ const PartnersCarousel = () => {
   useEffect(() => {
     if (425 >= screenWidth) {
       setWindowWidth(1);
-    } else if (768 >= screenWidth) {
-      setWindowWidth(2);
+    }else if (495 >= screenWidth) {
+      setWindowWidth(2); }
+    else if (768 >= screenWidth) {
+      setWindowWidth(3);
     } else if (1024 >= screenWidth) {
-      setWindowWidth(4);
-    } else {
       setWindowWidth(5);
-    }
+    } 
   }, [screenWidth]);
   return (
     <div>
@@ -48,28 +48,28 @@ const PartnersCarousel = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners1} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners2} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners3} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners4} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners1} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners2} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners3} alt="" />
         </SwiperSlide>
-        <SwiperSlide className="flex justify-center ">
+        <SwiperSlide className="flex h-[28px] justify-center ">
           <img src={partners4} alt="" />
         </SwiperSlide>
       </Swiper>

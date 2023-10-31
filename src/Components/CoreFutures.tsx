@@ -8,6 +8,14 @@ import SignpostOutlinedIcon from '@mui/icons-material/SignpostOutlined';
 // <========== images ==========>
 import paint from "../Assets/Images/shape4.png";
 
+const cardHover = (x:any) =>{
+  console.log(x)
+}
+
+const cardOut = (x:any) =>{
+  console.log("mouseOut")
+}
+
 const CoreFutures = () => {
   return (
     <div className="  ">
@@ -33,13 +41,13 @@ const CoreFutures = () => {
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
               </h3>
-              <p className="card-para">
+              <p className="card-para ">
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia.
               </p>
-              <p className="card-review">100+ Reviews</p>
+              <p className="card-review ">100+ Reviews</p>
             </div>
-            <div className="card">
+            <div className="card" id='box2'  onMouseOver={cardHover}>
               <LocationOnOutlinedIcon className="card-icon" style={{height:"60", width:"60px"}} />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
@@ -50,7 +58,7 @@ const CoreFutures = () => {
               </p>
               <p className="card-review">100+ Reviews</p>
             </div>
-            <div className="card">
+            <div className="card" id='box3'  onMouseOver={cardHover}>
               <SignpostOutlinedIcon style={{height:"60", width:"60px"}} className="card-icon"/>
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
@@ -61,7 +69,7 @@ const CoreFutures = () => {
               </p>
               <p className="card-review">100+ Reviews</p>
             </div>
-            <div className="card">
+            <div className="card" id='box4'  onMouseOver={cardHover}>
               <ExploreOutlinedIcon className="card-icon" style={{height:"60", width:"60px"}}/>
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do

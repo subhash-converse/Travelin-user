@@ -13,6 +13,8 @@ import carousel1 from "../Assets/Images/corrosal1.jpg";
 
 // <========== images ==========>
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
 interface LastMainDeal {
@@ -73,20 +75,35 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
           if (filter) {
             return (
               <SwiperSlide className="flex justify-center w-full">
-                <div
-                  className="backround-image carousel-bg "
+                <div className="image-box">
+                {/* <div
+                  className="image backround-image carousel-bg "
                   style={{ backgroundImage: `url(${carousel1})` }}
 
-                >
-                  <div className="bg-[#000] h-full w-full opacity-50 absolute">
+                > */}
+                  <div className="h-full w-full">
+                    <img className="image" src={carousel1} alt="" />
                   </div>
-                  <div className="background-text z-[1] ">
+                  
+                  <div className="background-text z-[1] w-full h-full absolute top-[40%] ">
                     <h2 className="yellow Play-fair swiper-title1">
                       {carousal.country}
                     </h2>
                     <h1 className="white Play-fair swiper-title2">
                       {carousal.touristPlace}
                     </h1>
+                    {/* .......................... */}
+                    <div className="rating-main pb-1">
+                          <div className="rating text-[#FDC703]  ">
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
+                          <span className="ms-2 white">(18)</span>
+                          </div>
+                          </div>
+                    {/* ............................... */}
                     <span className="yellow">{carousal.reviewsStar}</span>
                     <div className="flex gap-x-2 justify-center">
                       <span className="border-r-[1px] pr-2 yellow">
@@ -101,6 +118,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
                       </h3>
                    </div>
                   
+                {/* </div> */}
                 </div>
               </SwiperSlide>
             );
