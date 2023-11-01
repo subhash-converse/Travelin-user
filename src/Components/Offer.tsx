@@ -33,13 +33,11 @@ const Offer = () => {
               return (
                 <div className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1 overflow-hidden md:grid-cols-5 img-radius main-input ">
                   <div className="image-box  md:col-span-2 bg-cover relative">
-                    
-                     <img src={offer} alt="" className="image h-full w-full" />
+                    <h3 className="rotate-off bg-[#FDC703]  py-[12px] z-10 px-14  text-white font-semibold absolute left-[-40px] top-[20px]">
+                      20% offer
+                    </h3>
 
-                     <h3 className="rotate-off bg-[#FDC703] w-[200px]  py-[12px] text-center text-white font-semibold absolute left-[-1] right-[109px] top-[21px]">
-                        20% offer
-                      </h3>
-                  
+                    <img src={offer} alt="" className="image h-full w-full" />
                   </div>
 
                   <div className="md:col-span-3 py-[24px] px-[15px]">
@@ -49,15 +47,25 @@ const Offer = () => {
                     <h2 className="text-[26px] Play-fair mb-2">
                       {data.country}
                     </h2>
-                   
+
                     <div className="rating text-[#FDC703]  ">
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="ms-2 white">(18)</span>
-                          </div>
+                      <span className="fa fa-star checked">
+                        <FontAwesomeIcon icon={faStar} />
+                      </span>
+                      <span className="fa fa-star checked">
+                        <FontAwesomeIcon icon={faStar} />
+                      </span>
+                      <span className="fa fa-star checked">
+                        <FontAwesomeIcon icon={faStar} />
+                      </span>
+                      <span className="fa fa-star checked">
+                        <FontAwesomeIcon icon={faStar} />
+                      </span>
+                      <span className="fa fa-star checked">
+                        <FontAwesomeIcon icon={faStar} />
+                      </span>
+                      <span className="ms-2 white">(18)</span>
+                    </div>
 
                     <p className="mb-2 text-[#777777] text-[16px]">
                       {data.description}

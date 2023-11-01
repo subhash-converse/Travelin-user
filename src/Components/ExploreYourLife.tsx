@@ -4,7 +4,7 @@ import mountain2 from "../Assets/Images/mountain2.png";
 
 // <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlay, faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const ExploreYourLife = () => {
   return (
@@ -30,8 +30,9 @@ const ExploreYourLife = () => {
 
       <div className="w-full flex flex-col justify-center p-0">
         <div className="call-button flex justify-center items-center ">
-          <button type="button" className="play-btn js-video-button" data-video-id="152879427" data-channel="vimeo">        
-          </button>
+       
+         <FontAwesomeIcon icon={faPlay}  className="bg-[#777F94] p-5 px-6 rounded-[50%] text-white text-[25px]"/>
+       
         </div>
         <div className="flex">
           <img className="rotate h-[130px] w-[100%] lg:w-[50%]" src={mountain2} alt="mountain" />
