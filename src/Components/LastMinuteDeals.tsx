@@ -26,7 +26,7 @@ const LastMinuteDeals = () => {
           </div>
 
           <div className="w-full flex justify-center px-4">
-            <div className="lg:max-w-[1290px] grid grid-cols-1 lg:grid-cols-5 gap-6 ">
+            <div className="last-deal-div lg:max-w-[1290px] grid grid-cols-1 lg:grid-cols-5 gap-6 ">
               <div className="grid gap-[31px] md:grid-cols-2 lg:col-span-3 ">
                 {carouselData.map((data) => {
                   let filter = data.catogory.find(
@@ -40,7 +40,7 @@ const LastMinuteDeals = () => {
                 })}
               </div>
 
-              <div className="grid gap-[31px] lg:col-span-2 ">
+              <div className="long-card-div grid gap-[31px] lg:col-span-2  ">
                 {carouselData.map((data) => {
                   let filter = data.catogory.find(
                     (a) => a.toLowerCase().trim() === "long card"

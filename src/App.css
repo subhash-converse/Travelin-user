@@ -477,6 +477,27 @@ border-bottom: 1px dashed #F1F1F1 ;
 }
 
 
+@media screen and (min-width: 425px) {
+  .long-card-width,.last-deal{
+    width: 350px;
+  }
+
+  .long-card-div,.last-deal-div{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .long-card-width,.last-deal{
+    width: 100%;
+  }
+
+  .long-card-div,.last-deal-div{
+    justify-content: center;
+  }
+}
+
+
 
 
 

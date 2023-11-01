@@ -23,13 +23,13 @@ const LongCard = (props: data) => {
   return (
     <div>
       {
-        <div className="image-box rounded-lg relative  h-[180px] md:h-[368px]  grid items-center md:items-end">
+        <div className=" long-card-width image-box rounded-lg relative   h-[180px] md:h-[368px] md:w-full grid items-center md:items-end ">
         {/* <div
           className=" image background-img img-radius p-[16px]"
           style={{ backgroundImage: `url(${longcard1})` }}
         > */}
         <div className="image-box h-full w-full">
-          <img className="image h-full w-fu" src={longcard1} alt="" />
+          <img className="image h-full w-full" src={longcard1} alt="" />
         </div>
 
           <div className="absolute bottom-0 p-3">

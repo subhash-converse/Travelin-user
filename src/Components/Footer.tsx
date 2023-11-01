@@ -1,14 +1,10 @@
 // <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faImage, faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-import WatchLaterOutlinedIcon from "@mui/icons-material/WatchLaterOutlined";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 // <========== swipper ==========>
 import "swiper/css";

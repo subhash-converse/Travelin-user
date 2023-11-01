@@ -25,7 +25,7 @@ interface data {
 
 const Card: React.FC<data> = (props) => {
   return (
-    <div className="card-hover btn-fromLeft card-line  bg-white main-input rounded-t-xl w-full  lg:h-[510px]  xl:h-[570px]  rounded-xl">
+    <div className="last-deal card-hover btn-fromLeft card-line  bg-white main-input rounded-t-xl w-full  lg:h-[510px]  xl:h-[570px]  rounded-xl">
       <div className="image-box rounded-t-xl">
       <div
         style={{ backgroundImage: `url(${topPick1})` }}

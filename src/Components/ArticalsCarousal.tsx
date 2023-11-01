@@ -26,7 +26,7 @@ interface data{
 
 const ArticalsCarousal = (props:data) => {
   return (
-    <div className="bg-white main-input img-radius w-full  lg:h-[510px]  xl:h-[570px]">
+    <div className="bg-white btn-fromLeft card-hover card-line main-input img-radius w-full  lg:h-[510px]  xl:h-[570px]">
       <div className="image-box rounded-t-xl">
       <div
         style={{ backgroundImage: `url(${topPick1})` }}
