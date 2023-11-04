@@ -6,7 +6,7 @@ import SignpostOutlinedIcon from '@mui/icons-material/SignpostOutlined';
 
 
 // <========== images ==========>
-import paint from "../Assets/Images/shape4.png";
+import paint from "../../Assets/Images/HomeImage/shape4.png";
 
 const cardHover = (x:any) =>{
   console.log(x)

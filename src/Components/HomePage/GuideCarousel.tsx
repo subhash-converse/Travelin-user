@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== images ==========>
-import guide from "../Assets/Images/guide1.jpg";
+import guide from "../../Assets/Images/HomeImage/guide1.jpg";
 
 // <========== MockData ==========>
 

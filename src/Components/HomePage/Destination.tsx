@@ -1,5 +1,5 @@
 // <========== MockData ==========>
-import destination1 from "../Assets/Images/destination2.jpg";
+import destination1 from "../../Assets/Images/HomeImage/destination2.jpg";
 
 interface data {
   data: {

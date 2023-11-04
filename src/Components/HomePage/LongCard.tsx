@@ -1,5 +1,5 @@
 // <========== Componets ==========>
-import longcard1 from "../Assets/Images/long-card3.jpg";
+import longcard1 from "../../Assets/Images/HomeImage/long-card3.jpg";
 
 // <========== icons ==========>
 import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";

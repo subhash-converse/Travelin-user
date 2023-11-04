@@ -9,10 +9,10 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== images ==========>
-import partners1 from "../Assets/Images/partners1.png";
-import partners2 from "../Assets/Images/partners2.png";
-import partners3 from "../Assets/Images/partners3.png";
-import partners4 from "../Assets/Images/partners.4.png";
+import partners1 from "../../Assets/Images/HomeImage/partners1.png";
+import partners2 from "../../Assets/Images/HomeImage/partners2.png";
+import partners3 from "../../Assets/Images/HomeImage/partners3.png";
+import partners4 from "../../Assets/Images/HomeImage/partners.4.png";
 
 const PartnersCarousel = () => {
   // <========== hooks ==========>

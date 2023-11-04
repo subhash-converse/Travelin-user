@@ -1,5 +1,5 @@
 // <========== images ==========>
-import mountain from "../Assets/Images/mountain.png";
+import mountain from "../../Assets/Images/HomeImage/mountain.png";
 
 // <========== icons ==========>
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";

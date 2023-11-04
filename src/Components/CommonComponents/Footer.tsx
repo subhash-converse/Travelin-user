@@ -17,18 +17,18 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== images ==========>
-import blueMountain from "../Assets/Images/mountain.png";
-import whiteLogo from "../Assets/Images/logo-white.png";
-import peoples from "../Assets/Images/peoples.png";
-import footer1 from "../Assets/Images/footer1.jpg";
-import footer2 from "../Assets/Images/footer2.jpg";
-import footer3 from "../Assets/Images/footer3.jpg";
-import footer4 from "../Assets/Images/footer4.jpg";
-import footer5 from "../Assets/Images/footer5.jpg";
-import footer6 from "../Assets/Images/footer6.jpg";
-import footer7 from "../Assets/Images/footer7.jpg";
-import footer8 from "../Assets/Images/footer8.jpg";
-import footer9 from "../Assets/Images/footer9.jpg";
+import blueMountain from "../../Assets/Images/HomeImage/mountain.png";
+import whiteLogo from "../../Assets/Images/HomeImage/logo-white.png";
+import peoples from "../../Assets/Images/HomeImage/peoples.png";
+import footer1 from "../../Assets/Images/HomeImage/footer1.jpg";
+import footer2 from "../../Assets/Images/HomeImage/footer2.jpg";
+import footer3 from "../../Assets/Images/HomeImage/footer3.jpg";
+import footer4 from "../../Assets/Images/HomeImage/footer4.jpg";
+import footer5 from "../../Assets/Images/HomeImage/footer5.jpg";
+import footer6 from "../../Assets/Images/HomeImage/footer6.jpg";
+import footer7 from "../../Assets/Images/HomeImage/footer7.jpg";
+import footer8 from "../../Assets/Images/HomeImage/footer8.jpg";
+import footer9 from "../../Assets/Images/HomeImage/footer9.jpg";
 
 const Footer = () => {
   const [windowWidth, setWindowWidth] = useState(4);

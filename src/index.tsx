@@ -7,71 +7,30 @@ import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import "./App.css";
 
-// <========== Layout ==========>
+// <========== Layouts ==========>
+import HomeLayout from "./Components/Layouts/HomeLayout"
+import LeftTourGrid from "./Components/Layouts/LeftTourGridLayout";
 
-import LandingPage from "./Components/LandingPage";
-import FindHolidayForm from "./Components/FindHolidayForm";
-import TopDestinations from "./Components/TopDestinations";
-import BestTourPackages from "./Components/BestTourPackages";
-import LastMinuteDeals from "./Components/LastMinuteDeals";
-import GetToKnowUs from "./Components/GetToKnowus";
-import GuideCarousal from "./Components/GuidePage";
-import Offer from "./Components/Offer";
-import ExploreYourLife from "./Components/ExploreYourLife";
-import GoodReviews from "./Components/GoodReviews";
-import ArticlesPosts from "./Components/ArticlesPosts";
-import Patners from "./Components/Partners";
-import Footer from "./Components/Footer";
-import CoreFutures from "./Components/CoreFutures";
-import Header from "./Components/Header";
+// <========== Common Components ==========>
+import Footer from "./Components/CommonComponents/Footer";
+import Header from "./Components/CommonComponents/Header";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    
+{/*......... Header......... */}
     <div>
       <Header />
     </div>
+{/*......... Body......... */}
     <div>
-      <LandingPage />
+       {/* <HomeLayout/> */}
+       <LeftTourGrid/>
     </div>
-    <div>
-      <FindHolidayForm />
-    </div>
-    <div >
-      <CoreFutures/>
-    </div>
-    <div>
-      <TopDestinations />
-    </div>
-    <div>
-      <BestTourPackages />
-    </div>
-    <div>
-      <LastMinuteDeals />
-    </div>
-    <div>
-      <GetToKnowUs />
-    </div>
-    <div>
-      <GuideCarousal />
-    </div>
-    <div>
-      <Offer />
-    </div>
-    <div >
-      <ExploreYourLife />
-    </div>
-    <div>
-      <GoodReviews/>
-    </div>
-    <div>
-      <ArticlesPosts/>
-    </div>
-    <div>
-      <Patners/>
-    </div>
+{/*......... Footer......... */}
     <div>
       <Footer/>
     </div>

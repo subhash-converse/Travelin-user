@@ -12,7 +12,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 // <========== images ==========>
-import logo from "../Assets/Images/logo.png";
+import logo from "../../Assets/Images/HomeImage/logo.png";
 import { Hidden } from "@mui/material";
 import { useState } from "react";
 

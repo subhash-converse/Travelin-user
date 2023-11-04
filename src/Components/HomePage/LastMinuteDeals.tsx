@@ -3,10 +3,10 @@ import Card from "./Card";
 import LongCard from "./LongCard";
 
 // <========== MockData ==========>
-import carouselData from "../Mock/PackageData";
+import carouselData from "../../Mock/PackageData";
 
 // <========== images ==========>
-import parashoot from "../Assets/Images/parashoot.png";
+import parashoot from "../../Assets/Images/HomeImage/parashoot.png";
 
 const LastMinuteDeals = () => {
   return (

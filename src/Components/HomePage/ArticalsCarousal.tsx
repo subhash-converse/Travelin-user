@@ -3,8 +3,8 @@ import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // <========== images ==========>
-import topPick1 from "../Assets/Images/TopPick1.jpg";
-import guide from "../Assets/Images/guide1.jpg";
+import topPick1 from "../../Assets/Images/HomeImage/TopPick1.jpg";
+import guide from "../../Assets/Images/HomeImage//guide2.jpg";
 
 
 
@@ -35,7 +35,6 @@ const ArticalsCarousal = (props:data) => {
       </div>
       </div>
       
-
       <div className=" p-[24px] ">
         <h3 className="Play-fair text-[18px] text-[#777777] mb-2">
           {props.data.country}

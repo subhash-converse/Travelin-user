@@ -3,7 +3,7 @@ import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // <========== images ==========>
-import topPick1 from "../Assets/Images/TopPick1.jpg";
+import topPick1 from "../../Assets/Images/HomeImage/TopPick1.jpg"
 
 import React from "react";
 

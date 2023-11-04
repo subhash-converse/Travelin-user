@@ -1,9 +1,6 @@
 // <========== MockData ==========>
-import carouselData from "../Mock/PackageData";
+import carouselData from "../../Mock/PackageData";
 import ArticalsCarousal from "./ArticalsCarousal";
-
-// <========== Components ==========>
-import Card from "./Card";
 
 
 const ArticlesPosts = () => {

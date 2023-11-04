@@ -1,6 +1,6 @@
 // <========== images ==========>
-import peoples from "../Assets/Images/peoples.png";
-import travelers from "../Assets/Images/travelers.png";
+import peoples from "../../Assets/Images/HomeImage/peoples.png";
+import travelers from "../../Assets/Images/HomeImage/travelers.png";
 
 // <========== icons ==========>
 import {

@@ -1,8 +1,8 @@
 // <========== Componets ==========>
-import offer from "../Assets/Images/offer1.jpg";
+import offer from "../../Assets/Images/HomeImage/offer1.jpg";
 
 // <========== MockData ==========>
-import carouselData from "../Mock/PackageData";
+import carouselData from "../../Mock/PackageData";
 
 // <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

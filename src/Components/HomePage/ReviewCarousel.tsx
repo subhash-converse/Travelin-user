@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== images ==========>
-import guide from "../Assets/Images/guide2.jpg";
+import guide from "../../Assets/Images/HomeImage/guide2.jpg";
 
 interface LastMainDeal {
   image: any;

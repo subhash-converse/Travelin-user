@@ -1,5 +1,5 @@
 // <========== MockData ==========>
-import LastMainDeals from "../Mock/PackageData";
+import LastMainDeals from "../../Mock/PackageData";
 
 // <========== Conponents ==========>
 import ReviewComponent from "./ReviewCarousel";

@@ -1,6 +1,6 @@
 // <========== images ==========>
-import mountainWithPeoples from "../Assets/Images/mountain-with-people.png";
-import mountain2 from "../Assets/Images/mountain2.png";
+import mountainWithPeoples from "../../Assets/Images/HomeImage/mountain-with-people.png";
+import mountain2 from "../../Assets/Images/HomeImage/mountain2.png";
 
 // <========== icons ==========>
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

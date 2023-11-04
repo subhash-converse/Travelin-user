@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // <========== mock data ==========>
-import carouselData from "../Mock/PackageData";
+import carouselData from "../../Mock/PackageData";
 
 // <========== Components ==========>
 import Card from "./Card";

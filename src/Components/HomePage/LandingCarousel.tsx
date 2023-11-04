@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== images ==========>
-import carousel1 from "../Assets/Images/corrosal1.jpg";
+import carousel1 from "../../Assets/Images/HomeImage/corrosal1.jpg";
 
 // <========== images ==========>
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
@@ -76,11 +76,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
             return (
               <SwiperSlide className="flex justify-center w-full">
                 <div className="image-box">
-                {/* <div
-                  className="image backround-image carousel-bg "
-                  style={{ backgroundImage: `url(${carousel1})` }}
-
-                > */}
+                
                   <div className="h-full w-full">
                     <img className="image" src={carousel1} alt="" />
                   </div>
