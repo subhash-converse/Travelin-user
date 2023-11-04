@@ -8,8 +8,11 @@ import "./index.css";
 import "./App.css";
 
 // <========== Layouts ==========>
-import HomeLayout from "./Components/Layouts/HomeLayout"
-import LeftTourGrid from "./Components/Layouts/LeftTourGridLayout";
+// import HomeLayout from "./Components/Layouts/HomeLayout"
+// import LeftTourGrid from "./Components/Layouts/LeftTourGridLayout";
+import Routing from "./Components/Routing/Routing";
+import { BrowserRouter } from 'react-router-dom'
+
 
 // <========== Common Components ==========>
 import Footer from "./Components/CommonComponents/Footer";
@@ -19,22 +22,23 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    
-{/*......... Header......... */}
-    <div>
-      <Header />
-    </div>
-{/*......... Body......... */}
-    <div>
-       {/* <HomeLayout/> */}
-       <LeftTourGrid/>
-    </div>
-{/*......... Footer......... */}
-    <div>
-      <Footer/>
-    </div>
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      
+      {/*......... Header......... */}
+          <div>
+            <Header />
+          </div>
+      {/*......... Body......... */}
+          <div>
+            <Routing/>
+          </div>
+      {/*......... Footer......... */}
+          <div>
+            <Footer/>
+          </div>
+      </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

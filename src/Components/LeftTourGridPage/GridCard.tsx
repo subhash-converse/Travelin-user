@@ -1,24 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 import carouselData from "../../Mock/PackageData";
 
 // ................Components.....................
 import Card from "../HomePage/Card";
 import CardCarousel from "./CardCarousel";
-import { faAngleDown, faBars, faTableCells } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faArrowRightLong, faBars, faTableCells } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const GridCard = () => {
+  const [grid,setGrid]=useState(false)
+
+  console.log(grid)
+
+  
   return (
     <>
       <div className="w-full flex justify-center text-[16px] text-[#777777] font-thin ">
-        <div className="lg:max-w-[1290px] flex mt-[52px]">
-          <div className="w-[66.66%]">
-            <div className="w-full flex justify-between items-center mb-[35px] ">
-              <h1>Showing 1-5 of 80 results</h1>
+        <div className="w-full flex flex-col lg:max-w-[1290px] lg:flex-row  mt-[52px]">
+          <div className="w-full lg:w-[66.66%] flex flex-col  px-4  items-center">
+            <div className="mb-[35px] md:flex md:justify-between md:w-full">
+                <div className="flex items-center">
+                   <h1 className="">Showing 1-5 of 80 results</h1>
+                </div>
               <div className="flex gap-5 items-center">
-                <FontAwesomeIcon icon={faBars} />
-                <FontAwesomeIcon icon={faTableCells} />
+                <FontAwesomeIcon icon={faBars} onClick={()=>{setGrid(true)}} />
+                <FontAwesomeIcon icon={faTableCells} onClick={()=>{setGrid(false)}}/>
                 <div className="dropdown inline-block relative ">
                   <button className="nav w-[150px] font-semibold py-2 px-4 border rounded-lg inline-flex justify-between items-center">
                     <span>Sort By{" "}</span>
@@ -45,9 +52,11 @@ const GridCard = () => {
                   </ul>
                 </div>
               </div>
+            
+             
             </div>
 
-            <div className=" grid grid-cols-2 gap-7 px-4 py-5">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 py-5">
               {carouselData.map((data) => {
                 let filter = data.catogory.find(
                   (a) => a.toLowerCase().trim() === "left grid"
@@ -59,10 +68,15 @@ const GridCard = () => {
                 }
               })}
             </div>
+            <div className="flex justify-center">
+              <div>
+                <button className="button tour-pic-btn py-[8px] flex flex-row gap-2"><div className="text">Load more <span><FontAwesomeIcon icon={faArrowRightLong}/></span></div></button>
+              </div>
+            </div>
           </div>
 
-          <div className="w-[33.33%]">
-            <div className="pl-[24px] pr-[15px] relative">
+          <div className=" w-full lg:w-[33.33%]">
+            <div className="pl-[24px] pr-[15px] sticky top-0">
               <div className=" border-b-[1px] border-dashed border-[#777777] pb-[30px] mb-[32px]">
                 <h1 className="text-[26px] Play-fair text-[#17233E] border-b-[1px] mb-[30px] pb-[10px] ">Categories Type</h1>
                 <div className="grid grid-cols-1 gap-3">
@@ -181,10 +195,10 @@ const GridCard = () => {
 
               </div>
 
-              <div className=" border-b-[1px] border-dashed border-[#777777] pb-[30px] mb-[32px]">
+              <div className="  pb-[30px] mb-[32px]">
                 <h1 className="text-[26px] Play-fair text-[#17233E] border-b-[1px] mb-[30px] pb-[10px] ">Related Destinations</h1>
                  <div className=" ">
-                 <CardCarousel carouselData={carouselData}  />
+                 <CardCarousel carouselData={carouselData} />
    
                  </div>
               </div>

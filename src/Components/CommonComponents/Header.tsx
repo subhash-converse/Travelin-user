@@ -15,6 +15,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import logo from "../../Assets/Images/HomeImage/logo.png";
 import { Hidden } from "@mui/material";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [dList, setDList] = useState(false);
@@ -87,7 +88,7 @@ const Header = () => {
           {/* .......................................................................................... */}
 
           <div className="hidden xl:inline-flex w-auto items-center gap-x-5">
-            <span className="nav">HOME</span>
+            <span className="nav"><Link to="/">Home</Link></span>
             <span className="nav">ABOUT US</span>
 
             {/* .......................................... */}
@@ -120,9 +121,9 @@ const Header = () => {
                   </li>
                   <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">TOUR GRID</a>  
                       <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
+                          <li><Link className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" to="/leftGrid"><span>Tour Grid Leftsidebar</span></Link></li>
+                          <li><Link className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" to="#"><span>Tour Grid Rightsidebar</span></Link></li>
+                          <li><Link className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" to="#"><span>Tour Grid Fullwidth</span></Link></li>
                       </ul>      
                   </li>
                   <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">TOUR SINGLE</a>  
