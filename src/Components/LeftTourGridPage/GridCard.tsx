@@ -17,13 +17,10 @@ import LeftLineCard from "./LeftLineCard";
 const GridCard = () => {
   const [grid, setGrid] = useState(false);
 
-  console.log(grid);
-
-  const cardType = (value:boolean,icon:string) =>{
-      setGrid(value);
-      let A = document.getElementById(icon)
-      if(A){A.style.backgroundColor = "#ffbc00"}
-      
+  const cardType = (icon:string) =>{
+      setGrid(!grid);
+      let iconColor = document.getElementById(icon)
+      if(iconColor){iconColor.style.backgroundColor = "#ffbc00";} 
   }
 
   return (
@@ -38,18 +35,18 @@ const GridCard = () => {
               <div className="flex gap-5 items-center">
                 <FontAwesomeIcon
                   icon={faBars}
-                  className="p-2 rounded-md"
+                  className="p-2 rounded-md icon-bar"
                   id="bar"
                   onClick={() => {
-                    cardType(true,"bar");
+                    cardType("bar");
                   }}
                 />
                 <FontAwesomeIcon
                   icon={faTableCells}
                   id="cell"
-                  className="p-2 rounded-md"
+                  className="p-2 rounded-md icon-tab"
                   onClick={() => {
-                    cardType(false,"cell");
+                    cardType("cell");
                   }}
                 />
                 <div className="dropdown inline-block relative ">

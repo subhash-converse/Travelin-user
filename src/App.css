@@ -434,4 +434,12 @@ border-bottom: 1px dashed #F1F1F1 ;
   gap: 4px;
 }
 
+.icon-bar:active{
+  background-color:"#ffbc00";
+}
+
+.icon-tab:active{
+  background-color:"#ffbc00";
+}
+
 /* ............. */

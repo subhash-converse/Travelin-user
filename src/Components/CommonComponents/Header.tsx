@@ -13,7 +13,6 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 
 // <========== images ==========>
 import logo from "../../Assets/Images/HomeImage/logo.png";
-import { Hidden } from "@mui/material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -29,8 +28,8 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <div className="top-head hidden lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
+    <div className="">
+      <div className="top-head hidden  lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
         <div className="w-[90%]  lg:max-w-[1296px] flex justify-between">
           <div className="flex items-center ">
             <div className="border-r-[1px] border-[#35B0AF] pr-[15px] flex  ">
@@ -77,7 +76,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="h-[100px]  flex justify-center items-center">
+      <header className="h-[100px] bg-white  flex justify-center items-center">
         <div className="flex w-[90%] justify-between md:max-w-[696px] lg:max-w-[1296px] ">
           <div className="xl:inline-flex items-center">
             <div className="pt-[1px]">
@@ -236,8 +235,8 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </div>
-  );
+      </div>
+        );
 };
 
 export default Header;
