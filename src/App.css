@@ -130,6 +130,8 @@ body {
 .main-input{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 
+  .card-shadow{box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;}
+
   .lite-input{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;}
 
@@ -443,3 +445,198 @@ border-bottom: 1px dashed #F1F1F1 ;
 }
 
 /* ............. */
+.card-type{
+  background-color: #FDC703;
+  color: #fff;
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider__track,
+.slider__range,
+.slider__left-value,
+.slider__right-value {
+  position: absolute;
+}
+
+.slider__track,
+.slider__range {
+  border-radius: 3px;
+  height: 5px;
+}
+
+.slider__track {
+  background-color: #ced4da;
+  width: 100%;
+  z-index: 1;
+}
+
+.slider__range {
+  background-color: #029E9D;
+  z-index: 2;
+}
+
+.slider__left-value,
+.slider__right-value {
+  color: #777777;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.slider__left-value {
+  left: 6px;
+}
+
+.slider__right-value {
+  right: -4px;
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+}
+
+.thumb--zindex-3 {
+  z-index: 3;
+}
+
+.thumb--zindex-4 {
+  z-index: 4;
+}
+
+.thumb--zindex-5 {
+  z-index: 5;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+
+.color-overlay{
+    top: inherit;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, #000000);
+    height: 50%;
+    opacity: 0.6;
+    width: 100%;
+}
+
+
+/* ......................... */
+
+.call-button button.play-btn::after {
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
+}
+.call-button button.play-btn::after, .call-button button.play-btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid #fdc70380;
+  opacity: 0.3;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.call-button button.play-btn i {
+  font-size: 28px;
+  height: 70px;
+  width: 70px;
+  line-height: 2.5;
+  text-align: center;
+  color: #fff;
+  background: #029e9d;
+  transition: all ease-in-out 0.5s;
+  padding: 0 0 0 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.fa, .fas {
+  font-weight: 900;
+}
+.fa, .far, .fas {
+  font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+user agent stylesheet
+i {
+  font-style: italic;
+}
+

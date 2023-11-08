@@ -2,12 +2,13 @@
 import carouselData from "../../Mock/PackageData";
 import ArticalsCarousal from "./ArticalsCarousal";
 
-
 const ArticlesPosts = () => {
   return (
     <div className="">
       <div className="flex flex-col justify-center items-center ]">
-        <h1 className="yellow content-head-1 Play-fair pt-[25px]">Our Blogs Offers</h1>
+        <h1 className="yellow content-head-1 Play-fair pt-[25px]">
+          Our Blogs Offers
+        </h1>
         <h1 className="content-head-2 Play-fair">
           <span className="text-[#17233E]">Recent </span>
           <span className="text-[#777777]">Articles & Posts</span>

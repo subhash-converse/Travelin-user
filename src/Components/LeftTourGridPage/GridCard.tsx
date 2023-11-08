@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import carouselData from "../../Mock/PackageData";
+import MultiRangeSlider from "./MultiRangeSlider";
 
 // ................Components.....................
 import LeftGridCard from "./LeftGridCard";
@@ -15,13 +16,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LeftLineCard from "./LeftLineCard";
 
 const GridCard = () => {
-  const [grid, setGrid] = useState(false);
+  const [grid, setGrid] = useState(true);
 
-  const cardType = (icon:string) =>{
-      setGrid(!grid);
-      let iconColor = document.getElementById(icon)
-      if(iconColor){iconColor.style.backgroundColor = "#ffbc00";} 
-  }
+  const cardType = (icon: string) => {
+    if (icon == "bar") {
+      setGrid(false);
+    } else {
+      setGrid(true);
+    }
+  };
 
   return (
     <>
@@ -32,10 +35,12 @@ const GridCard = () => {
               <div className="flex items-center">
                 <h1 className="">Showing 1-5 of 80 results</h1>
               </div>
-              <div className="flex gap-5 items-center">
+              <div className={`flex gap-5 items-center`}>
                 <FontAwesomeIcon
                   icon={faBars}
-                  className="p-2 rounded-md icon-bar"
+                  className={`p-2 rounded-md icon-bar ${
+                    !grid ? "card-type" : ""
+                  }`}
                   id="bar"
                   onClick={() => {
                     cardType("bar");
@@ -43,10 +48,12 @@ const GridCard = () => {
                 />
                 <FontAwesomeIcon
                   icon={faTableCells}
-                  id="cell"
-                  className="p-2 rounded-md icon-tab"
+                  id="grid"
+                  className={`p-2 rounded-md icon-bar ${
+                    grid ? "card-type" : ""
+                  }`}
                   onClick={() => {
-                    cardType("cell");
+                    cardType("grid");
                   }}
                 />
                 <div className="dropdown inline-block relative ">
@@ -95,33 +102,26 @@ const GridCard = () => {
               </div>
             </div>
 
-            {grid ? (
-              <div className="grid grid-cols-1 gap-7 py-5">
-                  {carouselData.map((data) => {
-                  let filter = data.catogory.find(
-                    (a) => a.toLowerCase().trim() === "left grid"
+            <div
+              className={`grid grid-cols-1 ${
+                grid ? "md:grid-cols-2" : ""
+              } gap-7 py-5`}
+            >
+              {carouselData.map((data) => {
+                let filter = data.catogory.find(
+                  (a) => a.toLowerCase().trim() === "left grid"
+                );
+                if (filter) {
+                  return grid ? (
+                    <LeftGridCard data={data} />
+                  ) : (
+                    <LeftLineCard data={data} />
                   );
-                  if (filter) {
-                    return <LeftLineCard data={data} gridtype={grid} />;
-                  } else {
-                    return null;
-                  }
-                })}
-              </div>
-            ) : (
-              <div className=" grid grid-cols-1 md:grid-cols-2 gap-7 py-5">
-                {carouselData.map((data) => {
-                  let filter = data.catogory.find(
-                    (a) => a.toLowerCase().trim() === "left grid"
-                  );
-                  if (filter) {
-                    return <LeftGridCard data={data} gridtype={grid} />;
-                  } else {
-                    return null;
-                  }
-                })}
-              </div>
-            )}
+                } else {
+                  return null;
+                }
+              })}
+            </div>
 
             <div className="flex justify-center">
               <div>
@@ -146,7 +146,7 @@ const GridCard = () => {
                 <div className="grid grid-cols-1 gap-3">
                   <div className="checkbox-inputs">
                     <div className="input-lable">
-                      <input id="Tours" type="checkbox" />
+                      <input id="Tours" type="checkbox" checked />
                       <label htmlFor="Tours">Tours</label>
                     </div>
                     <div>
@@ -226,7 +226,7 @@ const GridCard = () => {
                 <div className="grid grid-cols-1 gap-3">
                   <div className="checkbox-inputs">
                     <div className="input-lable">
-                      <input id="Tours" type="checkbox" />
+                      <input id="Tours" type="checkbox" checked />
                       <label htmlFor="Tours">up to 1 hour</label>
                     </div>
                     <div>
@@ -281,12 +281,18 @@ const GridCard = () => {
                 </div>
               </div>
 
-              <div className=" border-b-[1px] border-dashed border-[#777777] pb-[30px] mb-[32px]">
+              <div className=" border-b-[1px] border-dashed border-[#777777] pb-[60px] mb-[32px] ">
                 <h1 className="text-[26px] Play-fair text-[#17233E] border-b-[1px] mb-[30px] pb-[10px] ">
                   Duration Type
                 </h1>
                 <h2 className="mb-[16px]">Price Range</h2>
-                <input type="range" className="w-full" />
+                <MultiRangeSlider
+                  min={0}
+                  max={2000}
+                  onChange={({ min, max }) =>
+                    console.log(`min = $${min}, max = $${max}`)
+                  }
+                />
               </div>
 
               <div className="  pb-[30px] mb-[32px]">

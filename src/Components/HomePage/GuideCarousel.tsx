@@ -8,11 +8,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
 
-// <========== images ==========>
-import guide from "../../Assets/Images/HomeImage/guide1.jpg";
-
-// <========== MockData ==========>
-
 interface LastMainDeal {
   image: any;
   country: string;
@@ -24,6 +19,7 @@ interface LastMainDeal {
   territory: string;
   days: number;
   guideName?: string;
+  guideImage: string;
   position?: string;
 }
 
@@ -49,7 +45,7 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
         centeredSlides={false}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -63,33 +59,30 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
           let filter = carousal.catogory.find((a) => {
             if (a.toLocaleLowerCase().trim() === "guide info") {
               return a;
-            }
-            else{
-              return null
+            } else {
+              return null;
             }
           });
 
           if (filter) {
             return (
               <SwiperSlide className="flex justify-center ">
-                <div className="image-box rounded-xl relative">
-                <div>
-                  <img src={guide} alt="" className="image" />
+                <div className="image-box rounded-xl relative h-[400px] hover:h-[385px] duration-100">
+                  <div>
+                    <img src={carousal.guideImage} alt="" className="image" />
+                  </div>
+
+                  <div className=" bg-[#029e9d] w-full z-10 rounded-b-lg flex flex-col items-center justify-center text-white p-4 absolute bottom-0 left-0 right-0">
+                    <h3 className="Play-fair text-[22px]">
+                      {carousal.guideName}
+                    </h3>
+                    <h3 className="text-[16px]">{carousal.position}</h3>
+                  </div>
                 </div>
-                  
-                    <div className=" bg-[#029e9d] w-full z-10 rounded-b-lg flex flex-col items-center justify-center text-white p-4 absolute bottom-0 left-0 right-0">
-                      <h3 className="Play-fair text-[22px]">
-                        {carousal.guideName}
-                      </h3>
-                      <h3 className="text-[16px]">{carousal.position}</h3>
-                    </div>
-                </div>
-              
               </SwiperSlide>
             );
-          }
-          else{
-            return null
+          } else {
+            return null;
           }
         })}
       </Swiper>

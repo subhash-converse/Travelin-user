@@ -35,7 +35,7 @@ const CardCarousel = (props: { carouselData: datas[] }) => {
         }}
         pagination={{
           clickable: true,
-        }}
+        }}  
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets"
@@ -59,8 +59,8 @@ const CardCarousel = (props: { carouselData: datas[] }) => {
 
                   <div className=" w-full flex justify-between p-[24px] absolute bottom-0 left-0 right-0">
                     <div className="Play-fair">
-                      <h3 className="yellow">{carousal.country}</h3>
-                      <h3 className="white text-[21px] md:text-[26px]">
+                      <h3 className="yellow text-left">{carousal.country}</h3>
+                      <h3 className="white text-[21px] text-left md:text-[26px]">
                         {carousal.territory}
                       </h3>
                     </div>

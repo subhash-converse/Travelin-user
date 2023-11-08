@@ -6,6 +6,32 @@ import carouselData from "../../Mock/PackageData";
 import Destination from "./Destination";
 
 const TopDestinations = () => {
+
+  interface data {
+    image: any;
+    country: string;
+    touristPlace: string;
+    reviewsStar: number;
+    description: string;
+    catogory: string[];
+    price: number;
+    territory: string;
+    days: number;
+    guideName?: string;
+    position?: string;
+  };
+
+  let filteredData:data[] = [];
+  {carouselData.map((data) => {
+    let filter = data.catogory.find(
+      (a) => a.toLowerCase().trim() === "destination");
+    if (filter) {
+      return filteredData.push(data)        
+    } else {
+      return null;
+    }
+  })}
+
   return (
     <div>
       <div className="px-4">
@@ -21,27 +47,15 @@ const TopDestinations = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center h-full ">
           <div
             className="
-            grid grid-cols-1 gap-[30px] w-full
+            grid grid-cols-1 gap-[30px] w-full 
             md:grid-cols-2 
             lg:grid-cols-7
-           
-            xl:max-w-[1290px] "
+            xl:max-w-[1290px] h-full "
           >
-            {carouselData.map((data,index) => {
-             
-              let filter = data.catogory.find(
-                (a) => a.toLowerCase().trim() === "destination");
-              if (filter) {
-                let filteredData = [];
-                filteredData.push(data)
-                  return <Destination data={data} index={index} />;
-              } else {
-                return null;
-              }
-            })}
+             <Destination data={filteredData} />;
           </div>
         </div>
       </div>

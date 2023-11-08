@@ -1,6 +1,3 @@
-// <========== Componets ==========>
-import offer from "../../Assets/Images/HomeImage/offer1.jpg";
-
 // <========== MockData ==========>
 import carouselData from "../../Mock/PackageData";
 
@@ -34,10 +31,14 @@ const Offer = () => {
                 <div className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1 overflow-hidden md:grid-cols-5 img-radius main-input ">
                   <div className="image-box  md:col-span-2 bg-cover relative">
                     <h3 className="rotate-off bg-[#FDC703]  py-[12px] z-10 px-14  text-white font-semibold absolute left-[-40px] top-[20px]">
-                      20% offer
+                      {`${data.offer}% offer`}
                     </h3>
 
-                    <img src={offer} alt="" className="image h-full w-full" />
+                    <img
+                      src={data.image}
+                      alt=""
+                      className="image h-full w-full"
+                    />
                   </div>
 
                   <div className="md:col-span-3 py-[24px] px-[15px]">

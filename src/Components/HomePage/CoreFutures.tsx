@@ -1,20 +1,11 @@
 // <========== icons ==========>
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import OutlinedFlagSharpIcon from '@mui/icons-material/OutlinedFlagSharp';
-import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
-import SignpostOutlinedIcon from '@mui/icons-material/SignpostOutlined';
-
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import OutlinedFlagSharpIcon from "@mui/icons-material/OutlinedFlagSharp";
+import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
+import SignpostOutlinedIcon from "@mui/icons-material/SignpostOutlined";
 
 // <========== images ==========>
 import paint from "../../Assets/Images/HomeImage/shape4.png";
-
-const cardHover = (x:any) =>{
-  console.log(x)
-}
-
-const cardOut = (x:any) =>{
-  console.log("mouseOut")
-}
 
 const CoreFutures = () => {
   return (
@@ -37,7 +28,10 @@ const CoreFutures = () => {
         <div className="w-full flex justify-center">
           <div className="max-w-[1295px] grid grid-cols-1 lg:pb-[27px] gap-y-4 md:grid-cols-2 gap-[33px] xl:grid-cols-4">
             <div className="card" id="box1">
-              <OutlinedFlagSharpIcon style={{height:"60", width:"60px"}} className="card-icon" />
+              <OutlinedFlagSharpIcon
+                style={{ height: "60", width: "60px" }}
+                className="card-icon"
+              />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
               </h3>
@@ -47,8 +41,11 @@ const CoreFutures = () => {
               </p>
               <p className="card-review ">100+ Reviews</p>
             </div>
-            <div className="card" id='box2'  onMouseOver={cardHover}>
-              <LocationOnOutlinedIcon className="card-icon" style={{height:"60", width:"60px"}} />
+            <div className="card" id="box2">
+              <LocationOnOutlinedIcon
+                className="card-icon"
+                style={{ height: "60", width: "60px" }}
+              />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
               </h3>
@@ -58,8 +55,11 @@ const CoreFutures = () => {
               </p>
               <p className="card-review">100+ Reviews</p>
             </div>
-            <div className="card" id='box3'  onMouseOver={cardHover}>
-              <SignpostOutlinedIcon style={{height:"60", width:"60px"}} className="card-icon"/>
+            <div className="card" id="box3">
+              <SignpostOutlinedIcon
+                style={{ height: "60", width: "60px" }}
+                className="card-icon"
+              />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
               </h3>
@@ -69,8 +69,11 @@ const CoreFutures = () => {
               </p>
               <p className="card-review">100+ Reviews</p>
             </div>
-            <div className="card" id='box4'  onMouseOver={cardHover}>
-              <ExploreOutlinedIcon className="card-icon" style={{height:"60", width:"60px"}}/>
+            <div className="card" id="box4">
+              <ExploreOutlinedIcon
+                className="card-icon"
+                style={{ height: "60", width: "60px" }}
+              />
               <h3 className="card-head Play-fair">
                 Tell Us What You Want To Do
               </h3>

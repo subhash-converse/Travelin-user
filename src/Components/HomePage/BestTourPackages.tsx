@@ -41,13 +41,15 @@ const BestTourPackages = () => {
                 return null;
               }
             })}
-            
           </div>
           <div className="flex justify-center mt-[32px]">
-              <button className="button tour-pic-btn" onClick={showPackages}>
-                <span className="text"> {btnOff ? "close" : "view All Packages"}</span>
-              </button>
-            </div>
+            <button className="button tour-pic-btn" onClick={showPackages}>
+              <span className="text">
+                {" "}
+                {btnOff ? "close" : "view All Packages"}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

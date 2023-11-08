@@ -1,6 +1,3 @@
-// <========== Componets ==========>
-import longcard1 from "../../Assets/Images/HomeImage/long-card3.jpg";
-
 // <========== icons ==========>
 import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,13 +21,13 @@ const LongCard = (props: data) => {
     <div>
       {
         <div className=" long-card-width image-box rounded-lg relative   h-[180px] md:h-[368px] md:w-full grid items-center md:items-end ">
-        {/* <div
-          className=" image background-img img-radius p-[16px]"
-          style={{ backgroundImage: `url(${longcard1})` }}
-        > */}
-        <div className="image-box h-full w-full">
-          <img className="image h-full w-full" src={longcard1} alt="" />
-        </div>
+          <div className="image-box h-full w-full">
+            <img
+              className="image h-full w-full"
+              src={props.data.image}
+              alt=""
+            />
+          </div>
 
           <div className="absolute bottom-0 p-3">
             <h3 className="yellow Play-fair text-[18px] mb-2">
@@ -40,14 +37,23 @@ const LongCard = (props: data) => {
               {props.data.country}
             </h3>
             <div className="rating text-[#FDC703]  ">
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="ms-2 white">(18)</span>
-                          </div>
-                          
+              <span className="fa fa-star checked">
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+              <span className="fa fa-star checked">
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+              <span className="fa fa-star checked">
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+              <span className="fa fa-star checked">
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+              <span className="fa fa-star checked">
+                <FontAwesomeIcon icon={faStar} />
+              </span>
+              <span className="ms-2 white">(18)</span>
+            </div>
 
             <div className="flex justify-between">
               <div className="white">
@@ -60,7 +66,6 @@ const LongCard = (props: data) => {
               </div>
             </div>
           </div>
-        
         </div>
       }
     </div>

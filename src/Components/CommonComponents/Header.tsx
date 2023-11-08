@@ -1,5 +1,9 @@
 // <========== icons ==========>
-import { faAngleDown, faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faBars,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -84,130 +88,449 @@ const Header = () => {
             </div>
           </div>
 
-          {/* .......................................................................................... */}
-
           <div className="hidden xl:inline-flex w-auto items-center gap-x-5">
-            <span className="nav"><Link to="/">Home</Link></span>
+            <span className="nav">
+              <Link to="/">HOME</Link>
+            </span>
             <span className="nav">ABOUT US</span>
 
-            {/* .......................................... */}
             <div className="dropdown inline-block relative">
-
               <button className="nav font-semibold py-2  rounded inline-flex items-center">
-                <span>DESTINATION <span><FontAwesomeIcon icon={faAngleDown} /></span></span>
+                <span>
+                  DESTINATION{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </span>
               </button>
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
-                <li><a className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">DESTINATION LIST</a></li>
-                <li><a className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">DESTINATION DETAIL</a></li>
+                <li>
+                  <a
+                    className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    DESTINATION LIST
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    DESTINATION DETAIL
+                  </a>
+                </li>
               </ul>
             </div>
 
-            {/* ................................................... */}
-
             <div className="dropdown inline-block relative">
-
               <button className="nav font-semibold py-2  rounded inline-flex items-center">
-                <span>TOURS <span><FontAwesomeIcon icon={faAngleDown} /></span></span>
+                <span>
+                  TOURS{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </span>
               </button>
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">TOUR LIST</a>  
-                      <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>                      </ul>      
-                  </li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">TOUR GRID</a>  
-                      <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                          <li><Link className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" to="/leftGrid"><span>Tour Grid Leftsidebar</span></Link></li>
-                          <li><Link className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" to="#"><span>Tour Grid Rightsidebar</span></Link></li>
-                          <li><Link className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" to="#"><span>Tour Grid Fullwidth</span></Link></li>
-                      </ul>      
-                  </li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">TOUR SINGLE</a>  
-                      <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                          <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span></span><span></span></span></a></li>
-                      </ul>      
-                  </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    TOUR LIST
+                  </a>
+                  <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </a>
+                    </li>{" "}
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    TOUR GRID
+                  </a>
+                  <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <Link
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        to="/leftGrid"
+                      >
+                        <span>Tour Grid Leftsidebar</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        to="#"
+                      >
+                        <span>Tour Grid Rightsidebar</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        to="#"
+                      >
+                        <span>Tour Grid Fullwidth</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    TOUR SINGLE
+                  </a>
+                  <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        <span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
-          
-            {/* ................................................................. */}
 
-            
             <div className="dropdown inline-block relative">
-
-                <button className="nav font-semibold py-2  rounded inline-flex items-center">
-                  <span>PAGES <span><FontAwesomeIcon icon={faAngleDown} /></span></span>
-                </button>
-
-                <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
-                  <li><a className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Guide</a></li>
-                  <li><a className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Booking</a></li>
-                  <li><a className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Confirmation</a></li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span>Services</span><span></span></span></a>
-                    <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services List</a></li>
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services Detail</a></li>
-                    </ul> 
-                  </li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span></span>Gallery<span><span></span></span></a>
-                    <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Gallery</a></li>
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Gallery Masonary</a></li>
-                    </ul> 
-                  </li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span>Error</span><span></span></span></a>
-                    <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Error 1</a></li>
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Error 2</a></li>
-                    </ul> 
-                  </li>
-                  <li><a className="rounded-b bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Login / Register</a></li>
-                  <li><a className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Coming Soon</a></li>
-                  <li><a className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Testimonials</a></li>
-                  <li><a className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Faq</a></li>
-                  <li><a className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Contact Us</a></li>
-                  <li><a className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap" href="#">Dashboard</a></li>
-                </ul>
-            </div>
-
-             {/* ................................................................. */}
-
-
-           
-              <div className="dropdown inline-block relative">
-
               <button className="nav font-semibold py-2  rounded inline-flex items-center">
-                <span>BLOG <span><FontAwesomeIcon icon={faAngleDown} /></span></span>
+                <span>
+                  PAGES{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </span>
               </button>
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span>Blog Grid</span><span></span></span></a>
-                    <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services List</a></li>
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services Detail</a></li>
-                    </ul> 
-                  </li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span>Services</span><span></span></span></a>
-                    <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services List</a></li>
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services Detail</a></li>
-                    </ul> 
-                  </li>
-                  <li className="dropdown"><a className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#"><span><span>Services</span><span></span></span></a>
-                    <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services List</a></li>
-                       <li><a className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap" href="#">Services Detail</a></li>
-                    </ul> 
-                  </li>
+                <li>
+                  <a
+                    className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Guide
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Booking
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Confirmation
+                  </a>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    <span>
+                      <span>Services</span>
+                      <span></span>
+                    </span>
+                  </a>
+                  <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services List
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services Detail
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    <span></span>Gallery
+                    <span>
+                      <span></span>
+                    </span>
+                  </a>
+                  <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Gallery Masonary
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    <span>
+                      <span>Error</span>
+                      <span></span>
+                    </span>
+                  </a>
+                  <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Error 1
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Error 2
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    className="rounded-b bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Login / Register
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Coming Soon
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Faq
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    Dashboard
+                  </a>
+                </li>
               </ul>
-              </div>
+            </div>
 
-            {/* ............................................................. */}
+            <div className="dropdown inline-block relative">
+              <button className="nav font-semibold py-2  rounded inline-flex items-center">
+                <span>
+                  BLOG{" "}
+                  <span>
+                    <FontAwesomeIcon icon={faAngleDown} />
+                  </span>
+                </span>
+              </button>
+
+              <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    <span>
+                      <span>Blog Grid</span>
+                      <span></span>
+                    </span>
+                  </a>
+                  <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services List
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services Detail
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    <span>
+                      <span>Services</span>
+                      <span></span>
+                    </span>
+                  </a>
+                  <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services List
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services Detail
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="dropdown">
+                  <a
+                    className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                  >
+                    <span>
+                      <span>Services</span>
+                      <span></span>
+                    </span>
+                  </a>
+                  <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services List
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
+                        href="#"
+                      >
+                        Services Detail
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
 
             <div>
               <FontAwesomeIcon
@@ -216,7 +539,6 @@ const Header = () => {
               />
             </div>
           </div>
-          {/* ................................................................................ */}
           <div className="flex">
             <FontAwesomeIcon
               icon={faBars}
@@ -235,8 +557,8 @@ const Header = () => {
           </div>
         </div>
       </header>
-      </div>
-        );
+    </div>
+  );
 };
 
 export default Header;

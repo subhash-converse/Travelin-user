@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 // <========== Layout ==========>
 
@@ -14,52 +14,52 @@ import ExploreYourLife from "../HomePage/ExploreYourLife";
 import GoodReviews from "../HomePage/GoodReviews";
 import ArticlesPosts from "../HomePage/ArticlesPosts";
 import CoreFutures from "../HomePage/CoreFutures";
-import Patners from '../HomePage/Partners';
+import Patners from "../HomePage/Partners";
 
 const HomeLayout = () => {
   return (
     <>
-    <div>
-      <LandingPage />
-    </div>
-    <div>
-      <FindHolidayForm />
-    </div>
-    <div >
-      <CoreFutures/>
-    </div>
-    <div>
-      <TopDestinations />
-    </div>
-    <div>
-      <BestTourPackages />
-    </div>
-    <div>
-      <LastMinuteDeals />
-    </div>
-    <div>
-      <GetToKnowUs />
-    </div>
-    <div>
-      <GuideCarousal />
-    </div>
-    <div>
-      <Offer />
-    </div>
-    <div >
-      <ExploreYourLife />
-    </div>
-    <div>
-      <GoodReviews/>
-    </div>
-    <div>
-      <ArticlesPosts/>
-    </div>
-    <div>
-      <Patners/>
-    </div>
+      <div>
+        <LandingPage />
+      </div>
+      <div>
+        <FindHolidayForm />
+      </div>
+      <div>
+        <CoreFutures />
+      </div>
+      <div>
+        <TopDestinations />
+      </div>
+      <div>
+        <BestTourPackages />
+      </div>
+      <div>
+        <LastMinuteDeals />
+      </div>
+      <div>
+        <GetToKnowUs />
+      </div>
+      <div>
+        <GuideCarousal />
+      </div>
+      <div>
+        <Offer />
+      </div>
+      <div>
+        <ExploreYourLife />
+      </div>
+      <div>
+        <GoodReviews />
+      </div>
+      <div>
+        <ArticlesPosts />
+      </div>
+      <div>
+        <Patners />
+      </div>
     </>
-  )
-}
+  );
+};
 
 export default HomeLayout;

@@ -9,15 +9,12 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== images ==========>
-import carousel1 from "../../Assets/Images/HomeImage/corrosal1.jpg";
-
-// <========== images ==========>
-import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-
 interface LastMainDeal {
+  id: number;
   image: any;
   country: string;
   touristPlace: string;
@@ -53,7 +50,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
         centeredSlides={false}
         loop={true}
         autoplay={{
-          delay: 8000,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -67,60 +64,76 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
           let filter = carousal.catogory.find((a) => {
             if (a.toLocaleLowerCase().trim() === "landing carowsal") {
               return a;
-            }
-            else{
-              return null
+            } else {
+              return null;
             }
           });
           if (filter) {
             return (
               <SwiperSlide className="flex justify-center w-full">
-                <div className="image-box">
-                
-                  <div className="h-full w-full">
-                    <img className="image" src={carousel1} alt="" />
-                  </div>
-                  
-                  <div className="background-text z-[1] w-full h-full absolute top-[40%] ">
-                    <h2 className="yellow Play-fair swiper-title1">
-                      {carousal.country}
-                    </h2>
-                    <h1 className="white Play-fair swiper-title2">
-                      {carousal.touristPlace}
-                    </h1>
-                    {/* .......................... */}
-                    <div className="rating-main pb-1">
-                          <div className="rating text-[#FDC703]  ">
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="fa fa-star checked"><FontAwesomeIcon icon={faStar} /></span>
-                          <span className="ms-2 white">(18)</span>
-                          </div>
-                          </div>
-                    {/* ............................... */}
-                    <span className="yellow">{carousal.reviewsStar}</span>
-                    <div className="flex gap-x-2 justify-center">
-                      <span className="border-r-[1px] pr-2 yellow">
-                        &#36;
-                        <span className="swiper-amount font-extrabold">{carousal.price}</span>
-                      </span>
-                      <span className="white text-[16px] self-end">per person</span>
+                <div key={carousal.id} className="bg-black">
+                  <div className="image-box">
+                    <div className="h-full w-full relative ">
+                      <img className="image" src={carousal.image} alt="" />
+                      <div className="bg-[#000] opacity-[0.6]  w-full h-full absolute top-0  "></div>
                     </div>
-                    <h3  className="white text-[16px]">
-                      <span><CalendarMonthOutlinedIcon className=""/></span>
-                      <span className="font-black">{carousal.days}Days Tour</span>
+
+                    <div className="background-text z-[3] w-full h-full absolute top-[40%] ">
+                      <h2 className="yellow Play-fair swiper-title1">
+                        {carousal.country}
+                      </h2>
+                      <h1 className="white Play-fair swiper-title2">
+                        {carousal.touristPlace}
+                      </h1>
+
+                      <div className="rating-main pb-1">
+                        <div className="rating text-[#FDC703]  ">
+                          <span className="fa fa-star checked">
+                            <FontAwesomeIcon icon={faStar} />
+                          </span>
+                          <span className="fa fa-star checked">
+                            <FontAwesomeIcon icon={faStar} />
+                          </span>
+                          <span className="fa fa-star checked">
+                            <FontAwesomeIcon icon={faStar} />
+                          </span>
+                          <span className="fa fa-star checked">
+                            <FontAwesomeIcon icon={faStar} />
+                          </span>
+                          <span className="fa fa-star checked">
+                            <FontAwesomeIcon icon={faStar} />
+                          </span>
+                          <span className="ms-2 white">(18)</span>
+                        </div>
+                      </div>
+
+                      <span className="yellow">{carousal.reviewsStar}</span>
+                      <div className="flex gap-x-2 justify-center">
+                        <span className="border-r-[1px] pr-2 yellow">
+                          &#36;
+                          <span className="swiper-amount font-extrabold">
+                            {carousal.price}
+                          </span>
+                        </span>
+                        <span className="white text-[16px] self-end">
+                          per person
+                        </span>
+                      </div>
+                      <h3 className="white text-[16px]">
+                        <span>
+                          <CalendarMonthOutlinedIcon className="" />
+                        </span>
+                        <span className="font-black">
+                          {carousal.days}Days Tour
+                        </span>
                       </h3>
-                   </div>
-                  
-                {/* </div> */}
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
             );
-          }
-          else{
-            return null
+          } else {
+            return null;
           }
         })}
       </Swiper>

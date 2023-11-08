@@ -4,9 +4,7 @@ import mountain from "../../Assets/Images/HomeImage/mountain.png";
 // <========== icons ==========>
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
-import {
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FindHolidayForm = () => {
@@ -23,7 +21,7 @@ const FindHolidayForm = () => {
           alt="mountain"
           className="w-[33.33%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
         />
-         <img
+        <img
           src={mountain}
           alt="mountain"
           className="w-[33.33%] rotate mountain-back lg:max-h-[130px] flex justify-center mt-8 lg:mt-0 z-10 "
@@ -93,7 +91,6 @@ const FindHolidayForm = () => {
                 />
                 <span> Search Now</span>
               </span>
-              
             </button>
           </form>
         </div>
