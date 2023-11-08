@@ -25,35 +25,21 @@ const ExploreYourLife = () => {
       </div>
 
       <div className="w-full flex flex-col justify-center p-0">
-        <div className="call-button flex justify-center items-center relative ">
-          <div className="video-button text-center position-relative">
-            <div className="call-button text-center">
-              <button
-                type="button"
-                className="play-btn js-video-button"
-                data-video-id="152879427"
-                data-channel="vimeo"
-              >
-                <i className="fa fa-play bg-blue"></i>
-              </button>
-            </div>
-            <div className="video-figure"></div>
-          </div>
-          {/* <FontAwesomeIcon icon={faPlay}  className=" bg-[#777F94] p-5 px-6 rounded-[50%] text-white text-[25px]"/> */}
-          <div className="video-button text-center position-relative">
-            <div className="call-button text-center">
-              <button
-                type="button"
-                className="play-btn js-video-button"
-                data-video-id="152879427"
-                data-channel="vimeo"
-              >
-                <i className="fa fa-play bg-blue"></i>
-              </button>
-            </div>
-            <div className="video-figure"></div>
-          </div>
-        </div>
+      <div className="call-button flex justify-center items-center relative">
+  <div className="video-button text-center position-relative">
+    <div className="call-button text-center">
+      <button
+        type="button"
+        className="play-btn js-video-button"
+        data-video-id="152879427"
+        data-channel="vimeo"
+      >
+        <i className="fa fa-play bg-blue rounded-circle"></i>
+      </button>
+    </div>
+    <div className="video-figure"></div>
+  </div>
+</div>
         <div className="flex">
           <img
             className="rotate h-[130px] w-[100%] lg:w-[50%]"

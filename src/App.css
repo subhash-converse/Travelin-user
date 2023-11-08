@@ -569,25 +569,42 @@ border-bottom: 1px dashed #F1F1F1 ;
 
 /* ......................... */
 
+/* .call-button button.play-btn::after {
+  -webkit-animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
+} */
+
+.call-button button.play-btn {
+  position: relative;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background: #ffffff2e;
+  border: none;
+  border-radius: 50%;
+}
+
+.call-button button.play-btn::before {
+  -webkit-animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
+}
 .call-button button.play-btn::after {
   -webkit-animation: ripple 2s linear 1s infinite;
   animation: ripple 2s linear 1s infinite;
 }
+
 .call-button button.play-btn::after, .call-button button.play-btn::before {
   content: '';
   display: block;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   bottom: 0;
   left: 0;
   border-radius: 50%;
   border: 2px solid #fdc70380;
   opacity: 0.3;
-}
-*, ::after, ::before {
-  box-sizing: border-box;
 }
 
 .call-button button.play-btn i {
@@ -605,38 +622,26 @@ border-bottom: 1px dashed #F1F1F1 ;
   -ms-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-.fa, .fas {
-  font-weight: 900;
-}
-.fa, .far, .fas {
-  font-family: "Font Awesome 5 Free";
-}
-.fa, .fab, .fad, .fal, .far, .fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-user agent stylesheet
+
 i {
   font-style: italic;
 }
 
+@keyframes ripple {
+  0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+  }
+
+  75% {
+      -webkit-transform: scale(1.75);
+      transform: scale(1.75);
+      opacity: 1;
+  }
+
+  100% {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+      opacity: 0;
+  }
+}

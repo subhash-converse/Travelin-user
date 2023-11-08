@@ -273,7 +273,7 @@ const Footer = () => {
 
             {/* col 2 */}
             <div className="mb-[32px] flex flex-col lg:px-2">
-              <h2 className="footer-heading ">Quick Link</h2>
+              <h2 className="">Quick Link</h2>
               <div className="border-b-[2px] border-white w-[60px] pb-[10px] mb-[30px]"></div>
               <div className="flex flex-col gap-4 md:justify-between h-full ">
                 <h3>About Us</h3>
@@ -287,7 +287,7 @@ const Footer = () => {
 
             {/* col 3 */}
             <div className="mb-[32px] flex flex-col lg:px-2">
-              <h2 className="footer-heading ">Categories</h2>
+              <h2 className=" ">Categories</h2>
               <div className="border-b-[2px] border-white w-[60px] pb-[10px] mb-[30px]"></div>
               <div className="flex flex-col gap-4 md:justify-between h-full ">
                 <h3>Travel</h3>
@@ -301,7 +301,7 @@ const Footer = () => {
 
             {/* col 4 */}
             <div className="mb-[32px] flex flex-col  lg:px-2">
-              <h2 className="footer-heading ">Newsletter</h2>
+              <h2 className=" ">Newsletter</h2>
               <div className="border-b-[2px] border-white w-[60px] pb-[10px] mb-[30px]"></div>
               <div className="grid gap-4">
                 <p>

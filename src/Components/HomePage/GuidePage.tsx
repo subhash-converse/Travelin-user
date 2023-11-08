@@ -24,7 +24,7 @@ const GuideCarousal = () => {
 
         <div className='className="w-full flex justify-center px-4  background-travelers"'>
           <div className="lg:max-w-[1290px] grid grid-cols-1 pt-[57px] ">
-            <GuideComponent carouselData={LastMainDeals} />;
+            <GuideComponent carouselData={LastMainDeals} />
           </div>
         </div>
       </div>
