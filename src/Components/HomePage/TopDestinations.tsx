@@ -8,6 +8,7 @@ import Destination from "./Destination";
 const TopDestinations = () => {
 
   interface data {
+    id:number;
     image: any;
     country: string;
     touristPlace: string;
@@ -55,7 +56,7 @@ const TopDestinations = () => {
             lg:grid-cols-7
             xl:max-w-[1290px] h-full "
           >
-             <Destination data={filteredData} />;
+             <Destination data={filteredData} />
           </div>
         </div>
       </div>

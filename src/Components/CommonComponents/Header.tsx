@@ -17,19 +17,10 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 
 // <========== images ==========>
 import logo from "../../Assets/Images/HomeImage/logo.png";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [dList, setDList] = useState(false);
 
-  function onHover(e: any) {
-    console.log(e);
-  }
-
-  function mouseout(e: any) {
-    console.log(e);
-  }
 
   return (
     <div className="">
@@ -80,7 +71,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="h-[100px] bg-white  flex justify-center items-center">
+      <header className="h-[100px] bg-white  flex justify-center items-center relative">
         <div className="flex w-[90%] justify-between md:max-w-[696px] lg:max-w-[1296px] ">
           <div className="xl:inline-flex items-center">
             <div className="pt-[1px]">
@@ -106,20 +97,20 @@ const Header = () => {
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
                 <li>
-                  <a
+                  <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     DESTINATION LIST
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     DESTINATION DETAIL
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -136,55 +127,55 @@ const Header = () => {
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     TOUR LIST
-                  </a>
+                  </Link>
                   <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         <span>
                           <span></span>
                           <span></span>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         <span>
                           <span></span>
                           <span></span>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         <span>
                           <span></span>
                           <span></span>
                         </span>
-                      </a>
+                      </Link>
                     </li>{" "}
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     TOUR GRID
-                  </a>
+                  </Link>
                   <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
                       <Link
@@ -213,45 +204,45 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     TOUR SINGLE
-                  </a>
+                  </Link>
                   <ul className="dropdown-content absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         <span>
                           <span></span>
                           <span></span>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         <span>
                           <span></span>
                           <span></span>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         <span>
                           <span></span>
                           <span></span>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -270,163 +261,163 @@ const Header = () => {
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
                 <li>
-                  <a
+                  <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Guide
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Booking
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Confirmation
-                  </a>
+                  </Link>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     <span>
                       <span>Services</span>
                       <span></span>
                     </span>
-                  </a>
+                  </Link>
                   <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services List
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services Detail
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     <span></span>Gallery
                     <span>
                       <span></span>
                     </span>
-                  </a>
+                  </Link>
                   <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Gallery
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Gallery Masonary
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     <span>
                       <span>Error</span>
                       <span></span>
                     </span>
-                  </a>
+                  </Link>
                   <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Error 1
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Error 2
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="rounded-b bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Login / Register
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Coming Soon
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Testimonials
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Faq
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     Dashboard
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -443,89 +434,89 @@ const Header = () => {
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     <span>
                       <span>Blog Grid</span>
                       <span></span>
                     </span>
-                  </a>
+                  </Link>
                   <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services List
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services Detail
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     <span>
                       <span>Services</span>
                       <span></span>
                     </span>
-                  </a>
+                  </Link>
                   <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services List
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services Detail
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
+                  <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                    href="#"
+                   to="#"
                   >
                     <span>
                       <span>Services</span>
                       <span></span>
                     </span>
-                  </a>
+                  </Link>
                   <ul className="dropdown-content w-[150px] absolute hidden text-gray-700 pl-5 ml-[162px] -mt-10">
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services List
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                       to="#"
                       >
                         Services Detail
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -557,6 +548,9 @@ const Header = () => {
           </div>
         </div>
       </header>
+      <div className="absolute w-full h-[200px] bg-black xl:hidden">
+
+      </div>
     </div>
   );
 };

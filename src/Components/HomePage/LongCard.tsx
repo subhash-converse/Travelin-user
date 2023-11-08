@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface data {
   data: {
+    id:number;
     image: any;
     country: string;
     touristPlace: string;
@@ -18,7 +19,7 @@ interface data {
 
 const LongCard = (props: data) => {
   return (
-    <div>
+    <div key={props.data.id}>
       {
         <div className=" long-card-width image-box rounded-lg relative   h-[180px] md:h-[368px] md:w-full grid items-center md:items-end ">
           <div className="image-box h-full w-full">

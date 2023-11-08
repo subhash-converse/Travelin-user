@@ -9,6 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 interface LastMainDeal {
+  id:number;
   image: any;
   country: string;
   touristPlace: string;
@@ -66,7 +67,8 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
 
           if (filter) {
             return (
-              <SwiperSlide className="flex justify-center ">
+              <div key={carousal.id}>
+                <SwiperSlide className="flex justify-center ">
                 <div className="image-box rounded-xl relative h-[400px] hover:h-[385px] duration-100">
                   <div>
                     <img src={carousal.guideImage} alt="" className="image" />
@@ -80,6 +82,8 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
                   </div>
                 </div>
               </SwiperSlide>
+              </div>
+              
             );
           } else {
             return null;

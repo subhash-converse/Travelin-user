@@ -3,8 +3,6 @@ import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // <========== images ==========>
-import topPick1 from "../../Assets/Images/HomeImage/TopPick1.jpg";
-
 import React from "react";
 
 interface data {
@@ -26,8 +24,7 @@ interface data {
 
 const Card: React.FC<data> = (props) => {
   return (
-    <div
-      key={props.data.id}
+    <div key={props.data.id}
       className="last-deal card-hover btn-fromLeft card-line  bg-white main-input rounded-t-xl w-full  lg:h-[510px]  xl:h-[570px]  rounded-xl"
     >
       <div className="image-box rounded-t-xl">

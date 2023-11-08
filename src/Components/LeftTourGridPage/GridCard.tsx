@@ -19,7 +19,7 @@ const GridCard = () => {
   const [grid, setGrid] = useState(true);
 
   const cardType = (icon: string) => {
-    if (icon == "bar") {
+    if (icon === "bar") {
       setGrid(false);
     } else {
       setGrid(true);
@@ -103,9 +103,9 @@ const GridCard = () => {
             </div>
 
             <div
-              className={`grid grid-cols-1 ${
+              className={`grid grid-cols-1 md:w- ${
                 grid ? "md:grid-cols-2" : ""
-              } gap-7 py-5`}
+              } gap-7 py-5`} 
             >
               {carouselData.map((data) => {
                 let filter = data.catogory.find(

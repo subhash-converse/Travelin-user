@@ -70,8 +70,9 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
           });
           if (filter) {
             return (
+              <div key={carousal.id}>
               <SwiperSlide className="flex justify-center w-full">
-                <div key={carousal.id} className="bg-black">
+                <div  className="bg-black">
                   <div className="image-box">
                     <div className="h-full w-full relative ">
                       <img className="image" src={carousal.image} alt="" />
@@ -88,19 +89,19 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
 
                       <div className="rating-main pb-1">
                         <div className="rating text-[#FDC703]  ">
-                          <span className="fa fa-star checked">
+                          <span className=" fa-star checked">
                             <FontAwesomeIcon icon={faStar} />
                           </span>
-                          <span className="fa fa-star checked">
+                          <span className=" fa-star checked">
                             <FontAwesomeIcon icon={faStar} />
                           </span>
-                          <span className="fa fa-star checked">
+                          <span className=" fa-star checked">
                             <FontAwesomeIcon icon={faStar} />
                           </span>
-                          <span className="fa fa-star checked">
+                          <span className=" fa-star checked">
                             <FontAwesomeIcon icon={faStar} />
                           </span>
-                          <span className="fa fa-star checked">
+                          <span className=" fa-star checked">
                             <FontAwesomeIcon icon={faStar} />
                           </span>
                           <span className="ms-2 white">(18)</span>
@@ -131,6 +132,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
                   </div>
                 </div>
               </SwiperSlide>
+              </div>
             );
           } else {
             return null;

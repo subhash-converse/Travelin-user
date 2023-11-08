@@ -22,8 +22,7 @@ interface data {
 
 const ArticalsCarousal = (props: data) => {
   return (
-    <div
-      key={props.data.id}
+    <div key={props.data.id}
       className="bg-white btn-fromLeft card-hover card-line main-input img-radius w-full  lg:h-[510px]  xl:h-[570px]"
     >
       <div className="image-box rounded-t-xl">
