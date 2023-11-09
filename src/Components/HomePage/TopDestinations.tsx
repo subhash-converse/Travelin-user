@@ -24,16 +24,17 @@ const TopDestinations = () => {
 
   let filteredData:data[] = [];
   {carouselData.map((data) => {
-    let filter = data.catogory.find(
-      (a) => a.toLowerCase().trim() === "destination");
-    if (filter) {
+    let filter = data.catogory.find((a) => a.toLowerCase().trim() === "destination");
+    if (filter){
       return filteredData.push(data)        
-    } else {
+    } 
+    else {
       return null;
     }
   })}
 
   return (
+    <>
     <div>
       <div className="px-4">
         <div className="flex flex-col justify-center items-center p-[50px]">
@@ -61,6 +62,7 @@ const TopDestinations = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

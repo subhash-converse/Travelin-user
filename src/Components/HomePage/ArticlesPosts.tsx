@@ -3,6 +3,23 @@ import carouselData from "../../Mock/PackageData";
 import ArticalsCarousal from "./ArticalsCarousal";
 
 const ArticlesPosts = () => {
+  
+    let articalArray:any = [];
+    carouselData.map((data) => {
+      let filter = data.catogory.find(
+        (a) => a.toLowerCase().trim() === "articles"
+      );
+      if (filter) {
+      return articalArray.push(data)
+        
+      } else {
+        return null;
+      }
+    })
+ 
+  
+  
+
   return (
     <div  className="">
       <div className="flex flex-col justify-center items-center ]">
@@ -20,16 +37,7 @@ const ArticlesPosts = () => {
       </div>
       <div className="w-full flex justify-center p-4">
         <div className="max-w-[1290px] grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3">
-          {carouselData.map((data) => {
-            let filter = data.catogory.find(
-              (a) => a.toLowerCase().trim() === "articles"
-            );
-            if (filter) {
-              return <ArticalsCarousal data={data} />;
-            } else {
-              return null;
-            }
-          })}
+        <ArticalsCarousal data={articalArray} />
         </div>
       </div>
     </div>

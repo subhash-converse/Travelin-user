@@ -21,14 +21,16 @@ interface data {
     position?: string;
   };
 
-const Card = (props:{data:data}) => {
+const Card = (props:{data:data[]}) => {
   return (
-    <div key={`Card-${props.data.id}`}
+    <>
+    { props.data.map((data) => (
+      <div key={`Card-${data.id}`}
       className="last-deal card-hover btn-fromLeft card-line  bg-white main-input rounded-t-xl w-full  lg:h-[510px]  xl:h-[570px]  rounded-xl"
     >
       <div className="image-box rounded-t-xl">
         <div
-          style={{ backgroundImage: `url(${props.data.image})` }}
+          style={{ backgroundImage: `url(${data.image})` }}
           className="image background-top-pick w-full h-[190px] rounded-t-xl md:h-[221px] xl:h-[274px] flex items-end"
         ></div>
       </div>
@@ -36,17 +38,17 @@ const Card = (props:{data:data}) => {
       <div className=" p-[24px] pt-[32px] ">
         <div className="flex">
           <h3 className="Play-fair text-[18px] text-[#777777]">
-            {props.data.country}
+            {data.country}
           </h3>
           <div className="w-full text-[16px] font-semibold  px-[24px] flex justify-end ">
             <button className="tour-pic-btn relative top-[-60px]">
               <FontAwesomeIcon icon={faCalendarDays} />
-              <span> {`${props.data.days} Days Tours`} </span>
+              <span> {`${data.days} Days Tours`} </span>
             </button>
           </div>
         </div>
         <h3 className="Play-fair text-[21px] lg:text-[26px] mb-2">
-          {props.data.territory}
+          {data.territory}
         </h3>
         <div className="rating-main pb-1">
           <div className="rating text-[#FDC703]  ">
@@ -69,15 +71,20 @@ const Card = (props:{data:data}) => {
           </div>
         </div>
         <p className="text-[#777777] text-[16px] mb-4">
-          {props.data.description}
+          {data.description}
         </p>
         <div>
-          <span className="text-[#777777] text-[20px] font-bold">{`$${props.data.price}`}</span>{" "}
+          <span className="text-[#777777] text-[20px] font-bold">{`$${data.price}`}</span>{" "}
           <span> | </span>{" "}
           <span className="text-[16px] text-[#777777]">Per person</span>
         </div>
       </div>
     </div>
+    ))
+      
+    }
+    </>
+    
   );
 };
 

@@ -14,6 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 interface LastMainDeal {
+  id:number;
   image: any;
   country: string;
   touristPlace: string;
@@ -58,7 +59,9 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
+        {/* {console.log(props.carouselData)} */}
         {props.carouselData.map(function (carousal: LastMainDeal) {
+      
           let filter = carousal.catogory.find(function (a) {
             if (a.toLocaleLowerCase().trim() === "review") {
               return a;
@@ -68,7 +71,8 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
           });
           if (filter) {
             return (
-              <SwiperSlide className="flex justify-center ">
+              <div key={`ReviewComponent-${carousal.id}`}>
+                  <SwiperSlide className="flex justify-center ">
                 <div className=" carousel-bg lite-input h-[383px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
                   <div className="h-[30%] flex items-center ">
                     <p className=" text-[#777]">
@@ -99,6 +103,8 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
                   </div>
                 </div>
               </SwiperSlide>
+              </div>
+              
             );
           } else {
             return null;

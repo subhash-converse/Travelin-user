@@ -13,6 +13,18 @@ const BestTourPackages = () => {
   const showPackages = () => {
     setBtnOn(!btnOff);
   };
+let bestArray:any = [];
+  carouselData.map((data) => {
+    let filter = data.catogory.find(
+      (a) => a.toLowerCase().trim() === "best tour package"
+    );
+    if (filter) {
+     return bestArray.push(data)
+       
+    } else {
+      return null;
+    }
+  })
 
   return (
     <div>
@@ -31,16 +43,7 @@ const BestTourPackages = () => {
 
         <div className="w-full flex flex-col items-center  px-4">
           <div className="lg:max-w-[1290px] grid gap-[31px] grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {carouselData.map((data) => {
-              let filter = data.catogory.find(
-                (a) => a.toLowerCase().trim() === "best tour package"
-              );
-              if (filter) {
-                return <Card data={data} />;
-              } else {
-                return null;
-              }
-            })}
+          <Card data={bestArray} />
           </div>
           <div className="flex justify-center mt-[32px]">
             <button className="button tour-pic-btn" onClick={showPackages}>

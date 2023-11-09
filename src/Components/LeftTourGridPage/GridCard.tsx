@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LeftLineCard from "./LeftLineCard";
+import { Link } from "react-router-dom";
 
 const GridCard = () => {
   const [grid, setGrid] = useState(true);
@@ -66,36 +67,36 @@ const GridCard = () => {
 
                   <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
                     <li>
-                      <a
+                      <Link
                         className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                        to="#"
                       >
                         Sort By
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                        to="#"
                       >
                         Average rating
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                        to="#"
                       >
                         Price: low to high
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                        href="#"
+                        to="#"
                       >
                         Price: high to low
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

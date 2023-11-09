@@ -18,28 +18,28 @@ interface data {
     position?: string;
 }
 
-const ArticalsCarousal = (props: {data:data}) => {
-//  console.log(props)
-//   console.log(props.data.id)
-  // debugger
+const ArticalsCarousal = (props: {data:data[]}) => {
+  console.log(props.data)
   return (
-    <div key={`ArticalsCarousal-${props.data.id}`}
+    <>
+    {props.data.map((data)=>(
+      <div key={`ArticalsCarousal-${data.id}`}
    
       className="bg-white btn-fromLeft card-hover card-line main-input img-radius w-full  lg:h-[510px]  xl:h-[570px]"
     >
-      
+      {}
       <div className="image-box rounded-t-xl">
         <div
-          style={{ backgroundImage: `url(${props.data.image})` }}
+          style={{ backgroundImage: `url(${data.image})` }}
           className=" image background-top-pick w-full h-[190px] rounded-t-xl md:h-[221px] xl:h-[274px] flex items-end "
         ></div>
       </div>
       <div className=" p-[24px] ">
         <h3 className="Play-fair text-[18px] text-[#777777] mb-2">
-          {props.data.country}
+          {data.country}
         </h3>
         <h3 className="Play-fair text-[21px] lg:text-[26px] mb-2">
-          {props.data.territory}
+          {data.territory}
         </h3>
         <div className="mb-4">
           <div className="rating text-[#FDC703]  ">
@@ -62,13 +62,13 @@ const ArticalsCarousal = (props: {data:data}) => {
           </div>
         </div>
         <p className="text-[#777777] text-[16px] mb-4">
-          {props.data.description}
+          {data.description}
         </p>
 
         <div className="flex justify-between">
           <div className=" flex gap-1 items-center">
             <img
-              src={props.data.guideImage}
+              src={data.guideImage}
               className="h-[30px] w-[30px] rounded-[50%]"
               alt=""
             />
@@ -82,6 +82,12 @@ const ArticalsCarousal = (props: {data:data}) => {
         </div>
       </div>
     </div>
+    ))
+      
+    }
+    </>
+    
+    
   );
 };
 
