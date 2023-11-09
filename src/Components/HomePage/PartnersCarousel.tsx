@@ -22,13 +22,13 @@ const PartnersCarousel = () => {
   useEffect(() => {
     if (425 >= screenWidth) {
       setWindowWidth(1);
-    }else if (495 >= screenWidth) {
-      setWindowWidth(2); }
-    else if (768 >= screenWidth) {
+    } else if (495 >= screenWidth) {
+      setWindowWidth(2);
+    } else if (768 >= screenWidth) {
       setWindowWidth(3);
     } else if (1024 >= screenWidth) {
       setWindowWidth(5);
-    } 
+    }
   }, [screenWidth]);
   return (
     <div>

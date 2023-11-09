@@ -35,7 +35,7 @@ const CardCarousel = (props: { carouselData: datas[] }) => {
         }}
         pagination={{
           clickable: true,
-        }}  
+        }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets"

@@ -9,31 +9,29 @@ import carouselData from "../../Mock/PackageData";
 import parashoot from "../../Assets/Images/HomeImage/parashoot.png";
 
 const LastMinuteDeals = () => {
-  let lastArray:any = [];
+  let lastArray: any = [];
   carouselData.map((data) => {
     let filter = data.catogory.find(
       (a) => a.toLowerCase().trim() === "last minute deals"
     );
     if (filter) {
-     return lastArray.push(data)
-     
+      return lastArray.push(data);
     } else {
       return null;
     }
-  })
+  });
 
-let longArray:any = [];
+  let longArray: any = [];
   carouselData.map((data) => {
     let filter = data.catogory.find(
       (a) => a.toLowerCase().trim() === "long card"
     );
     if (filter) {
-     return longArray.push(data)
-       
+      return longArray.push(data);
     } else {
       return null;
     }
-  })
+  });
   return (
     <div>
       <div>
@@ -53,11 +51,11 @@ let longArray:any = [];
           <div className="w-full flex justify-center px-4">
             <div className="last-deal-div lg:max-w-[1290px] grid grid-cols-1 lg:grid-cols-5 gap-6 ">
               <div className="grid gap-[31px] md:grid-cols-2 lg:col-span-3 ">
-              <Card data={lastArray} />;
+                <Card data={lastArray} />;
               </div>
 
               <div className="long-card-div grid gap-[31px] lg:col-span-2  ">
-              <LongCard data={longArray} />
+                <LongCard data={longArray} />
               </div>
             </div>
           </div>

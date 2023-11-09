@@ -106,7 +106,7 @@ const GridCard = () => {
             <div
               className={`grid grid-cols-1 md:w- ${
                 grid ? "md:grid-cols-2" : ""
-              } gap-7 py-5`} 
+              } gap-7 py-5`}
             >
               {carouselData.map((data) => {
                 let filter = data.catogory.find(

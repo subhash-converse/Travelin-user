@@ -28,7 +28,10 @@ const Offer = () => {
             );
             if (filter) {
               return (
-                <div key={`offer-${data.id}`} className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1 overflow-hidden md:grid-cols-5 img-radius main-input ">
+                <div
+                  key={`offer-${data.id}`}
+                  className=" grid grid-cols-1 grid-rows-2 md:grid-rows-1 overflow-hidden md:grid-cols-5 img-radius main-input "
+                >
                   <div className="image-box  md:col-span-2 bg-cover relative">
                     <h3 className="rotate-off bg-[#FDC703]  py-[12px] z-10 px-14  text-white font-semibold absolute left-[-40px] top-[20px]">
                       {`${data.offer}% offer`}

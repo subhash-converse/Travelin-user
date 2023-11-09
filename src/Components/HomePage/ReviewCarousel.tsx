@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 interface LastMainDeal {
-  id:number;
+  id: number;
   image: any;
   country: string;
   touristPlace: string;
@@ -59,9 +59,7 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {/* {console.log(props.carouselData)} */}
         {props.carouselData.map(function (carousal: LastMainDeal) {
-      
           let filter = carousal.catogory.find(function (a) {
             if (a.toLocaleLowerCase().trim() === "review") {
               return a;
@@ -72,39 +70,38 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
           if (filter) {
             return (
               <div key={`ReviewComponent-${carousal.id}`}>
-                  <SwiperSlide className="flex justify-center ">
-                <div className=" carousel-bg lite-input h-[383px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
-                  <div className="h-[30%] flex items-center ">
-                    <p className=" text-[#777]">
-                      <em>
-                        <span>
-                          <FormatQuoteIcon
-                            style={{ height: "90", width: "50px" }}
-                            className="rotate text-[#777777] pt-4"
-                          />
-                        </span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore.
-                      </em>
-                    </p>
-                  </div>
-                  <div className="  w-full h-full flex flex-col items-center justify-center text-[#777] p-4 pt-0">
-                    <div className="h-[92px] w-[92px]">
-                      <img
-                        src={carousal.guideImage}
-                        alt=""
-                        className="  rounded-[50%]"
-                      />
+                <SwiperSlide className="flex justify-center ">
+                  <div className=" carousel-bg lite-input h-[383px] m-10 bg-white  rounded-xl flex flex-col justify-center items-center ">
+                    <div className="h-[30%] flex items-center ">
+                      <p className=" text-[#777]">
+                        <em>
+                          <span>
+                            <FormatQuoteIcon
+                              style={{ height: "90", width: "50px" }}
+                              className="rotate text-[#777777] pt-4"
+                            />
+                          </span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore.
+                        </em>
+                      </p>
                     </div>
-                    <h3 className="Play-fair text-[22px]">
-                      {carousal.guideName}
-                    </h3>
-                    <h3 className="text-[16px]">{carousal.position}</h3>
+                    <div className="  w-full h-full flex flex-col items-center justify-center text-[#777] p-4 pt-0">
+                      <div className="h-[92px] w-[92px]">
+                        <img
+                          src={carousal.guideImage}
+                          alt=""
+                          className="  rounded-[50%]"
+                        />
+                      </div>
+                      <h3 className="Play-fair text-[22px]">
+                        {carousal.guideName}
+                      </h3>
+                      <h3 className="text-[16px]">{carousal.position}</h3>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
               </div>
-              
             );
           } else {
             return null;

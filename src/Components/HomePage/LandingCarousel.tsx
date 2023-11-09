@@ -71,67 +71,67 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
           if (filter) {
             return (
               <div key={`LandingCarousel${carousal.id}`}>
-              <SwiperSlide className="flex justify-center w-full">
-                <div  className="bg-black">
-                  <div className="image-box">
-                    <div className="h-full w-full relative ">
-                      <img className="image" src={carousal.image} alt="" />
-                      <div className="bg-[#000] opacity-[0.6]  w-full h-full absolute top-0  "></div>
-                    </div>
+                <SwiperSlide className="flex justify-center w-full">
+                  <div className="bg-black">
+                    <div className="image-box">
+                      <div className="h-full w-full relative ">
+                        <img className="image" src={carousal.image} alt="" />
+                        <div className="bg-[#000] opacity-[0.6]  w-full h-full absolute top-0  "></div>
+                      </div>
 
-                    <div className="background-text z-[3] w-full h-full absolute top-[40%] ">
-                      <h2 className="yellow Play-fair swiper-title1">
-                        {carousal.country}
-                      </h2>
-                      <h1 className="white Play-fair swiper-title2">
-                        {carousal.touristPlace}
-                      </h1>
+                      <div className="background-text z-[3] w-full h-full absolute top-[40%] ">
+                        <h2 className="yellow Play-fair swiper-title1">
+                          {carousal.country}
+                        </h2>
+                        <h1 className="white Play-fair swiper-title2">
+                          {carousal.touristPlace}
+                        </h1>
 
-                      <div className="rating-main pb-1">
-                        <div className="rating text-[#FDC703]  ">
-                          <span className=" fa-star checked">
-                            <FontAwesomeIcon icon={faStar} />
-                          </span>
-                          <span className=" fa-star checked">
-                            <FontAwesomeIcon icon={faStar} />
-                          </span>
-                          <span className=" fa-star checked">
-                            <FontAwesomeIcon icon={faStar} />
-                          </span>
-                          <span className=" fa-star checked">
-                            <FontAwesomeIcon icon={faStar} />
-                          </span>
-                          <span className=" fa-star checked">
-                            <FontAwesomeIcon icon={faStar} />
-                          </span>
-                          <span className="ms-2 white">(18)</span>
+                        <div className="rating-main pb-1">
+                          <div className="rating text-[#FDC703]  ">
+                            <span className=" fa-star checked">
+                              <FontAwesomeIcon icon={faStar} />
+                            </span>
+                            <span className=" fa-star checked">
+                              <FontAwesomeIcon icon={faStar} />
+                            </span>
+                            <span className=" fa-star checked">
+                              <FontAwesomeIcon icon={faStar} />
+                            </span>
+                            <span className=" fa-star checked">
+                              <FontAwesomeIcon icon={faStar} />
+                            </span>
+                            <span className=" fa-star checked">
+                              <FontAwesomeIcon icon={faStar} />
+                            </span>
+                            <span className="ms-2 white">(18)</span>
+                          </div>
                         </div>
-                      </div>
 
-                      <span className="yellow">{carousal.reviewsStar}</span>
-                      <div className="flex gap-x-2 justify-center">
-                        <span className="border-r-[1px] pr-2 yellow">
-                          &#36;
-                          <span className="swiper-amount font-extrabold">
-                            {carousal.price}
+                        <span className="yellow">{carousal.reviewsStar}</span>
+                        <div className="flex gap-x-2 justify-center">
+                          <span className="border-r-[1px] pr-2 yellow">
+                            &#36;
+                            <span className="swiper-amount font-extrabold">
+                              {carousal.price}
+                            </span>
                           </span>
-                        </span>
-                        <span className="white text-[16px] self-end">
-                          per person
-                        </span>
+                          <span className="white text-[16px] self-end">
+                            per person
+                          </span>
+                        </div>
+                        <h3 className="white text-[16px]">
+                          <span>
+                            <CalendarMonthOutlinedIcon className="" />
+                          </span>
+                          <span className="font-black">
+                            {carousal.days}Days Tour
+                          </span>
+                        </h3>
                       </div>
-                      <h3 className="white text-[16px]">
-                        <span>
-                          <CalendarMonthOutlinedIcon className="" />
-                        </span>
-                        <span className="font-black">
-                          {carousal.days}Days Tour
-                        </span>
-                      </h3>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
               </div>
             );
           } else {

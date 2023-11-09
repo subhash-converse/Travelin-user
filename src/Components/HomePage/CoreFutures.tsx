@@ -27,7 +27,6 @@ const CoreFutures = () => {
         </div>
         <div className="w-full flex justify-center">
           <div className="max-w-[1295px] grid grid-cols-1 lg:pb-[27px] gap-y-4 md:grid-cols-2 gap-[33px] xl:grid-cols-4">
-            
             <div className="card text-[#777777] hover:text-white" id="box1">
               <OutlinedFlagSharpIcon
                 style={{ height: "60", width: "60px" }}

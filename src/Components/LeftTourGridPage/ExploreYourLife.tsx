@@ -1,10 +1,8 @@
-import React from 'react'
-import ExploreYourLife from "../../Components/HomePage/ExploreYourLife"
+import React from "react";
+import ExploreYourLife from "../../Components/HomePage/ExploreYourLife";
 
 const ExploreYourLifeGrid = () => {
-  return (
-    <ExploreYourLife/>
-  )
+  return <ExploreYourLife />
 }
 
-export default ExploreYourLifeGrid
+export default ExploreYourLifeGrid;

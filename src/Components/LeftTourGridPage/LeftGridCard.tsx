@@ -5,21 +5,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 interface data {
-
-    image: any;
-    country: string;
-    touristPlace: string;
-    reviewsStar: number;
-    description: string;
-    catogory: string[];
-    price: number;
-    territory: string;
-    days: number;
-    guideName?: string;
-    position?: string;
+  image: any;
+  country: string;
+  touristPlace: string;
+  reviewsStar: number;
+  description: string;
+  catogory: string[];
+  price: number;
+  territory: string;
+  days: number;
+  guideName?: string;
+  position?: string;
 }
 
-const LeftGridCard= (props:{data:data}) => {
+const LeftGridCard = (props: { data: data }) => {
   let overlayElement = document.getElementById("overlay");
   overlayElement?.addEventListener("mouseenter", () => {
     overlayElement?.classList.add("color-overlay");

@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 interface LastMainDeal {
-  id:number;
+  id: number;
   image: any;
   country: string;
   touristPlace: string;
@@ -69,21 +69,20 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
             return (
               <div key={`CorouselGuide${carousal.id}`}>
                 <SwiperSlide className="flex justify-center ">
-                <div className="image-box rounded-xl relative h-[400px] hover:h-[385px] duration-100">
-                  <div>
-                    <img src={carousal.guideImage} alt="" className="image" />
-                  </div>
+                  <div className="image-box rounded-xl relative h-[400px] hover:h-[385px] duration-100">
+                    <div>
+                      <img src={carousal.guideImage} alt="" className="image" />
+                    </div>
 
-                  <div className=" bg-[#029e9d] w-full z-10 rounded-b-lg flex flex-col items-center justify-center text-white p-4 absolute bottom-0 left-0 right-0">
-                    <h3 className="Play-fair text-[22px]">
-                      {carousal.guideName}
-                    </h3>
-                    <h3 className="text-[16px]">{carousal.position}</h3>
+                    <div className=" bg-[#029e9d] w-full z-10 rounded-b-lg flex flex-col items-center justify-center text-white p-4 absolute bottom-0 left-0 right-0">
+                      <h3 className="Play-fair text-[22px]">
+                        {carousal.guideName}
+                      </h3>
+                      <h3 className="text-[16px]">{carousal.position}</h3>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
               </div>
-              
             );
           } else {
             return null;

@@ -546,16 +546,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className="absolute w-full h-[200px] flex flex-col text-[#B6B3C4] bg-black overflow-y-scroll xl:hidden">
-        <div className="px-[15px] py-[10px] text-[#B6B3C4]">
-          <span>Home</span>
-          <span></span>
-        </div>
-        <div className="px-[15px] py-[10px]">AboutUS</div>
-        <div className="px-[15px] py-[10px]">Destinations</div>
-        <div className="px-[15px] py-[10px]">Tours</div>
-        <div className="px-[15px] py-[10px]">Pages</div>
-      </div>
     </div>
   );
 };

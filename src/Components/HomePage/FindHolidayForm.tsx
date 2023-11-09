@@ -49,7 +49,9 @@ const FindHolidayForm = () => {
                 <option value="" hidden>
                   Destination
                 </option>
-                <option style={{padding:"10px"}} value="india">India</option>
+                <option style={{ padding: "10px" }} value="india">
+                  India
+                </option>
                 <option value="india">India</option>
                 <option value="india">India</option>
                 <option value="india">India</option>

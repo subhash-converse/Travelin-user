@@ -1,11 +1,11 @@
-import Patnersgrid from "../../Components/HomePage/Partners"
+import Patnersgrid from "../../Components/HomePage/Partners";
 
 const PatnersGrid = () => {
   return (
     <>
-    <Patnersgrid/>
+      <Patnersgrid />
     </>
-  )
-}
+  );
+};
 
-export default PatnersGrid
+export default PatnersGrid;
