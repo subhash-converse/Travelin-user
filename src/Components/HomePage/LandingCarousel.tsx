@@ -70,7 +70,7 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
           });
           if (filter) {
             return (
-              <div key={carousal.id}>
+              <div key={`LandingCarousel${carousal.id}`}>
               <SwiperSlide className="flex justify-center w-full">
                 <div  className="bg-black">
                   <div className="image-box">

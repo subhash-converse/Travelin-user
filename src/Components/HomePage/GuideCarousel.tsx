@@ -67,7 +67,7 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
 
           if (filter) {
             return (
-              <div key={carousal.id}>
+              <div key={`CorouselGuide${carousal.id}`}>
                 <SwiperSlide className="flex justify-center ">
                 <div className="image-box rounded-xl relative h-[400px] hover:h-[385px] duration-100">
                   <div>

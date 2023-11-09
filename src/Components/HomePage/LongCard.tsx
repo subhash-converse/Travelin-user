@@ -3,7 +3,7 @@ import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface data {
-  data: {
+ 
     id:number;
     image: any;
     country: string;
@@ -14,12 +14,11 @@ interface data {
     price: number;
     territory: string;
     days: number;
-  };
 }
 
-const LongCard = (props: data) => {
+const LongCard = (props: {data:data}) => {
   return (
-    <div key={props.data.id}>
+    <div key={`long-card-${props.data.id}`}>
       {
         <div className=" long-card-width image-box rounded-lg relative   h-[180px] md:h-[368px] md:w-full grid items-center md:items-end ">
           <div className="image-box h-full w-full">

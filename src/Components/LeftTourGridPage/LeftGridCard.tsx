@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 interface data {
-  data: {
+
     image: any;
     country: string;
     touristPlace: string;
@@ -17,10 +17,9 @@ interface data {
     days: number;
     guideName?: string;
     position?: string;
-  };
 }
 
-const LeftGridCard: React.FC<data> = (props) => {
+const LeftGridCard= (props:{data:data}) => {
   let overlayElement = document.getElementById("overlay");
   overlayElement?.addEventListener("mouseenter", () => {
     overlayElement?.classList.add("color-overlay");

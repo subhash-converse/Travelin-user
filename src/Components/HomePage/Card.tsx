@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 interface data {
-  data: {
+ 
     id: number;
     image: any;
     country: string;
@@ -20,11 +20,10 @@ interface data {
     guideName?: string;
     position?: string;
   };
-}
 
-const Card: React.FC<data> = (props) => {
+const Card = (props:{data:data}) => {
   return (
-    <div key={props.data.id}
+    <div key={`Card-${props.data.id}`}
       className="last-deal card-hover btn-fromLeft card-line  bg-white main-input rounded-t-xl w-full  lg:h-[510px]  xl:h-[570px]  rounded-xl"
     >
       <div className="image-box rounded-t-xl">

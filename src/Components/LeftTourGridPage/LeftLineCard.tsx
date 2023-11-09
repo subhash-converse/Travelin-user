@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 interface data {
-  data: {
+
     image: any;
     country: string;
     touristPlace: string;
@@ -16,10 +16,9 @@ interface data {
     days: number;
     guideName?: string;
     position?: string;
-  };
 }
 
-const LeftLineCard = (props: data) => {
+const LeftLineCard = (props: {data:data}) => {
   return (
     <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 last-deal  rounded-xl  bg-white main-input p-7">
       <div>

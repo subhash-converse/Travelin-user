@@ -20,8 +20,6 @@ import logo from "../../Assets/Images/HomeImage/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-
-
   return (
     <div className="">
       <div className="top-head hidden  lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
@@ -99,7 +97,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     DESTINATION LIST
                   </Link>
@@ -107,7 +105,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     DESTINATION DETAIL
                   </Link>
@@ -129,7 +127,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     TOUR LIST
                   </Link>
@@ -137,7 +135,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         <span>
                           <span></span>
@@ -148,7 +146,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         <span>
                           <span></span>
@@ -159,7 +157,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         <span>
                           <span></span>
@@ -172,7 +170,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     TOUR GRID
                   </Link>
@@ -206,7 +204,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     TOUR SINGLE
                   </Link>
@@ -214,7 +212,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         <span>
                           <span></span>
@@ -225,7 +223,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         <span>
                           <span></span>
@@ -236,7 +234,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         <span>
                           <span></span>
@@ -263,7 +261,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Guide
                   </Link>
@@ -271,7 +269,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Booking
                   </Link>
@@ -279,7 +277,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Confirmation
                   </Link>
@@ -287,7 +285,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     <span>
                       <span>Services</span>
@@ -298,7 +296,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services List
                       </Link>
@@ -306,7 +304,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services Detail
                       </Link>
@@ -316,7 +314,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     <span></span>Gallery
                     <span>
@@ -327,7 +325,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Gallery
                       </Link>
@@ -335,7 +333,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Gallery Masonary
                       </Link>
@@ -345,7 +343,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     <span>
                       <span>Error</span>
@@ -356,7 +354,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Error 1
                       </Link>
@@ -364,7 +362,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Error 2
                       </Link>
@@ -374,7 +372,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="rounded-b bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Login / Register
                   </Link>
@@ -382,7 +380,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Coming Soon
                   </Link>
@@ -390,7 +388,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Testimonials
                   </Link>
@@ -398,7 +396,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Faq
                   </Link>
@@ -406,7 +404,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="rounded-t bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Contact Us
                   </Link>
@@ -414,7 +412,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="bg-white hover:bg-[#868686] hover:text-white py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     Dashboard
                   </Link>
@@ -436,7 +434,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     <span>
                       <span>Blog Grid</span>
@@ -447,7 +445,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services List
                       </Link>
@@ -455,7 +453,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services Detail
                       </Link>
@@ -465,7 +463,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     <span>
                       <span>Services</span>
@@ -476,7 +474,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services List
                       </Link>
@@ -484,7 +482,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services Detail
                       </Link>
@@ -494,7 +492,7 @@ const Header = () => {
                 <li className="dropdown">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                   to="#"
+                    to="#"
                   >
                     <span>
                       <span>Services</span>
@@ -505,7 +503,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services List
                       </Link>
@@ -513,7 +511,7 @@ const Header = () => {
                     <li>
                       <Link
                         className="bg-white  hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
-                       to="#"
+                        to="#"
                       >
                         Services Detail
                       </Link>
@@ -548,8 +546,15 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className="absolute w-full h-[200px] bg-black xl:hidden">
-
+      <div className="absolute w-full h-[200px] flex flex-col text-[#B6B3C4] bg-black overflow-y-scroll xl:hidden">
+        <div className="px-[15px] py-[10px] text-[#B6B3C4]">
+          <span>Home</span>
+          <span></span>
+        </div>
+        <div className="px-[15px] py-[10px]">AboutUS</div>
+        <div className="px-[15px] py-[10px]">Destinations</div>
+        <div className="px-[15px] py-[10px]">Tours</div>
+        <div className="px-[15px] py-[10px]">Pages</div>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface data {
-  data: {
     id: number;
     image: any;
     country: string;
@@ -17,21 +16,24 @@ interface data {
     guideImage: string;
     guideName?: string;
     position?: string;
-  };
 }
 
-const ArticalsCarousal = (props: data) => {
+const ArticalsCarousal = (props: {data:data}) => {
+//  console.log(props)
+//   console.log(props.data.id)
+  // debugger
   return (
-    <div key={props.data.id}
+    <div key={`ArticalsCarousal-${props.data.id}`}
+   
       className="bg-white btn-fromLeft card-hover card-line main-input img-radius w-full  lg:h-[510px]  xl:h-[570px]"
     >
+      
       <div className="image-box rounded-t-xl">
         <div
           style={{ backgroundImage: `url(${props.data.image})` }}
           className=" image background-top-pick w-full h-[190px] rounded-t-xl md:h-[221px] xl:h-[274px] flex items-end "
         ></div>
       </div>
-
       <div className=" p-[24px] ">
         <h3 className="Play-fair text-[18px] text-[#777777] mb-2">
           {props.data.country}

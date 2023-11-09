@@ -21,7 +21,7 @@ const Destination = (props: { data: Data[] }) => {
     <>
       {props.data.map((eachData, index) =>
         index === 0 ? (
-          <div key={eachData.id} className="image-box md:col-span-2 lg:row-span-2 lg:col-span-3 img-radius  relative">
+          <div key={`Destination-long-${eachData.id}`} className="image-box md:col-span-2 lg:row-span-2 lg:col-span-3 img-radius  relative">
             <div className="relative">
               <img
                 src={eachData.image}
@@ -44,7 +44,7 @@ const Destination = (props: { data: Data[] }) => {
             </div>
           </div>
         ) : (
-          <div key={eachData.id} className="lg:col-span-2 image-box img-radius relative">
+          <div key={`Destination-long-short${eachData.id}`} className="lg:col-span-2 image-box img-radius relative">
             <div>
               <img
                 src={eachData.image}
