@@ -3,6 +3,9 @@ import React from "react";
 // <========== icons ==========>
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
+// <========== interface ==========>
+import interfaceMain from "../../interface /Interface"
+
 // <========== swipper ==========>
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -13,23 +16,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
 
-interface LastMainDeal {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideImage: string;
-  guideName?: string;
-  position?: string;
-}
 
-const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
+const ReviewComponent = (props: { carouselData: interfaceMain[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -59,8 +47,8 @@ const ReviewComponent = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        {props.carouselData.map(function (carousal: LastMainDeal) {
-          let filter = carousal.catogory.find(function (a) {
+        {props.carouselData.map(function (carousal: interfaceMain) {
+          let filter = carousal.pages_for_show.find(function (a) {
             if (a.toLocaleLowerCase().trim() === "review") {
               return a;
             } else {

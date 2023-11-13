@@ -8,27 +8,17 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
 
+// <========== interface ==========>
+import interfaceMain from "../../interface /Interface"
+
 // <========== images ==========>
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-interface LastMainDeal {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  position?: string;
-}
 
-const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
+
+const LandingCarousel = (props: { carouselData: interfaceMain[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -60,8 +50,8 @@ const LandingCarousel = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets "
       >
-        {props.carouselData.map((carousal: LastMainDeal) => {
-          let filter = carousal.catogory.find((a) => {
+        {props.carouselData.map((carousal: interfaceMain) => {
+          let filter = carousal.pages_for_show.find((a) => {
             if (a.toLocaleLowerCase().trim() === "landing carowsal") {
               return a;
             } else {

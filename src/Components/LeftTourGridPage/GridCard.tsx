@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import carouselData from "../../Mock/PackageData";
-import MultiRangeSlider from "./MultiRangeSlider";
 
 // ................Components.....................
 import LeftGridCard from "./LeftGridCard";
@@ -15,10 +14,15 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import LeftLineCard from "./LeftLineCard";
 import { Link } from "react-router-dom";
+import CatogoryFilterForm from "./CatogoryFilterForm";
+import DurationFilterForm from "./DurationFilterForm";
+import PriceFilterForm from "./PriceFilterForm";
 
 const GridCard = () => {
   const [grid, setGrid] = useState(true);
+  const [expand, setExpand] = useState(false);
 
+  // ........Card type(grid & bar)...........
   const cardType = (icon: string) => {
     if (icon === "bar") {
       setGrid(false);
@@ -26,12 +30,24 @@ const GridCard = () => {
       setGrid(true);
     }
   };
+  // ........Load more.............
+  const expandBlock = () => {
+    return setExpand(true);
+  };
+
+
+    // ........catogory filter.............
+    // ........duration filter.............
+    // .........price filter...............
+
 
   return (
     <>
       <div className="w-full flex justify-center text-[16px] text-[#777777] font-thin ">
         <div className="w-full flex flex-col lg:max-w-[1290px] lg:flex-row  mt-[52px]">
-          <div className="w-full lg:w-[66.66%] flex flex-col  px-4  items-center">
+          <div
+            className={"w-full lg:w-[66.66%] flex flex-col  px-4  items-center"}
+          >
             <div className="mb-[35px] md:flex md:justify-between md:w-full">
               <div className="flex items-center">
                 <h1 className="">Showing 1-5 of 80 results</h1>
@@ -106,10 +122,12 @@ const GridCard = () => {
             <div
               className={`grid grid-cols-1 md:w- ${
                 grid ? "md:grid-cols-2" : ""
-              } gap-7 py-5`}
+              } overflow-x-hidden gap-7 pb-5 mt-5 px-1 h-[4500px]  md:max-h-[2180px] lg:max-h-[2150px] xl:max-h-[2380px]  ${
+                expand ? "overflow-scroll" : "overflow-hidden"
+              }`}
             >
               {carouselData.map((data) => {
-                let filter = data.catogory.find(
+                let filter = data.pages_for_show.find(
                   (a) => a.toLowerCase().trim() === "left grid"
                 );
                 if (filter) {
@@ -124,9 +142,15 @@ const GridCard = () => {
               })}
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex relative top-0 justify-center">
               <div>
-                <button className="button tour-pic-btn py-[8px] flex flex-row gap-2">
+                <button
+                  id="loagMore"
+                  className=" button tour-pic-btn py-[8px] flex flex-row gap-2"
+                  onClick={() => {
+                    expandBlock();
+                  }}
+                >
                   <div className="text">
                     Load more{" "}
                     <span>
@@ -140,160 +164,16 @@ const GridCard = () => {
 
           <div className=" w-full lg:w-[33.33%]">
             <div className="pl-[24px] pr-[15px] sticky top-0">
-              <div className=" border-b-[1px] border-dashed border-[#777777] pb-[30px] mb-[32px]">
-                <h1 className="text-[26px] Play-fair text-[#17233E] border-b-[1px] mb-[30px] pb-[10px] ">
-                  Categories Type
-                </h1>
-                <div className="grid grid-cols-1 gap-3">
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Tours" type="checkbox" checked />
-                      <label htmlFor="Tours">Tours</label>
-                    </div>
-                    <div>
-                      <h2>92</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Attractions" type="checkbox" />
-                      <label htmlFor="Attractions">Attractions</label>
-                    </div>
-                    <div>
-                      <h2>22</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="DayTrips" type="checkbox" />
-                      <label htmlFor="DayTrips"> Day Trips</label>
-                    </div>
-                    <div>
-                      <h2>35</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="OutdoorActivities" type="checkbox" />
-                      <label htmlFor="OutdoorActivities">Tours</label>
-                    </div>
-                    <div>
-                      <h2>41</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Concert&Show" type="checkbox" />
-                      <label htmlFor="Concert&Show">Concert & Show</label>
-                    </div>
-                    <div>
-                      <h2>61</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Indoor" type="checkbox" />
-                      <label htmlFor="Indoor">Indoor</label>
-                    </div>
-                    <div>
-                      <h2>18</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="SightSeeing" type="checkbox" />
-                      <label htmlFor="SightSeeing">Sight Seeing</label>
-                    </div>
-                    <div>
-                      <h2>88</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Travels" type="checkbox" />
-                      <label htmlFor="Travels">Travels</label>
-                    </div>
-                    <div>
-                      <h2>92</h2>
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <CatogoryFilterForm  />
               </div>
 
-              <div className=" border-b-[1px] border-dashed border-[#777777] pb-[30px] mb-[32px]">
-                <h1 className="text-[26px] Play-fair text-[#17233E] border-b-[1px] mb-[30px] pb-[10px] ">
-                  Duration Type
-                </h1>
-                <div className="grid grid-cols-1 gap-3">
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Tours" type="checkbox" checked />
-                      <label htmlFor="Tours">up to 1 hour</label>
-                    </div>
-                    <div>
-                      <h2>92</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Attractions" type="checkbox" />
-                      <label htmlFor="Attractions">1 to 2 hour</label>
-                    </div>
-                    <div>
-                      <h2>22</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="DayTrips" type="checkbox" />
-                      <label htmlFor="DayTrips"> 2 to 4 hour</label>
-                    </div>
-                    <div>
-                      <h2>35</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="OutdoorActivities" type="checkbox" />
-                      <label htmlFor="OutdoorActivities">4 to 8 hour</label>
-                    </div>
-                    <div>
-                      <h2>41</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Concert&Show" type="checkbox" />
-                      <label htmlFor="Concert&Show"> 8 to 1 Day</label>
-                    </div>
-                    <div>
-                      <h2>61</h2>
-                    </div>
-                  </div>
-                  <div className="checkbox-inputs">
-                    <div className="input-lable">
-                      <input id="Indoor" type="checkbox" />
-                      <label htmlFor="Indoor"> 1 Day to 2 Days</label>
-                    </div>
-                    <div>
-                      <h2>18</h2>
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <DurationFilterForm />
               </div>
 
-              <div className=" border-b-[1px] border-dashed border-[#777777] pb-[60px] mb-[32px] ">
-                <h1 className="text-[26px] Play-fair text-[#17233E] border-b-[1px] mb-[30px] pb-[10px] ">
-                  Duration Type
-                </h1>
-                <h2 className="mb-[16px]">Price Range</h2>
-                <MultiRangeSlider
-                  min={0}
-                  max={2000}
-                  onChange={({ min, max }) =>
-                    console.log(`min = $${min}, max = $${max}`)
-                  }
-                />
+              <div>
+                <PriceFilterForm />
               </div>
 
               <div className="  pb-[30px] mb-[32px]">

@@ -11,7 +11,7 @@ import parashoot from "../../Assets/Images/HomeImage/parashoot.png";
 const LastMinuteDeals = () => {
   let lastArray: any = [];
   carouselData.map((data) => {
-    let filter = data.catogory.find(
+    let filter = data.pages_for_show.find(
       (a) => a.toLowerCase().trim() === "last minute deals"
     );
     if (filter) {
@@ -23,7 +23,7 @@ const LastMinuteDeals = () => {
 
   let longArray: any = [];
   carouselData.map((data) => {
-    let filter = data.catogory.find(
+    let filter = data.pages_for_show.find(
       (a) => a.toLowerCase().trim() === "long card"
     );
     if (filter) {

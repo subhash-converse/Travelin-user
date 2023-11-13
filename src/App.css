@@ -417,7 +417,7 @@ option {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("./Assets/Images/LeftTourGridImages/nighthouse.jpg");
+  background-image: url("./Assets/Images/LeftTourGridImages//nighthouse.jpg");
 }
 
 .checkbox-inputs {
@@ -635,3 +635,27 @@ i {
   content: "";
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  padding: 10px; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(228, 227, 227); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  rgb(228, 227, 227); 
+}

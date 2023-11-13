@@ -4,26 +4,16 @@ import carouselData from "../../Mock/PackageData";
 // <========== Componets ==========>
 import Destination from "./Destination";
 
-const TopDestinations = () => {
-  interface data {
-    id: number;
-    image: any;
-    country: string;
-    touristPlace: string;
-    reviewsStar: number;
-    description: string;
-    catogory: string[];
-    price: number;
-    territory: string;
-    days: number;
-    guideName?: string;
-    position?: string;
-  }
+// <========== interface ==========>
+import interfaceMain from "../../interface /Interface"
 
-  let filteredData: data[] = [];
+const TopDestinations = () => {
+ 
+
+  let filteredData: interfaceMain[] = [];
   {
     carouselData.map((data) => {
-      let filter = data.catogory.find(
+      let filter = data.pages_for_show.find(
         (a) => a.toLowerCase().trim() === "destination"
       );
       if (filter) {

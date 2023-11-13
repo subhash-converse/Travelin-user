@@ -7,23 +7,12 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import destination1 from "../../Assets/Images/HomeImage/TopPick1.jpg";
 
-interface datas {
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  position?: string;
-}
+// <========== interface ==========>
+import interfaceMain from "../../interface /Interface"
 
-const CardCarousel = (props: { carouselData: datas[] }) => {
+const CardCarousel = (props: { carouselData: interfaceMain[] }) => {
   return (
-    <div className="">
+    <div >
       <Swiper
         slidesPerView={1}
         spaceBetween={25}
@@ -40,8 +29,8 @@ const CardCarousel = (props: { carouselData: datas[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets"
       >
-        {props.carouselData.map((carousal: datas) => {
-          let filter = carousal.catogory.find((a) => {
+        {props.carouselData.map((carousal: interfaceMain) => {
+          let filter = carousal.pages_for_show.find((a) => {
             if (a.toLocaleLowerCase().trim() === "related destination") {
               return a;
             } else {

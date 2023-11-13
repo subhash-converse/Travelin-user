@@ -5,22 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // <========== images ==========>
 import React from "react";
 
-interface data {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  position?: string;
-}
+// <========== interface ==========>
+import interfaceMain from "../../interface /Interface"
 
-const Card = (props: { data: data[] }) => {
+
+
+const Card = (props: { data: interfaceMain[] }) => {
   return (
     <>
       {props.data.map((data) => (
