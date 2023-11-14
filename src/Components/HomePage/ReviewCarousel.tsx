@@ -4,7 +4,7 @@ import React from "react";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface"
+import interfaceMain from "../../interface /Interface";
 
 // <========== swipper ==========>
 import "swiper/css";
@@ -15,7 +15,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
-
 
 const ReviewComponent = (props: { carouselData: interfaceMain[] }) => {
   // <========== hooks ==========>

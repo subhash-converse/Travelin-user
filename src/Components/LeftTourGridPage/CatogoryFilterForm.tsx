@@ -1,8 +1,8 @@
 import React from "react";
 import mockData from "../../Mock/PackageData";
 
-const CatogoryFilterForm = () => {
-  let catogoryArray: string[] = [];
+const CatogoryFilterForm = ({setFilterFunc, filters}: any) => {
+  let catogoryArray: string[] = filters.category;
 
   const CatogoryFilter = (event: any) => {
     let id = event.target.id;
@@ -16,6 +16,8 @@ const CatogoryFilterForm = () => {
       });
       catogoryArray.splice(index, 1);
     }
+
+    setFilterFunc({ ...filters, category: catogoryArray });
   };
 
 

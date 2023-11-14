@@ -22,6 +22,13 @@ const GridCard = () => {
   const [grid, setGrid] = useState(true);
   const [expand, setExpand] = useState(false);
 
+  const [arr, setArr] = useState([]);
+  const [filters, setFilters] = useState({
+    category: [],
+    duration: [],
+    price: [],
+  });
+
   // ........Card type(grid & bar)...........
   const cardType = (icon: string) => {
     if (icon === "bar") {
@@ -34,12 +41,6 @@ const GridCard = () => {
   const expandBlock = () => {
     return setExpand(true);
   };
-
-
-    // ........catogory filter.............
-    // ........duration filter.............
-    // .........price filter...............
-
 
   return (
     <>
@@ -165,15 +166,21 @@ const GridCard = () => {
           <div className=" w-full lg:w-[33.33%]">
             <div className="pl-[24px] pr-[15px] sticky top-0">
               <div>
-                <CatogoryFilterForm  />
+                <CatogoryFilterForm
+                  setFilterFunc={setFilters}
+                  filters={filters}
+                />
               </div>
 
               <div>
-                <DurationFilterForm />
+                <DurationFilterForm
+                  setFilterFunc={setFilters}
+                  filters={filters}
+                />
               </div>
 
               <div>
-                <PriceFilterForm />
+                <PriceFilterForm setFilterFunc={setFilters} filters={filters} />
               </div>
 
               <div className="  pb-[30px] mb-[32px]">

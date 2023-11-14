@@ -1,24 +1,9 @@
 // <========== icons ==========>
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import interfeces from "../../interface /Interface";
 
-interface data {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideImage: string;
-  guideName?: string;
-  position?: string;
-}
-
-const ArticalsCarousal = (props: { data: data[] }) => {
+const ArticalsCarousal = (props: { data: interfeces[] }) => {
   return (
     <>
       {props.data.map((data) => (

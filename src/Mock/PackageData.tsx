@@ -440,7 +440,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["guide info", "articles"],
-    catogory: [ "Indoor,Sight Seeing"],
+    catogory: [ "Indoor"],
     offer: 43,
     price: 250,
     territory: "Russia",

@@ -1,7 +1,9 @@
+import { duration } from "@mui/material";
 import React from "react";
+import { useEffect } from "react";
 
-const DurationFilterForm = () => {
-  let durationArray: string[] = [];
+const DurationFilterForm = ({ setFilterFunc, filters }: any) => {
+  let durationArray: string[] = filters.duration;
 
   const durationFilter = (event: any) => {
     let id = event.target.id;
@@ -14,10 +16,8 @@ const DurationFilterForm = () => {
         return value2 === value;
       });
       durationArray.splice(index, 1);
-      console.log(durationArray);
     }
-
-    console.log(durationArray);
+    setFilterFunc({ ...filters, duration: durationArray });
   };
 
   return (

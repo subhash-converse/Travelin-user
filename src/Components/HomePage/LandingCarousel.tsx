@@ -9,14 +9,12 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface"
+import interfaceMain from "../../interface /Interface";
 
 // <========== images ==========>
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-
-
 
 const LandingCarousel = (props: { carouselData: interfaceMain[] }) => {
   // <========== hooks ==========>

@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface"
+import interfaceMain from "../../interface /Interface";
 
 const CorouselGuide = (props: { carouselData: interfaceMain[] }) => {
   // <========== hooks ==========>

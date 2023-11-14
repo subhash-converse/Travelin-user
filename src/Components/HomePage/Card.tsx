@@ -6,9 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface"
-
-
+import interfaceMain from "../../interface /Interface";
 
 const Card = (props: { data: interfaceMain[] }) => {
   return (

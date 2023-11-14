@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MultiRangeSlider from "./MultiRangeSlider";
 
-const PriceFilterForm = () => {
- 
+const PriceFilterForm = ({ setFilterFunc, filters }: any) => {
+  let priceArray: number[] = filters.price;
+
+  const PriceFilter = (min: number, max: number) => {
+    if (min != priceArray[0] || max != priceArray[1]) {
+      priceArray[0] = min;
+      priceArray[1] = max;
+      setFilterFunc({ ...filters, price: priceArray });
+    }
+  };
 
   return (
     <>
@@ -15,10 +23,7 @@ const PriceFilterForm = () => {
           min={0}
           max={2000}
           onChange={({ min, max }) => {
-            let priceArray: any = [0,20000];
-            priceArray[0] = min;
-            priceArray[1] = max;
-            {console.log(priceArray)}
+            PriceFilter(min, max);
           }}
         />
       </div>
