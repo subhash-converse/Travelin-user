@@ -167,10 +167,9 @@ const GridCard = () => {
               className={`grid grid-cols-1 
               md:w- ${
                 grid ? "md:grid-cols-2" : ""
-              } overflow-x-hidden gap-7 pb-5 mt-5 px-1 h-[4500px]  md:max-h-[2180px] lg:max-h-[2150px] xl:max-h-[2380px]  ${
+              } overflow-x-hidden gap-7 pb-5 mt-5 px-1 h-auto   ${
                 expand ? "overflow-scroll" : "overflow-hidden"
-              }
-              `}
+              }`}
             >
               {filteredData.map((data) => {
                 let filter = data.pages_for_show.find(

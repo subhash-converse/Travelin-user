@@ -7,12 +7,12 @@ import { PackageContent } from "../../interface/common";
 
 const LeftLineCard = (props: { data: PackageContent }) => {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 last-deal  rounded-xl   bg-white main-input p-7">
+    <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 last-deal  rounded-xl max-h-[280px]  bg-white main-input p-7">
       <div>
         <img
           src={props.data.image}
           alt="tourpic"
-          className="rounded-xl w-full h-full"
+          className="rounded-xl w-full h-[224px]"
         />
       </div>
       <div>
