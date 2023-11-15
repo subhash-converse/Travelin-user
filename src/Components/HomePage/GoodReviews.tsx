@@ -23,7 +23,7 @@ const GoodReviews = () => {
 
       <div className='className="w-full flex justify-center p-4  background-travelers"'>
         <div className="lg:max-w-[1290px] grid grid-cols-1  ">
-          <ReviewComponent carouselData={LastMainDeals} />
+          <ReviewComponent carouselData ={LastMainDeals} />
         </div>
       </div>
     </div>

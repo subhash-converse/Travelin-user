@@ -32,7 +32,7 @@ const DurationFilterForm = ({ setFilterFunc, filters }: any) => {
               <input
                 id="1-5"
                 type="checkbox"
-                value={"1 to 5 days"}
+                value={"1-5"}
                 onChange={durationFilter}
               />
               <label htmlFor="1-5">1 to 5 days</label>
@@ -46,10 +46,10 @@ const DurationFilterForm = ({ setFilterFunc, filters }: any) => {
               <input
                 id="1-10"
                 type="checkbox"
-                value={"1 to 10 days"}
+                value={"6-10"}
                 onChange={durationFilter}
               />
-              <label htmlFor="1-10"> 1 to 10 days</label>
+              <label htmlFor="1-10"> 6 to 10 days</label>
             </div>
             <div>
               <h2>35</h2>
@@ -60,10 +60,10 @@ const DurationFilterForm = ({ setFilterFunc, filters }: any) => {
               <input
                 id="1-15"
                 type="checkbox"
-                value={"1 to 15 days"}
+                value={"11-15"}
                 onChange={durationFilter}
               />
-              <label htmlFor="1-15">1 to 15 days</label>
+              <label htmlFor="1-15">11 to 15 days</label>
             </div>
             <div>
               <h2>41</h2>
@@ -74,10 +74,10 @@ const DurationFilterForm = ({ setFilterFunc, filters }: any) => {
               <input
                 id="days>15"
                 type="checkbox"
-                value={"above 15 days"}
+                value={"16-20"}
                 onChange={durationFilter}
               />
-              <label htmlFor="days>15">above 15 days</label>
+              <label htmlFor="days>15">16 to 20 days</label>
             </div>
             <div>
               <h2>41</h2>

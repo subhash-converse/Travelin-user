@@ -1,22 +1,7 @@
-interface datas {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  pages_for_show:string[];
-  catogory: string[];
-  offer: number;
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  guideImage: string;
-  position?: string;
-}
+// <========== interface ==========>
+import { PackageContent } from "../interface/common";
 
-const LastMainDeals: datas[] = [
+const LastMainDeals: PackageContent[] = [
   {
     id: 0,
     image: "/HomePage/carousal1.jpg",
@@ -25,11 +10,11 @@ const LastMainDeals: datas[] = [
     reviewsStar: 4.5,
     description:
       "Visit the iconic Eiffel Tower in Paris, a symbol of romance and architectural beauty.",
-    pages_for_show: ["landing carowsal", "guide info", "review"],
-    catogory: ["Attractions"],
+    pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
+    category: ["Attractions"],
     offer: 12,
-    price: 150,
-    territory: "Caspian Valley",
+    price: 2000,
+    territory: "subhash",
     days: 3,
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
@@ -43,10 +28,10 @@ const LastMainDeals: datas[] = [
     reviewsStar: 4.5,
     description:
       "Visit the iconic Eiffel Tower in Paris, a symbol of romance and architectural beauty.",
-    pages_for_show: ["landing carowsal", "guide info", "review"],
-    catogory: [ "Day Trips"],
+    pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
+    category: [ "Day Trips", "Outdoor Activities"],
     offer: 12,
-    price: 150,
+    price: 1000,
     territory: "Caspian Valley",
     days: 10,
     guideName: "Horke Pels",
@@ -61,8 +46,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 4.8,
     description:
       "Experience the breathtaking beauty of the Grand Canyon in Arizona, USA.",
-    pages_for_show: ["landing carowsal", "guide info", "review"],
-    catogory: [ "Outdoor Activities"],
+    pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
+    category: [ "Outdoor Activities"],
     offer: 30,
     price: 180,
     territory: "Japan",
@@ -79,8 +64,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["landing carowsal", "guide info", "review"],
-    catogory: ["Concert & Show"],
+    pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
+    category: ["Concert & Show"],
     offer: 45,
     price: 250,
     territory: "Russia",
@@ -97,8 +82,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["landing carowsal", "guide info", "review"],
-    catogory: [ "Indoor,Sight Seeing"],
+    pages_for_show: ["landing carowsal", "guide info", "review" , "left grid"],
+    category: [ "Indoor,Sight Seeing"],
     offer: 65,
     price: 250,
     territory: "Japan",
@@ -115,8 +100,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["landing carowsal", "guide info"],
-    catogory: [ "Travels"],
+    pages_for_show: ["landing carowsal", "guide info", "left grid"],
+    category: [ "Travels"],
     offer: 63,
     price: 250,
     territory: "Russia",
@@ -133,8 +118,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info"],
-    catogory: ["Attractions"],
+    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    category: ["Attractions"],
     offer: 32,
     price: 250,
     territory: "Russia",
@@ -151,8 +136,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info"],
-    catogory: [ "Day Trips"],
+    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    category: [ "Day Trips"],
     offer: 87,
     price: 250,
     territory: "Russia",
@@ -169,8 +154,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info"],
-    catogory: [ "Outdoor Activities"],
+    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    category: [ "Outdoor Activities"],
     offer: 21,
     price: 250,
     territory: "Russia",
@@ -187,8 +172,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info"],
-    catogory: [ "Concert & Show"],
+    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    category: [ "Concert & Show"],
     offer: 98,
     price: 250,
     territory: "Russia",
@@ -205,8 +190,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info"],
-    catogory: ["Indoor,Sight Seeing"],
+    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    category: ["Indoor,Sight Seeing"],
     offer: 61,
     price: 250,
     territory: "Russia",
@@ -230,7 +215,7 @@ const LastMainDeals: datas[] = [
       "offer",
       "left grid",
     ],
-    catogory: ["Travels"],
+    category: ["Travels"],
     offer: 23,
     price: 250,
     territory: "Russia",
@@ -254,7 +239,7 @@ const LastMainDeals: datas[] = [
       "offer",
       "left grid",
     ],
-    catogory: ["Attractions"],
+    category: ["Attractions"],
     offer: 70,
     price: 250,
     territory: "Russia",
@@ -278,7 +263,7 @@ const LastMainDeals: datas[] = [
       "offer",
       "left grid",
     ],
-    catogory: [ "Day Trips"],
+    category: [ "Day Trips"],
     offer: 54,
     price: 250,
     territory: "Russia",
@@ -296,7 +281,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["last minute deals", "guide info", "offer", "left grid"],
-    catogory: [ "Outdoor Activities"],
+    category: [ "Outdoor Activities"],
     offer: 34,
     price: 250,
     territory: "Russia",
@@ -314,7 +299,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    catogory: [ "Concert & Show"],
+    category: [ "Concert & Show"],
     offer: 23,
     price: 250,
     territory: "Russia",
@@ -332,7 +317,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    catogory: [ "Indoor,Sight Seeing"],
+    category: [ "Indoor,Sight Seeing"],
     offer: 70,
     price: 250,
     territory: "Russia",
@@ -350,7 +335,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    catogory: [ "Travels"],
+    category: [ "Travels"],
     offer: 54,
     price: 250,
     territory: "Russia",
@@ -368,7 +353,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    catogory: ["Attractions"],
+    category: ["Attractions"],
     offer: 34,
     price: 250,
     territory: "Russia",
@@ -386,7 +371,7 @@ const LastMainDeals: datas[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["long card", "guide info","left grid"],
-    catogory: ["Day Trips"],
+    category: ["Day Trips"],
     offer: 87,
     price: 250,
     territory: "Russia",
@@ -403,8 +388,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["long card", "guide info"],
-    catogory: [ "Outdoor Activities"],
+    pages_for_show: ["long card", "guide info", "left grid"],
+    category: [ "Outdoor Activities"],
     offer: 43,
     price: 250,
     territory: "Russia",
@@ -421,8 +406,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["long card", "guide info"],
-    catogory: ["Concert & Show"],
+    pages_for_show: ["long card", "guide info", "left grid"],
+    category: ["Concert & Show"],
     offer: 39,
     price: 250,
     territory: "Russia",
@@ -439,8 +424,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["guide info", "articles"],
-    catogory: [ "Indoor"],
+    pages_for_show: ["guide info", "articles", "left grid"],
+    category: [ "Indoor"],
     offer: 43,
     price: 250,
     territory: "Russia",
@@ -457,8 +442,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["guide info", "articles"],
-    catogory: [ "Travels"],
+    pages_for_show: ["guide info", "articles", "left grid"],
+    category: [ "Travels"],
     offer: 39,
     price: 250,
     territory: "Russia",
@@ -475,8 +460,8 @@ const LastMainDeals: datas[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["guide info", "articles"],
-    catogory: ["Attractions"],
+    pages_for_show: ["guide info", "articles", "left grid"],
+    category: ["Attractions"],
     offer: 39,
     price: 250,
     territory: "Russia",

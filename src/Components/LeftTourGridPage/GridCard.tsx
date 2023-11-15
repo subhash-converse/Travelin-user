@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import carouselData from "../../Mock/PackageData";
+import { PackageContent } from "../../interface/common";
 
 // ................Components.....................
 import LeftGridCard from "./LeftGridCard";
@@ -21,13 +22,55 @@ import PriceFilterForm from "./PriceFilterForm";
 const GridCard = () => {
   const [grid, setGrid] = useState(true);
   const [expand, setExpand] = useState(false);
-
-  const [arr, setArr] = useState([]);
+  const [filteredData, setFilteredData] = useState(carouselData);
   const [filters, setFilters] = useState({
     category: [],
     duration: [],
     price: [],
   });
+
+  useEffect(() => {
+    let filteredValues: PackageContent[] = [];
+
+    carouselData.filter((package_val: PackageContent) => {
+      if (filters.category.length != 0) {
+        let category_included = filters.category.some((filterVal) => {
+          return package_val.category.includes(filterVal);
+        });
+
+
+        if (!category_included) {
+          return;
+        }
+      }
+      if (filters.duration.length != 0) {
+        let duration_included = filters.duration.some((filterVal: any) => {
+          let splited = filterVal.split("-");
+
+          return (
+            splited[0] <= package_val.days && splited[1] >= package_val.days
+          );
+        });
+        if (!duration_included) {
+          return;
+        }
+      }
+
+      if (filters.price.length != 0) {
+        let min_price = filters.price[0] <= package_val.price ? true : false;
+        let max_price = filters.price[1] >= package_val.price ? true : false;
+
+        let price_included = min_price && max_price ? true : false;
+        if (!price_included) {
+          return;
+        }
+      }
+
+      filteredValues.push(package_val);
+    });
+
+    setFilteredData(filteredValues);
+  }, [filters]);
 
   // ........Card type(grid & bar)...........
   const cardType = (icon: string) => {
@@ -121,13 +164,15 @@ const GridCard = () => {
             </div>
 
             <div
-              className={`grid grid-cols-1 md:w- ${
+              className={`grid grid-cols-1 
+              md:w- ${
                 grid ? "md:grid-cols-2" : ""
               } overflow-x-hidden gap-7 pb-5 mt-5 px-1 h-[4500px]  md:max-h-[2180px] lg:max-h-[2150px] xl:max-h-[2380px]  ${
                 expand ? "overflow-scroll" : "overflow-hidden"
-              }`}
+              }
+              `}
             >
-              {carouselData.map((data) => {
+              {filteredData.map((data) => {
                 let filter = data.pages_for_show.find(
                   (a) => a.toLowerCase().trim() === "left grid"
                 );

@@ -2,24 +2,12 @@
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { PackageContent } from "../../interface/common";
 
-interface data {
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  position?: string;
-}
 
-const LeftLineCard = (props: { data: data }) => {
+const LeftLineCard = (props: { data: PackageContent }) => {
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 last-deal  rounded-xl  bg-white main-input p-7">
+    <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 last-deal  rounded-xl   bg-white main-input p-7">
       <div>
         <img
           src={props.data.image}

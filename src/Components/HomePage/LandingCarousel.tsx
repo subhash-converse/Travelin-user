@@ -9,14 +9,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useState, useEffect } from "react";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface";
+import { PackageContent } from "../../interface/common";
 
 // <========== images ==========>
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-const LandingCarousel = (props: { carouselData: interfaceMain[] }) => {
+const LandingCarousel = (props: { carouselData: PackageContent[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -48,7 +48,7 @@ const LandingCarousel = (props: { carouselData: interfaceMain[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets "
       >
-        {props.carouselData.map((carousal: interfaceMain) => {
+        {props.carouselData.map((carousal: PackageContent) => {
           let filter = carousal.pages_for_show.find((a) => {
             if (a.toLocaleLowerCase().trim() === "landing carowsal") {
               return a;

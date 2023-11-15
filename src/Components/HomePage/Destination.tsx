@@ -1,6 +1,6 @@
-import interfeces from "../../interface /Interface";
+import { PackageContent } from "../../interface/common";
 
-const Destination = (props: { data: interfeces[] }) => {
+const Destination = (props: { data: PackageContent[] }) => {
   return (
     <>
       {props.data.map((eachData, index) =>

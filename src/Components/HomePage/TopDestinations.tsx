@@ -5,10 +5,10 @@ import carouselData from "../../Mock/PackageData";
 import Destination from "./Destination";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface";
+import { PackageContent } from "../../interface/common";
 
 const TopDestinations = () => {
-  let filteredData: interfaceMain[] = [];
+  let filteredData: PackageContent[] = [];
   {
     carouselData.map((data) => {
       let filter = data.pages_for_show.find(

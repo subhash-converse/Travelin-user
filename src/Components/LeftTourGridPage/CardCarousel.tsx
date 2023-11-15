@@ -8,9 +8,9 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import destination1 from "../../Assets/Images/HomeImage/TopPick1.jpg";
 
 // <========== interface ==========>
-import interfaceMain from "../../interface /Interface"
+import { PackageContent } from "../../interface/common";
 
-const CardCarousel = (props: { carouselData: interfaceMain[] }) => {
+const CardCarousel = (props: { carouselData: PackageContent[] }) => {
   return (
     <div >
       <Swiper
@@ -29,7 +29,7 @@ const CardCarousel = (props: { carouselData: interfaceMain[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets"
       >
-        {props.carouselData.map((carousal: interfaceMain) => {
+        {props.carouselData.map((carousal: PackageContent) => {
           let filter = carousal.pages_for_show.find((a) => {
             if (a.toLocaleLowerCase().trim() === "related destination") {
               return a;

@@ -1,21 +1,10 @@
 // <========== icons ==========>
 import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { PackageContent } from "../../interface/common";
 
-interface data {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-}
 
-const LongCard = (props: { data: data[] }) => {
+const LongCard = (props: { data: PackageContent[] }) => {
   return (
     <>
       {props.data.map((data) => (

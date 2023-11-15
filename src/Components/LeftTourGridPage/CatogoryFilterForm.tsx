@@ -2,22 +2,22 @@ import React from "react";
 import mockData from "../../Mock/PackageData";
 
 const CatogoryFilterForm = ({setFilterFunc, filters}: any) => {
-  let catogoryArray: string[] = filters.category;
+  let categoryArray: string[] = filters.category;
 
   const CatogoryFilter = (event: any) => {
     let id = event.target.id;
     let value = event.target.value;
 
     if (event.target.checked === true) {
-      catogoryArray.push(event.target.value);
+      categoryArray.push(event.target.value);
     } else {
-      let index = catogoryArray.findIndex((value2) => {
+      let index = categoryArray.findIndex((value2) => {
         return value === value2;
       });
-      catogoryArray.splice(index, 1);
+      categoryArray.splice(index, 1);
     }
 
-    setFilterFunc({ ...filters, category: catogoryArray });
+    setFilterFunc({ ...filters, category: categoryArray });
   };
 
 
