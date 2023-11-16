@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { PackageContent } from "../../interface/common";
 
+// <========== Route ==========>
+import { Link } from "react-router-dom";
+
 const LeftLineCard = (props: { data: PackageContent }) => {
   return (
     <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 last-deal  rounded-xl max-h-[280px]  bg-white main-input p-7">
@@ -58,7 +61,7 @@ const LeftLineCard = (props: { data: PackageContent }) => {
           <span>Per Adult</span>
         </div>
         <button className="button tour-pic-btn py-[8px] flex flex-row gap-2">
-          <div className="text">View Detail </div>
+        <Link to="PackageDetails"><div className="text">View Detail </div></Link>
         </button>
       </div>
     </div>
