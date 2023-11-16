@@ -12,7 +12,7 @@ import { PackageContent } from "../../interface/common";
 
 const CardCarousel = (props: { carouselData: PackageContent[] }) => {
   return (
-    <div >
+    <div>
       <Swiper
         slidesPerView={1}
         spaceBetween={25}

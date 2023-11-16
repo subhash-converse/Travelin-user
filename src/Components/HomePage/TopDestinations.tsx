@@ -12,7 +12,7 @@ const TopDestinations = () => {
   {
     carouselData.map((data) => {
       let filter = data.pages_for_show.find(
-        (a) => a.toLowerCase().trim() === "destination"
+        (a) => a.toLowerCase().trim() === "destination",
       );
       if (filter) {
         return filteredData.push(data);

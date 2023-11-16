@@ -1,6 +1,27 @@
+interface DayPlan {
+  day: number;
+  city: string;
+  description: string;
+}
+
+interface Review {
+  user_name: string;
+  rating: number;
+  description: string;
+}
+
+interface ReviewSummary {
+  cleanliness: number;
+  facilities: number;
+  value_for_money: number;
+  service: number;
+  location: number;
+  total_summary: number;
+}
+
 export interface PackageContent {
   id: number;
-  image: any;
+  image: string;
   country: string;
   touristPlace: string;
   reviewsStar: number;
@@ -11,7 +32,10 @@ export interface PackageContent {
   price: number;
   territory: string;
   days: number;
-  guideName?: string;
+  days_and_plans: DayPlan[];
+  guideName: string;
   guideImage: string;
-  position?: string;
+  position: string;
+  reviews: Review[];
+  review_summary: ReviewSummary;
 }

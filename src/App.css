@@ -47,7 +47,11 @@ body {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -211,7 +215,7 @@ body {
 .card-icon {
   height: 60px;
   width: 58px;
-  
+
   margin-bottom: 8px;
 }
 
@@ -635,7 +639,6 @@ i {
   content: "";
 }
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -645,17 +648,17 @@ i {
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px white;
-  padding: 10px; 
+  padding: 10px;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(228, 227, 227); 
+  background: rgb(228, 227, 227);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:  rgb(228, 227, 227); 
+  background: rgb(228, 227, 227);
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import mockData from "../../Mock/PackageData";
 
-const CatogoryFilterForm = ({setFilterFunc, filters}: any) => {
+const CatogoryFilterForm = ({ setFilterFunc, filters }: any) => {
   let categoryArray: string[] = filters.category;
 
   const CatogoryFilter = (event: any) => {
@@ -19,8 +19,6 @@ const CatogoryFilterForm = ({setFilterFunc, filters}: any) => {
 
     setFilterFunc({ ...filters, category: categoryArray });
   };
-
-
 
   return (
     <>

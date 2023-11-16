@@ -55,7 +55,7 @@ const Destination = (props: { data: PackageContent[] }) => {
               </div>
             </div>
           </div>
-        )
+        ),
       )}
     </>
   );

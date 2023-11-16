@@ -38,7 +38,6 @@ const GridCard = () => {
           return package_val.category.includes(filterVal);
         });
 
-
         if (!category_included) {
           return;
         }
@@ -173,7 +172,7 @@ const GridCard = () => {
             >
               {filteredData.map((data) => {
                 let filter = data.pages_for_show.find(
-                  (a) => a.toLowerCase().trim() === "left grid"
+                  (a) => a.toLowerCase().trim() === "left grid",
                 );
                 if (filter) {
                   return grid ? (
