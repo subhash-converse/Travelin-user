@@ -61,7 +61,7 @@ const LeftLineCard = (props: { data: PackageContent }) => {
           <span>Per Adult</span>
         </div>
         <button className="button tour-pic-btn py-[8px] flex flex-row gap-2">
-        <Link to="PackageDetails"><div className="text">View Detail </div></Link>
+        <Link to="/packageDetails"><div className="text">View Detail </div></Link>
         </button>
       </div>
     </div>

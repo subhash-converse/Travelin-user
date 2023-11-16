@@ -10,7 +10,7 @@ const Routing = () => {
     <Routes>
       <Route index element={<Home />} />
       <Route path="leftGrid" element={<LeftSideGrid />} />
-      <Route path="PackageDetails" element={<PackageDetails />} />
+      <Route path="packageDetails" element={<PackageDetails />} />
     </Routes>
   );
 };
