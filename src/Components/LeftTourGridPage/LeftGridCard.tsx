@@ -1,24 +1,12 @@
 // <========== icons ==========>
 import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { PackageContent } from "../../interface/common";
+
 
 import React from "react";
 
-interface data {
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  position?: string;
-}
-
-const LeftGridCard = (props: { data: data }) => {
+const LeftGridCard = (props: { data: PackageContent }) => {
   let overlayElement = document.getElementById("overlay");
   overlayElement?.addEventListener("mouseenter", () => {
     overlayElement?.classList.add("color-overlay");

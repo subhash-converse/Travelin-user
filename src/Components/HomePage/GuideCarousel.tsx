@@ -8,23 +8,10 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 // <========== hooks ==========>
 import { useState, useEffect } from "react";
 
-interface LastMainDeal {
-  id: number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  guideImage: string;
-  position?: string;
-}
+// <========== interface ==========>
+import { PackageContent } from "../../interface/common";
 
-const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
+const CorouselGuide = (props: { carouselData: PackageContent[] }) => {
   // <========== hooks ==========>
   const [windowWidth, setWindowWidth] = useState(4);
   let screenWidth = window.innerWidth;
@@ -56,8 +43,8 @@ const CorouselGuide = (props: { carouselData: LastMainDeal[] }) => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper swiper-pagination-bullets"
       >
-        {props.carouselData.map((carousal: LastMainDeal) => {
-          let filter = carousal.catogory.find((a) => {
+        {props.carouselData.map((carousal: PackageContent) => {
+          let filter = carousal.pages_for_show.find((a) => {
             if (a.toLocaleLowerCase().trim() === "guide info") {
               return a;
             } else {

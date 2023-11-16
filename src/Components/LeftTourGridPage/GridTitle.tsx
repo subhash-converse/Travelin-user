@@ -2,12 +2,13 @@ import React from "react";
 
 // ..............Images.................
 import mountain from "../../Assets/Images/HomeImage/mountain.png";
+import nightimage from "../../Assets/Images/LeftTourGridImages/nighthouse.jpg";
 
 const GridTitle = () => {
   return (
     <>
       <div className="fix-image h-[354px] w-full relative ">
-        <div className="bg-black opacity-[0.6] absolute w-full h-full  "></div>
+        <div className="bg-black opacity-[0.6] absolute w-full h-full"></div>
         <div className="absolute top-[40%] ld:top-[25%] flex justify-center w-full">
           <div className="text-center white ">
             <h1 className="text-[24px] md:text-[58px] Play-fair">TOUR GRID</h1>

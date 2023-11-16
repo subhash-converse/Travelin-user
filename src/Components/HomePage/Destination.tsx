@@ -1,27 +1,14 @@
-// <========== MockData ==========>
-// import destination1 from "/corosal2.jpg";
+import { PackageContent } from "../../interface/common";
 
-interface Data {
-  id:number;
-  image: any;
-  country: string;
-  touristPlace: string;
-  reviewsStar: number;
-  description: string;
-  catogory: string[];
-  price: number;
-  territory: string;
-  days: number;
-  guideName?: string;
-  position?: string;
-}
-
-const Destination = (props: { data: Data[] }) => {
+const Destination = (props: { data: PackageContent[] }) => {
   return (
     <>
       {props.data.map((eachData, index) =>
         index === 0 ? (
-          <div key={`Destination-long-${eachData.id}`} className="image-box md:col-span-2 lg:row-span-2 lg:col-span-3 img-radius  relative">
+          <div
+            key={`Destination-long-${eachData.id}`}
+            className="image-box md:col-span-2 lg:row-span-2 lg:col-span-3 img-radius  relative"
+          >
             <div className="relative">
               <img
                 src={eachData.image}
@@ -44,7 +31,10 @@ const Destination = (props: { data: Data[] }) => {
             </div>
           </div>
         ) : (
-          <div key={`Destination-long-short${eachData.id}`} className="lg:col-span-2 image-box img-radius relative">
+          <div
+            key={`Destination-long-short${eachData.id}`}
+            className="lg:col-span-2 image-box img-radius relative"
+          >
             <div>
               <img
                 src={eachData.image}

@@ -15,7 +15,7 @@ const BestTourPackages = () => {
   };
   let bestArray: any = [];
   carouselData.map((data) => {
-    let filter = data.catogory.find(
+    let filter = data.pages_for_show.find(
       (a) => a.toLowerCase().trim() === "best tour package"
     );
     if (filter) {

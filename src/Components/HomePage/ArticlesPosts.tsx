@@ -5,7 +5,7 @@ import ArticalsCarousal from "./ArticalsCarousal";
 const ArticlesPosts = () => {
   let articalArray: any = [];
   carouselData.map((data) => {
-    let filter = data.catogory.find(
+    let filter = data.pages_for_show.find(
       (a) => a.toLowerCase().trim() === "articles"
     );
     if (filter) {
@@ -17,7 +17,7 @@ const ArticlesPosts = () => {
 
   return (
     <div className="">
-      <div className="flex flex-col justify-center items-center ]">
+      <div className="flex flex-col justify-center items-center]">
         <h1 className="yellow content-head-1 Play-fair pt-[25px]">
           Our Blogs Offers
         </h1>
