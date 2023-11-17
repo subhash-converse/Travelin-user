@@ -124,7 +124,7 @@ const Header = () => {
               </button>
 
               <ul className="dropdown-content absolute hidden nav w-[180px]  pt-1 z-10">
-                <li className="dropdown">
+                <li className="dropdown w-full">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
                     to="#"
@@ -167,7 +167,7 @@ const Header = () => {
                     </li>{" "}
                   </ul>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown w-full">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
                     to="#"
@@ -201,7 +201,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="dropdown">
+                <li className="dropdown w-full">
                   <Link
                     className="bg-white hover:text-white hover:bg-[#868686] py-2 px-4 block whitespace-no-wrap"
                     to="#"
