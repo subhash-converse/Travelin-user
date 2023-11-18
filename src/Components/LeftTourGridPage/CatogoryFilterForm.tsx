@@ -1,11 +1,7 @@
-import React from "react";
-import mockData from "../../Mock/PackageData";
-
-const CatogoryFilterForm = ({setFilterFunc, filters}: any) => {
+const CatogoryFilterForm = ({ setFilterFunc, filters }: any) => {
   let categoryArray: string[] = filters.category;
 
   const CatogoryFilter = (event: any) => {
-    let id = event.target.id;
     let value = event.target.value;
 
     if (event.target.checked === true) {
@@ -19,8 +15,6 @@ const CatogoryFilterForm = ({setFilterFunc, filters}: any) => {
 
     setFilterFunc({ ...filters, category: categoryArray });
   };
-
-
 
   return (
     <>

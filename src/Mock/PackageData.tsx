@@ -16,9 +16,96 @@ const LastMainDeals: PackageContent[] = [
     price: 2000,
     territory: "subhash",
     days: 3,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 1,
@@ -29,14 +116,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Visit the iconic Eiffel Tower in Paris, a symbol of romance and architectural beauty.",
     pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
-    category: [ "Day Trips", "Outdoor Activities"],
+    category: ["Day Trips", "Outdoor Activities"],
     offer: 12,
     price: 1000,
     territory: "Caspian Valley",
     days: 10,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 2,
@@ -47,14 +221,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Experience the breathtaking beauty of the Grand Canyon in Arizona, USA.",
     pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
-    category: [ "Outdoor Activities"],
+    category: ["Outdoor Activities"],
     offer: 30,
     price: 180,
     territory: "Japan",
     days: 13,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Solden kalos",
     guideImage: "/HomePage/guide2.jpg",
     position: "Manager",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 3,
@@ -70,9 +331,96 @@ const LastMainDeals: PackageContent[] = [
     price: 250,
     territory: "Russia",
     days: 21,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Solden kalos",
     guideImage: "/HomePage/guide3.jpg",
     position: "Manager",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 4,
@@ -82,15 +430,102 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["landing carowsal", "guide info", "review" , "left grid"],
-    category: [ "Indoor,Sight Seeing"],
+    pages_for_show: ["landing carowsal", "guide info", "review", "left grid"],
+    category: ["Indoor,Sight Seeing"],
     offer: 65,
     price: 250,
     territory: "Japan",
     days: 10,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Solden kalos",
     guideImage: "/HomePage/guide4.jpg",
     position: "Manager",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 5,
@@ -101,14 +536,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["landing carowsal", "guide info", "left grid"],
-    category: [ "Travels"],
+    category: ["Travels"],
     offer: 63,
     price: 250,
     territory: "Russia",
     days: 1,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Solden kalos",
     guideImage: "/HomePage/guide1.jpg",
     position: "Manager",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 6,
@@ -118,15 +640,107 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    pages_for_show: [
+      "destination",
+      "related destination",
+      "guide info",
+      "left grid",
+    ],
     category: ["Attractions"],
     offer: 32,
     price: 250,
     territory: "Russia",
     days: 9,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide2.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 7,
@@ -136,15 +750,107 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info", "left grid"],
-    category: [ "Day Trips"],
+    pages_for_show: [
+      "destination",
+      "related destination",
+      "guide info",
+      "left grid",
+    ],
+    category: ["Day Trips"],
     offer: 87,
     price: 250,
     territory: "Russia",
     days: 1,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide3.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 8,
@@ -154,15 +860,107 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info", "left grid"],
-    category: [ "Outdoor Activities"],
+    pages_for_show: [
+      "destination",
+      "related destination",
+      "guide info",
+      "left grid",
+    ],
+    category: ["Outdoor Activities"],
     offer: 21,
     price: 250,
     territory: "Russia",
     days: 8,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide4.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 9,
@@ -172,15 +970,107 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info", "left grid"],
-    category: [ "Concert & Show"],
+    pages_for_show: [
+      "destination",
+      "related destination",
+      "guide info",
+      "left grid",
+    ],
+    category: ["Concert & Show"],
     offer: 98,
     price: 250,
     territory: "Russia",
     days: 11,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 10,
@@ -190,15 +1080,107 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["destination","related destination", "guide info", "left grid"],
+    pages_for_show: [
+      "destination",
+      "related destination",
+      "guide info",
+      "left grid",
+    ],
     category: ["Indoor,Sight Seeing"],
     offer: 61,
     price: 250,
     territory: "Russia",
     days: 19,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 11,
@@ -220,9 +1202,96 @@ const LastMainDeals: PackageContent[] = [
     price: 250,
     territory: "Russia",
     days: 5,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide2.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 12,
@@ -244,9 +1313,96 @@ const LastMainDeals: PackageContent[] = [
     price: 250,
     territory: "Russia",
     days: 10,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide3.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 13,
@@ -263,14 +1419,101 @@ const LastMainDeals: PackageContent[] = [
       "offer",
       "left grid",
     ],
-    category: [ "Day Trips"],
+    category: ["Day Trips"],
     offer: 54,
     price: 250,
     territory: "Russia",
     days: 15,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide4.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 14,
@@ -281,14 +1524,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["last minute deals", "guide info", "offer", "left grid"],
-    category: [ "Outdoor Activities"],
+    category: ["Outdoor Activities"],
     offer: 34,
     price: 250,
     territory: "Russia",
     days: 20,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 15,
@@ -299,14 +1629,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    category: [ "Concert & Show"],
+    category: ["Concert & Show"],
     offer: 23,
     price: 250,
     territory: "Russia",
     days: 25,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide2.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 16,
@@ -317,14 +1734,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    category: [ "Indoor,Sight Seeing"],
+    category: ["Indoor,Sight Seeing"],
     offer: 70,
     price: 250,
     territory: "Russia",
     days: 2,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide3.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 17,
@@ -335,14 +1839,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["left grid"],
-    category: [ "Travels"],
+    category: ["Travels"],
     offer: 54,
     price: 250,
     territory: "Russia",
     days: 7,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide4.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 18,
@@ -358,9 +1949,96 @@ const LastMainDeals: PackageContent[] = [
     price: 250,
     territory: "Russia",
     days: 13,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide1.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 19,
@@ -370,15 +2048,102 @@ const LastMainDeals: PackageContent[] = [
     reviewsStar: 5,
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
-    pages_for_show: ["long card", "guide info","left grid"],
+    pages_for_show: ["long card", "guide info", "left grid"],
     category: ["Day Trips"],
     offer: 87,
     price: 250,
     territory: "Russia",
     days: 16,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide2.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 20,
@@ -389,14 +2154,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["long card", "guide info", "left grid"],
-    category: [ "Outdoor Activities"],
+    category: ["Outdoor Activities"],
     offer: 43,
     price: 250,
     territory: "Russia",
     days: 1,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide3.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 21,
@@ -412,9 +2264,96 @@ const LastMainDeals: PackageContent[] = [
     price: 250,
     territory: "Russia",
     days: 6,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide4.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 22,
@@ -425,14 +2364,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["guide info", "articles", "left grid"],
-    category: [ "Indoor"],
+    category: ["Indoor"],
     offer: 43,
     price: 250,
     territory: "Russia",
     days: 16,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide3.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 23,
@@ -443,14 +2469,101 @@ const LastMainDeals: PackageContent[] = [
     description:
       "Santorini offers stunning sunsets and picturesque views of white-washed buildings against the sea.",
     pages_for_show: ["guide info", "articles", "left grid"],
-    category: [ "Travels"],
+    category: ["Travels"],
     offer: 39,
     price: 250,
     territory: "Russia",
     days: 10,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide4.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
   {
     id: 24,
@@ -466,9 +2579,96 @@ const LastMainDeals: PackageContent[] = [
     price: 250,
     territory: "Russia",
     days: 12,
+    days_and_plans: [
+      {
+        day: 1,
+        city: "New York",
+        description: "Explore downtown and visit local markets.",
+      },
+      {
+        day: 2,
+        city: "Los Angeles",
+        description: "Take a guided tour of historical landmarks.",
+      },
+      {
+        day: 3,
+        city: "Chicago",
+        description: "Enjoy a day at the city's renowned museums.",
+      },
+      {
+        day: 4,
+        city: "Miami",
+        description: "Experience the vibrant nightlife and entertainment.",
+      },
+      {
+        day: 5,
+        city: "San Francisco",
+        description: "Relax in the city parks and gardens.",
+      },
+      {
+        day: 6,
+        city: "Austin",
+        description: "Try local cuisines at recommended restaurants.",
+      },
+      {
+        day: 7,
+        city: "Seattle",
+        description: "Explore the city's architecture and skyscrapers.",
+      },
+      {
+        day: 8,
+        city: "Las Vegas",
+        description: "Take a scenic boat tour along the city's waterfront.",
+      },
+      {
+        day: 9,
+        city: "Denver",
+        description: "Discover hidden gems and local attractions.",
+      },
+      {
+        day: 10,
+        city: "Orlando",
+        description: "Attend cultural events and festivals in the city.",
+      },
+      {
+        day: 11,
+        city: "Atlanta",
+        description: "Visit art galleries and exhibitions.",
+      },
+      {
+        day: 12,
+        city: "Portland",
+        description: "Go on a shopping spree in popular districts.",
+      },
+      {
+        day: 13,
+        city: "New Orleans",
+        description: "Wrap up the trip with a memorable farewell dinner.",
+      },
+    ],
     guideName: "Horke Pels",
     guideImage: "/HomePage/guide4.jpg",
     position: "HR",
+    reviews: [
+      {
+        user_name: "Alice",
+        rating: 4.5,
+        description: "Great experience, loved it!",
+      },
+      {
+        user_name: "Bob",
+        rating: 5,
+        description: "Absolutely fantastic, highly recommended!",
+      },
+    ],
+    review_summary: {
+      cleanliness: 3,
+      facilities: 4,
+      value_for_money: 2,
+      service: 1,
+      location: 3,
+      total_summary: 3.2,
+    },
   },
 ];
 export default LastMainDeals;

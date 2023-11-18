@@ -2,7 +2,6 @@ import React from "react";
 
 // ..............Images.................
 import mountain from "../../Assets/Images/HomeImage/mountain.png";
-import nightimage from "../../Assets/Images/LeftTourGridImages/nighthouse.jpg";
 
 const GridTitle = () => {
   return (
@@ -13,7 +12,7 @@ const GridTitle = () => {
           <div className="text-center white ">
             <h1 className="text-[24px] md:text-[58px] Play-fair">TOUR GRID</h1>
             <h3 className="flex gap-2 justify-center">
-              <span>Home</span>
+              <span className="text-[#028B8A] text-[16px]">Home</span>
               <span>|</span>
               <span>Tour Grid Leftside</span>
             </h3>

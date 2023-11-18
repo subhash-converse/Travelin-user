@@ -12,7 +12,7 @@ const LastMinuteDeals = () => {
   let lastArray: any = [];
   carouselData.map((data) => {
     let filter = data.pages_for_show.find(
-      (a) => a.toLowerCase().trim() === "last minute deals"
+      (a) => a.toLowerCase().trim() === "last minute deals",
     );
     if (filter) {
       return lastArray.push(data);
@@ -24,7 +24,7 @@ const LastMinuteDeals = () => {
   let longArray: any = [];
   carouselData.map((data) => {
     let filter = data.pages_for_show.find(
-      (a) => a.toLowerCase().trim() === "long card"
+      (a) => a.toLowerCase().trim() === "long card",
     );
     if (filter) {
       return longArray.push(data);

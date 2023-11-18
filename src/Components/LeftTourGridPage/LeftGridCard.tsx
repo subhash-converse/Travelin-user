@@ -3,7 +3,6 @@ import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PackageContent } from "../../interface/common";
 
-
 import React from "react";
 
 const LeftGridCard = (props: { data: PackageContent }) => {

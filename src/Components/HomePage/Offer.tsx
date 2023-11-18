@@ -24,7 +24,7 @@ const Offer = () => {
         <div className="grid gap-4 lg:max-w-[1290px] md: grid-cols-l lg:grid-cols-2 lg:gap-7">
           {carouselData.map((data) => {
             let filter = data.pages_for_show.find(
-              (a) => a.toLowerCase().trim() === "offer"
+              (a) => a.toLowerCase().trim() === "offer",
             );
             if (filter) {
               return (
