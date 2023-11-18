@@ -762,7 +762,7 @@ i {
   transition-duration: 0.5s;
 }
 
-.package-highlight{
+.package-highlight {
   border: 1px solid #f1f1f1;
   border-radius: 10px;
   padding: 15px;
@@ -773,7 +773,7 @@ i {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 6px;
 }
 
-.accordian{
+.accordian {
   background-color: #029e9d;
   color: white;
 }

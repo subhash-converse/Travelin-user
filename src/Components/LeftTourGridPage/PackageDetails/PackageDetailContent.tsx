@@ -27,14 +27,17 @@ const PackageDetailContent = () => {
   let currentUrl = window.location.href;
   let paramsVal = Number(currentUrl.split("/").pop());
 
- let arr = Packages.filter((data)=>{
-    return data.id === paramsVal
-  })
+  let arr = Packages.filter((data) => {
+    return data.id === paramsVal;
+  });
 
   return (
     <div className="w-full ">
       {arr.map((data: PackageContent) => (
-        <div className="max-w-[1290px] px-[15px] lg:flex mx-auto pt-[48px]" id="package">
+        <div
+          className="max-w-[1290px] px-[15px] lg:flex mx-auto pt-[48px]"
+          id="package"
+        >
           <div className="w-full lg:w-[65%] px-[15px] ">
             <div className="mb-4 pb-4">
               <h2 className="text-[28px] mb-2 lg:text-[46px]  Play-fair ">
@@ -102,7 +105,7 @@ const PackageDetailContent = () => {
               <tr>
                 <td>
                   <AccessTimeFilledIcon style={{ fontSize: 18 }} />
-                  <span>{data.days}</span>
+                  <span>{` ${data.days} days`}</span>
                 </td>
                 <td>
                   <GroupsIcon style={{ fontSize: 18 }} />
@@ -230,7 +233,7 @@ const PackageDetailContent = () => {
               Showing 16 Verified Guest Comments{" "}
             </h1>
             <div className="grid grid-cols-1 gap-4">
-              <ReviewChat chat={data.reviews}/>
+              <ReviewChat chat={data.reviews} />
             </div>
             {/* form */}
             <h3
@@ -283,7 +286,7 @@ const PackageDetailContent = () => {
             </div>
           </div>
         </div>
-      ))} 
+      ))}
       <div>
         <ExploreYourLife />
       </div>
