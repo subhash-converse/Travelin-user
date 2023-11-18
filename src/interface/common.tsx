@@ -1,16 +1,16 @@
-interface DayPlan {
+export interface DayPlan {
   day: number;
   city: string;
   description: string;
 }
 
-interface Review {
+export interface Review {
   user_name: string;
   rating: number;
   description: string;
 }
 
-interface ReviewSummary {
+export interface ReviewSummary {
   cleanliness: number;
   facilities: number;
   value_for_money: number;

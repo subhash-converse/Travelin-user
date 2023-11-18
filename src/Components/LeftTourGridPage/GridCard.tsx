@@ -33,7 +33,7 @@ const GridCard = () => {
     let filteredValues: PackageContent[] = [];
 
     carouselData.filter((package_val: PackageContent) => {
-      if (filters.category.length != 0) {
+      if (filters.category.length !== 0) {
         let category_included = filters.category.some((filterVal) => {
           return package_val.category.includes(filterVal);
         });
@@ -42,7 +42,7 @@ const GridCard = () => {
           return;
         }
       }
-      if (filters.duration.length != 0) {
+      if (filters.duration.length !== 0) {
         let duration_included = filters.duration.some((filterVal: any) => {
           let splited = filterVal.split("-");
 
@@ -55,7 +55,7 @@ const GridCard = () => {
         }
       }
 
-      if (filters.price.length != 0) {
+      if (filters.price.length !== 0) {
         let min_price = filters.price[0] <= package_val.price ? true : false;
         let max_price = filters.price[1] >= package_val.price ? true : false;
 

@@ -1,7 +1,7 @@
 import React from "react";
 // ............Components.................
 import PackageSlider from "../LeftTourGridPage/PackageDetails/PackageSlider";
-import PackageContent from "../LeftTourGridPage/PackageDetails/PackageContent";
+import PackageDetailContent from "../LeftTourGridPage/PackageDetails/PackageDetailContent";
 
 const PackageDetails = () => {
   return (
@@ -10,7 +10,7 @@ const PackageDetails = () => {
         <PackageSlider />
       </div>
       <div>
-        <PackageContent />
+        <PackageDetailContent />
       </div>
     </>
   );

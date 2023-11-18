@@ -2,7 +2,6 @@ import React from "react";
 
 // ..............Images.................
 import mountain from "../../Assets/Images/HomeImage/mountain.png";
-import nightimage from "../../Assets/Images/LeftTourGridImages/nighthouse.jpg";
 
 const GridTitle = () => {
   return (

@@ -1,12 +1,7 @@
-import { duration } from "@mui/material";
-import React from "react";
-import { useEffect } from "react";
-
 const DurationFilterForm = ({ setFilterFunc, filters }: any) => {
   let durationArray: string[] = filters.duration;
 
   const durationFilter = (event: any) => {
-    let id = event.target.id;
     let value = event.target.value;
 
     if (event.target.checked === true) {
