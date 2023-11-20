@@ -3,7 +3,8 @@ import { faCalendarDays, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { PackageContent } from "../../interface/common";
 
-import React from "react";
+// <========== Route ==========>
+import { Link } from "react-router-dom";
 
 const LeftGridCard = (props: { data: PackageContent }) => {
   let overlayElement = document.getElementById("overlay");
@@ -29,8 +30,10 @@ const LeftGridCard = (props: { data: PackageContent }) => {
           </h3>
           <div className="w-full text-[16px] font-semibold  px-[24px] flex justify-end ">
             <button className="tour-pic-btn relative top-[-60px]">
+            <Link to={`/packageDetails/${props.data.id}`}>
               <FontAwesomeIcon icon={faCalendarDays} />
               <span> {`${props.data.days} Days Tours`} </span>
+              </Link>
             </button>
           </div>
         </div>

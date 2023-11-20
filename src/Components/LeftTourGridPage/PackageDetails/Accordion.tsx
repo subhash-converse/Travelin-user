@@ -2,21 +2,22 @@ import React, { useState } from "react";
 import { DayPlan } from "../../../interface/common";
 
 const Accordion = (props: { accordian: DayPlan[] }) => {
-  const [open, setOpen] = useState(false);
+const[selectedDay,setSelectedDay]=useState<any>(null)
 
-  const openToggle = () => {
-    return setOpen(!open);
-  };
   return (
     <div className="flex flex-col gap-4">
       {props.accordian.map((data) => (
         <div className="collapse collapse-arrow ">
-          <input type="radio" name="my-accordion-2" />
+          <input
+            type="radio"
+            name="my-accordion-2"
+            onClick={() => {
+              setSelectedDay(data.day);
+            }}
+          />
           <div
-            className={`collapse-title text-xl font-medium hover:accordian border border-[#f1f1f1] rounded-2xl Play-fair text-[18px]  ${
-              open ? "accordian" : null
-            }`}
-            onClick={openToggle}
+            id={`${data.day}`}
+            className={`collapse-title  text-xl font-medium border border-[#f1f1f1] rounded-2xl Play-fair text-[18px] ${data.day == selectedDay ? "accordian" : ""}`}
           >
             {`day ${data.day}-${data.city}`}
           </div>
