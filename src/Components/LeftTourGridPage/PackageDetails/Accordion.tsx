@@ -5,17 +5,15 @@ const Accordion = (props: { accordian: DayPlan[] }) => {
   const [open, setOpen] = useState(false);
 
   const openToggle = () => {
-    console.log("hi");
     return setOpen(!open);
   };
-
   return (
     <div className="flex flex-col gap-4">
       {props.accordian.map((data) => (
         <div className="collapse collapse-arrow ">
           <input type="radio" name="my-accordion-2" />
           <div
-            className={`collapse-title text-xl font-medium border border-[#f1f1f1] rounded-2xl Play-fair text-[18px]  ${
+            className={`collapse-title text-xl font-medium hover:accordian border border-[#f1f1f1] rounded-2xl Play-fair text-[18px]  ${
               open ? "accordian" : null
             }`}
             onClick={openToggle}

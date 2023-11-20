@@ -1,4 +1,5 @@
 import React from "react";
+
 // <========== components ==========>
 import Packages from "../../../Mock/PackageData";
 
@@ -22,6 +23,9 @@ import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined
 import PersonIcon from "@mui/icons-material/Person";
 import DescriptionIcon from "@mui/icons-material/Description";
 import SignpostOutlinedIcon from "@mui/icons-material/SignpostOutlined";
+import { Link } from "react-router-dom";
+
+
 
 const PackageDetailContent = () => {
   let currentUrl = window.location.href;
@@ -82,6 +86,7 @@ const PackageDetailContent = () => {
                 src={data.image}
                 alt="packageimage"
               />
+              
               <h3 className="text-[22px] mb-4 mt-6 text-[black] Play-fair">
                 Description
               </h3>
@@ -215,6 +220,13 @@ const PackageDetailContent = () => {
                 title="map"
               ></iframe>
             </div>
+            <div className="flex justify-center py-6">
+                  <button className="button book-now">
+                    <Link to="book-now" className="text" >
+                      BOOK NOW
+                    </Link>
+                  </button>
+              </div>
             {/* reviews */}
             <h1
               id="reviews"

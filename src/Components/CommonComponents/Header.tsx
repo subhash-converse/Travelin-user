@@ -19,7 +19,14 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import logo from "../../Assets/Images/HomeImage/logo.png";
 import { Link } from "react-router-dom";
 
+// <========== interface ==========>
+import { PackageContent } from "../../interface/common";
+
+// <========== mockdata ==========>
+import LastMainDeals from "../../Mock/PackageData"
+
 const Header = () => {
+
   return (
     <div className="">
       <div className="top-head hidden  lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">
@@ -538,10 +545,6 @@ const Header = () => {
                 <PersonOutlineOutlinedIcon className="mb-[7px] " />
                 LOGIN/REGISTER
               </span>
-
-              <button className="button book-now">
-                <span className="text">BOOK NOW</span>
-              </button>
             </div>
           </div>
         </div>
