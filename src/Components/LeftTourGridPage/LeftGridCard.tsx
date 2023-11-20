@@ -30,9 +30,9 @@ const LeftGridCard = (props: { data: PackageContent }) => {
           </h3>
           <div className="w-full text-[16px] font-semibold  px-[24px] flex justify-end ">
             <button className="tour-pic-btn relative top-[-60px]">
-            <Link to={`/packageDetails/${props.data.id}`}>
-              <FontAwesomeIcon icon={faCalendarDays} />
-              <span> {`${props.data.days} Days Tours`} </span>
+              <Link to={`/packageDetails/${props.data.id}`}>
+                <FontAwesomeIcon icon={faCalendarDays} />
+                <span> {`${props.data.days} Days Tours`} </span>
               </Link>
             </button>
           </div>

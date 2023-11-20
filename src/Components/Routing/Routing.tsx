@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from ".././Layouts/HomeLayout";
 import LeftSideGrid from ".././Layouts/LeftTourGridLayout";
 import PackageDetails from "../Layouts/PackageDetails";
-import BooknowLayout from "../Layouts/BookNowLayout"
+import BooknowLayout from "../Layouts/BookNowLayout";
 
 const Routing = () => {
   return (

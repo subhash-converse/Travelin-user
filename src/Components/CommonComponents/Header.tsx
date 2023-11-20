@@ -23,10 +23,9 @@ import { Link } from "react-router-dom";
 import { PackageContent } from "../../interface/common";
 
 // <========== mockdata ==========>
-import LastMainDeals from "../../Mock/PackageData"
+import LastMainDeals from "../../Mock/PackageData";
 
 const Header = () => {
-
   return (
     <div className="">
       <div className="top-head hidden  lg:inline-flex justify-center bg-[#029E9D] h-10 w-full text-white">

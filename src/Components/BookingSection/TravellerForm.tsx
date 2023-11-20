@@ -16,9 +16,7 @@ const TravellerForm = () => {
 
             <div className=" w-full select-div ">
               <select name="" id="" className="select-input bg-white w-full ">
-                <option value="">
-                 select
-                </option>
+                <option value="">select</option>
                 <option value="">Mr</option>
                 <option value="">Ms</option>
               </select>

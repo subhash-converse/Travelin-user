@@ -1,5 +1,5 @@
 import React from "react";
-import card from "../../Assets/Images/BookingImages/card.png"
+import card from "../../Assets/Images/BookingImages/card.png";
 
 const CardPayment = () => {
   return (
@@ -46,7 +46,7 @@ const CardPayment = () => {
         </div>
       </form>
       <div>
-        <img src={card} alt="" className="px-[15px]"/>
+        <img src={card} alt="" className="px-[15px]" />
       </div>
     </div>
   );

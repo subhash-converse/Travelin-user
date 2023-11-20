@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { DayPlan } from "../../../interface/common";
 
 const Accordion = (props: { accordian: DayPlan[] }) => {
-const[selectedDay,setSelectedDay]=useState<any>(null)
+  const [selectedDay, setSelectedDay] = useState<any>(null);
 
   return (
     <div className="flex flex-col gap-4">
@@ -17,7 +17,9 @@ const[selectedDay,setSelectedDay]=useState<any>(null)
           />
           <div
             id={`${data.day}`}
-            className={`collapse-title  text-xl font-medium border border-[#f1f1f1] rounded-2xl Play-fair text-[18px] ${data.day == selectedDay ? "accordian" : ""}`}
+            className={`collapse-title  text-xl font-medium border border-[#f1f1f1] rounded-2xl Play-fair text-[18px] ${
+              data.day == selectedDay ? "accordian" : ""
+            }`}
           >
             {`day ${data.day}-${data.city}`}
           </div>

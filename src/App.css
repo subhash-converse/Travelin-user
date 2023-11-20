@@ -328,12 +328,12 @@ option {
   transition: all 0.5s ease-out;
 }
 
-.button-aply{
+.button-aply {
   color: white;
-  background-color:#212529 ;
+  background-color: #212529;
 }
 
-.button-apply{
+.button-apply {
   display: block;
   background: linear-gradient(to right, #fdc703 50%, #212529 50%);
   background-size: 200% 100%;
@@ -793,8 +793,8 @@ i {
   color: white;
 }
 
-.booking-input{
-  border:1px solid #f1f1f1;
+.booking-input {
+  border: 1px solid #f1f1f1;
   border-radius: 7px;
   font-size: 15px;
   color: #777777;
@@ -802,8 +802,8 @@ i {
   margin-top: 8px;
   margin-bottom: 20px;
 }
-.select-div{
-  border:1px solid #f1f1f1;
+.select-div {
+  border: 1px solid #f1f1f1;
   border-radius: 7px;
   font-size: 15px;
   color: #777777;
@@ -812,19 +812,17 @@ i {
   margin-bottom: 20px;
 }
 
-.select-input{
+.select-input {
   font-size: 15px;
   color: #777777;
   padding: 12px 0px;
-  
 }
-.select-input:focus{
-outline: none;
-  
+.select-input:focus {
+  outline: none;
 }
 
-.apply-input{
-  border:1px solid #f1f1f1;
+.apply-input {
+  border: 1px solid #f1f1f1;
   border-radius: 7px;
   font-size: 15px;
   color: #777777;
@@ -833,17 +831,16 @@ outline: none;
   margin-bottom: 20px;
 }
 
-.booking-input:focus{
+.booking-input:focus {
   outline: 1px solid #999999;
-  transition-duration: 0.30s;
+  transition-duration: 0.3s;
 }
 
-.apply-input:focus{
+.apply-input:focus {
   outline: none;
-  ;
 }
 
-.payment-btn{
+.payment-btn {
   background-color: white;
   border-radius: 10px;
   padding: 15px 30px;
@@ -851,48 +848,44 @@ outline: none;
   border: 1px solid #f1f1f1;
 }
 
-.payment-btn:hover{
+.payment-btn:hover {
   background-color: #029e9d;
   color: white;
   transition-duration: 0.5s;
 }
 
-.payment-true{
+.payment-true {
   background-color: #029e9d;
   color: white;
 }
 
-@media screen and (min-width: 375px){
-  .payment-container{
-   flex-direction: row;
+@media screen and (min-width: 375px) {
+  .payment-container {
+    flex-direction: row;
   }
-} 
+}
 
-.shadow-booknow{
+.shadow-booknow {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 0px;
 }
-.price-summary{
+.price-summary {
   font-size: 16px;
 }
- .fir-td{
+.fir-td {
   color: #777777;
 }
-.sec-td{
+.sec-td {
   color: #212529;
 }
 
-.price-summary{
+.price-summary {
   width: 100%;
   border: 1px solid #f1f1f1;
-  border-collapse:collapse ;
+  border-collapse: collapse;
 }
 
-.price-summary td{
+.price-summary td {
   border: 1px solid #f1f1f1;
   width: 50%;
   padding: 10px;
-
 }
-
-
-
